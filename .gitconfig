@@ -1,0 +1,30 @@
+[user]
+  name = Jordan Elver
+  email = jordan.elver@gmail.com
+[color]
+  branch=auto
+  diff=auto
+  status=auto
+[core]
+  excludesfile = "~/.gitignore"
+  editor = mate -w
+[alias]
+  st = status
+  co = checkout
+  ci = commit
+  br = branch -a
+  a = add
+  staged = diff --staged
+  l = log --oneline --max-count=10
+  last = log -1 HEAD
+  d = diff
+  dt = difftool
+[github]
+  user = jordelver
+  token = fd049392c4c32ed7ff2543a50a18c7c9
+[difftool "Kaleidoscope"]
+  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+  prompt = false
+[diff]
+  tool = Kaleidoscope

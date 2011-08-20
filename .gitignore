@@ -1,0 +1,4 @@
+*.tmproj
+.DS_Store
+Thumbs.db
+config/*.yml
