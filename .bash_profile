@@ -1,17 +1,18 @@
-##################################################
+##############################################################################
 # Environment variables
-##################################################
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/Users/jord/homebrew/bin:$PATH"
+##############################################################################
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PS1='\[\e[01;32m\]\u@\h\[\e[01;34m\] \w$(__git_ps1 "(%s)") \$\[\e[00m\] '
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export EDITOR='mate'
+export INPUTRC="~/.inputrc"
 
 ##############################################################################
 # Bash completion
 ##############################################################################
-if [ -f /etc/bash_completion ]; then
-  . /etc/bash_completion
+if [ -d /usr/local/etc/bash_completion.d/ ]; then
+  . /usr/local/etc/bash_completion.d/*
 fi
 
 ##############################################################################
@@ -49,3 +50,7 @@ lcase() {
     fi
   done
 }
+
+# For rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
