@@ -1,0 +1,2 @@
+# Also search these file types
+--type-add=ruby=.builder
