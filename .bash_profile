@@ -1,7 +1,7 @@
 ##############################################################################
 # Environment variables
 ##############################################################################
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PS1='\[\e[01;32m\]\u@\h\[\e[01;34m\] \w$(__git_ps1 "(%s)") \$\[\e[00m\] '
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
