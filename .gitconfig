@@ -16,9 +16,12 @@
   a = add
   staged = diff --staged
   l = log --oneline --max-count=10
+  ll = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ad%x09%Creset%s" --max-count=10
   last = log -1 HEAD
   d = diff
   dt = difftool
+[branch]
+  autosetuprebase = always
 [github]
   user = jordelver
   token = fd049392c4c32ed7ff2543a50a18c7c9
