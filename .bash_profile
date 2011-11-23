@@ -53,6 +53,8 @@ lcase() {
   done
 }
 
-# For rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# Add rbenv if it exists
+if [ -d "$HOME/.rbenv/" ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
