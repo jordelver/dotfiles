@@ -26,6 +26,7 @@ alias n="nano -w"
 alias t="tail -f"
 alias g="git"
 alias m="mate"
+alias o="open ."
 
 # SSH aliases
 alias nas="ssh nas -t tmux a"
