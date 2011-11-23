@@ -53,8 +53,15 @@ lcase() {
   done
 }
 
+##############################################################################
+# Ruby environments - rbenv and rvm CANNOT co-exist on the same system
+##############################################################################
+
 # Add rbenv if it exists
 if [ -d "$HOME/.rbenv/" ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
+
+# Add RVM if it exists
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
