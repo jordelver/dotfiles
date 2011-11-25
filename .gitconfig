@@ -15,8 +15,7 @@
   br = branch -a
   a = add
   staged = diff --staged
-  l = log --oneline --max-count=10
-  ll = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s" --max-count=10
+  l = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s" --max-count=10
   last = log -1 HEAD
   d = diff
   dt = difftool
