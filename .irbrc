@@ -6,6 +6,19 @@ require 'wirble'
 require 'hirb'
 require 'interactive_editor'
 
+# Add all gems in the global RVM gemset to the $LOAD_PATH so they can
+# be used in the rails console
+if defined?(::Bundler)
+  global_gemset = ENV['GEM_PATH'].split(':').grep(/ruby.*@global/).first
+  if global_gemset
+    all_global_gem_paths = Dir.glob("#{global_gemset}/gems/*")
+    all_global_gem_paths.each do |p|
+      gem_path = "#{p}/lib"
+      $LOAD_PATH << gem_path
+    end
+  end
+end
+
 # load Wirble
 Wirble.init()
 Wirble.colorize
