@@ -10,6 +10,7 @@
   editor = mate -w
 [alias]
   st = status
+  s = status
   co = checkout
   ci = commit
   br = branch -a
