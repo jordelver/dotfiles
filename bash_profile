@@ -28,6 +28,9 @@ alias g="git"
 alias m="mate"
 alias o="open ."
 
+# Get the current working directory with newlines removes
+alias getpath='pwd | tr -d "\r\n" | pbcopy'
+
 # SSH aliases
 alias nas="ssh nas -t tmux a"
 alias slicehost="ssh slicehost -t tmux a"
