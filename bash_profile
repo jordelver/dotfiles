@@ -40,6 +40,19 @@ alias sc="./script/console"
 alias c="bundle exec cucumber"
 
 ##############################################################################
+# Bash history
+##############################################################################
+
+# Erase duplicates in history
+export HISTCONTROL=erasedups
+
+# Store 10k history entries
+export HISTSIZE=10000
+
+# Append to the history file when exiting instead of overwriting it
+shopt -s histappend
+
+##############################################################################
 # Shell functions
 ##############################################################################
 
