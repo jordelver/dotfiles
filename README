@@ -1,1 +1,7 @@
-These will be setup instructions here one day, honest.
+Clone the repo to ~/.dotfiles
+
+Run the install script to link the configs into ~/
+
+  cd ~/.dotfiles
+
+  ./install.sh
