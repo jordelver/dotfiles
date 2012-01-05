@@ -1,5 +1,6 @@
 # Also search these file types
 --type-add=ruby=.builder,.feature,.gemspec,Gemfile
+--type-add=css=.scss
 
 # Ignore the tmp directory
 --ignore-dir=tmp
