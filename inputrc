@@ -2,3 +2,6 @@
 set completion-ignore-case on
 
 set completion-prefix-display-length 2
+
+# Immediately add a trailing slash when autocompleting symlinks to directories
+set mark-symlinked-directories on
