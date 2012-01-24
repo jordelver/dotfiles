@@ -1,3 +1,8 @@
+# ~/.inputrc is read by readline, which is used by bash
+# zsh does NOT use readline so settings here do not take affect
+#
+# https://wiki.archlinux.org/index.php/Zsh#Key_Bindings
+
 # Ignore case when <tab> completing
 set completion-ignore-case on
 
