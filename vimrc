@@ -24,3 +24,13 @@ set number
 
 "" Set colorscheme (theme)
 colorscheme all_hallows_eve
+
+"" Show 'invisible' characters
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set list
+
+"" Show the 80 character column gutter
+set colorcolumn=80
+
+"" Show the filename in the window titlebar
+set title
