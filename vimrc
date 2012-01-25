@@ -1,3 +1,6 @@
+"" Use to pathogen to manage plugins
+call pathogen#infect()
+
 set nocompatible                " choose no compatibility with legacy vi
 
 "" Enable syntax highlighting
