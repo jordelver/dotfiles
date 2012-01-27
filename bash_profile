@@ -44,6 +44,7 @@ alias slicehost="ssh slicehost -t tmux a"
 alias sc="./script/console"
 alias c="bundle exec cucumber"
 alias b="bundle"
+alias be="bundle exec"
 
 ##############################################################################
 # Bash history
