@@ -33,7 +33,9 @@ set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
 
 "" Show the 80 character column gutter
-set colorcolumn=80
+if exists("&colorcolumn")
+  set colorcolumn=80
+endif
 
 "" Show the filename in the window titlebar
 set title
