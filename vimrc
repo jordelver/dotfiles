@@ -42,3 +42,6 @@ set title
 
 "" Start NERDTree at startup
 autocmd vimenter * NERDTree
+
+"" Key bindings
+map <C-f> :Ack<space>
