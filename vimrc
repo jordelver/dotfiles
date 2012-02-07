@@ -39,3 +39,6 @@ endif
 
 "" Show the filename in the window titlebar
 set title
+
+"" Start NERDTree at startup
+autocmd vimenter * NERDTree
