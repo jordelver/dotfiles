@@ -10,3 +10,6 @@
 [submodule "vim/bundle/ctrlp"]
 	path = vim/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "vim/bundle/coffeescript"]
+	path = vim/bundle/coffeescript
+	url = https://github.com/kchmck/vim-coffee-script.git
