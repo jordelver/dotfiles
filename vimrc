@@ -45,3 +45,6 @@ autocmd vimenter * NERDTree
 
 "" Key bindings
 map <C-f> :Ack<space>
+
+"" Ignore source control directories in CTRL-P searches
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
