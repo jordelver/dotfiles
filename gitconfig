@@ -20,6 +20,7 @@
   last = log -1 HEAD
   d = diff
   dt = difftool
+  timeline=log --oneline --graph --all
 [branch]
   autosetuprebase = always
 [github]
