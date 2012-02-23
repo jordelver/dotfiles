@@ -7,7 +7,7 @@
   status=auto
 [core]
   excludesfile = "~/.gitignore"
-  editor = mate -w
+  editor = vim
 [alias]
   st = status
   s = status
