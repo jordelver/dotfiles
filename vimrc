@@ -41,7 +41,7 @@ endif
 set title
 
 "" Start NERDTree at startup
-autocmd vimenter * NERDTree
+autocmd vimenter * if !argc() | NERDTree | endif
 
 "" Key bindings
 map <C-f> :Ack<space>
