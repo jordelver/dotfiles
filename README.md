@@ -19,6 +19,8 @@ Run the install script to link the configs into ~/
 
     ./install.sh
 
+Copy git-commit-template to ~/.git-commit-template if required
+
 
 Adding a new vim plugin
 -----------------------
