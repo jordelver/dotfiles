@@ -22,3 +22,9 @@
 [submodule "vim/bundle/powerline"]
 	path = vim/bundle/powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "vim/bundle/cucumber"]
+	path = vim/bundle/cucumber
+	url = https://github.com/tpope/vim-cucumber.git
+[submodule "vim/bundle/bundler"]
+	path = vim/bundle/bundler
+	url = https://github.com/tpope/vim-bundler.git
