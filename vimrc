@@ -48,6 +48,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 let mapleader="," " change the mapleader from \ to ,
 
 map <C-f> :Ack<space>
+map <leader>n :NERDTreeToggle<CR>
 
 "" Ignore source control directories and friends in CTRL-P searches
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*.swp,.DS_Store,*cache*/*
