@@ -45,6 +45,8 @@ autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 "" Key bindings
+let mapleader="," " change the mapleader from \ to ,
+
 map <C-f> :Ack<space>
 
 "" Ignore source control directories and friends in CTRL-P searches
