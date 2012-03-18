@@ -25,6 +25,9 @@ set smartcase                   " ... unless they contain at least one capital l
 "" Turn on line numbers
 set number
 
+"" Show shell-like command completions when in command mode (:)
+set wildmenu
+
 "" Set colorscheme (theme)
 colorscheme all_hallows_eve
 
