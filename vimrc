@@ -53,5 +53,11 @@ let mapleader="," " change the mapleader from \ to ,
 map <C-f> :Ack<space>
 map <leader>n :NERDTreeToggle<CR>
 
+"" Remap ` to ' as it's more convenient to type
+"" ' jumps to the line of the mark
+"" ` jumps to the line and column of the mark
+nnoremap ' `
+nnoremap ` '
+
 "" Ignore source control directories and friends in CTRL-P searches
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*.swp,.DS_Store,*cache*/*
