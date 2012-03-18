@@ -28,6 +28,9 @@ set number
 "" Show shell-like command completions when in command mode (:)
 set wildmenu
 
+"" Maintain 3 lines of context when the cursor approaches end of the window
+set scrolloff=3
+
 "" Set colorscheme (theme)
 colorscheme all_hallows_eve
 
