@@ -6,6 +6,9 @@ set nocompatible                " choose no compatibility with legacy vi
 "" Enable syntax highlighting
 syntax enable
 
+"" Treat *.ru files as ruby files (remove this if using vim-ruby)
+au BufRead,BufNewFile *.ru setfiletype ruby
+
 set encoding=utf-8
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
