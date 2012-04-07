@@ -60,6 +60,12 @@ map <C-f> :Ack<space>
 map <leader>n :NERDTreeToggle<CR>
 nmap <silent> ,/ :nohlsearch<CR>
 
+"" Move windows without having to press w
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 "" Remap ` to ' as it's more convenient to type
 "" ' jumps to the line of the mark
 "" ` jumps to the line and column of the mark
