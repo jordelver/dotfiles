@@ -38,7 +38,7 @@ set scrolloff=3
 colorscheme all_hallows_eve
 
 "" Show 'invisible' characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_,extends:#
 set list
 
 "" Show the 80 character column gutter
