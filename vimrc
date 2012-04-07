@@ -58,6 +58,7 @@ let mapleader="," " change the mapleader from \ to ,
 
 map <C-f> :Ack<space>
 map <leader>n :NERDTreeToggle<CR>
+nmap <silent> ,/ :nohlsearch<CR>
 
 "" Remap ` to ' as it's more convenient to type
 "" ' jumps to the line of the mark
