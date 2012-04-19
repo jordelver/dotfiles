@@ -52,6 +52,7 @@ set title
 "" Start NERDTree at startup
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd vimenter * wincmd l
 
 "" Key bindings
 let mapleader="," " change the mapleader from \ to ,
