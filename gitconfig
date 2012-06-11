@@ -15,7 +15,8 @@
   br = branch -a
   a = add
   staged = diff --staged
-  l = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s"
+  l = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s" -20
+  ll = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s"
   last = log -1 HEAD
   d = diff
   dt = difftool
