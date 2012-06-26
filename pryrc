@@ -1,12 +1,6 @@
 # Set editor for external editing
-Pry.config.editor = "mate -w"
+Pry.config.editor = "vim"
 
 # Prompt with ruby version
-Pry.prompt = [
-  proc do |obj, nest_level, _|
-    "#{RUBY_VERSION} (#{obj}):#{nest_level} > "
-  end,
-  proc do |obj, nest_level, _|
-    "#{RUBY_VERSION} (#{obj}):#{nest_level} * "
-  end
-]
+Pry.config.prompt = Pry::NAV_PROMPT
+
