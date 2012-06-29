@@ -61,6 +61,7 @@ map <C-f> :Ack<space>
 map <leader>n :NERDTreeToggle<CR>
 map <leader>m :MarkedOpen<CR>
 nmap <silent> ,/ :nohlsearch<CR>
+nnoremap <leader>l :NumbersToggle<CR>
 
 "" Move windows without having to press w
 map <C-h> <C-w>h
