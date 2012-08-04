@@ -5,3 +5,6 @@
 
 # Ignore the tmp directory
 --ignore-dir=tmp
+
+# Set paging with color
+--pager=less -FRX
