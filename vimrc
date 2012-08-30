@@ -60,7 +60,7 @@ let mapleader="," " change the mapleader from \ to ,
 map <C-f> :Ack<space>
 map <leader>n :NERDTreeToggle<CR>
 map <leader>m :MarkedOpen<CR>
-nmap <silent> ,/ :nohlsearch<CR>
+nnoremap <CR> :nohlsearch<CR>
 nnoremap <leader>l :NumbersToggle<CR>
 
 "" Move windows without having to press w
