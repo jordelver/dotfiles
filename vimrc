@@ -63,6 +63,12 @@ map <leader>m :MarkedOpen<CR>
 nnoremap <CR> :nohlsearch<CR>
 nnoremap <leader>l :NumbersToggle<CR>
 
+"" Unmap arrow keys!
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
+
 "" Move windows without having to press w
 map <C-h> <C-w>h
 map <C-j> <C-w>j
