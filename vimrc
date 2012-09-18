@@ -49,6 +49,9 @@ endif
 "" Show the filename in the window titlebar
 set title
 
+"" Turn on spell checking
+set spell
+
 "" Start NERDTree at startup
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
@@ -62,6 +65,7 @@ map <leader>n :NERDTreeToggle<CR>
 map <leader>m :MarkedOpen<CR>
 nnoremap <CR> :nohlsearch<CR>
 nnoremap <leader>l :NumbersToggle<CR>
+nmap <silent> <leader>s :set spell!<CR>
 
 "" Unmap arrow keys!
 map <Left> <Nop>
