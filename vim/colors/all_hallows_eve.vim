@@ -24,6 +24,7 @@ hi Pmenu ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi PmenuSel ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#644d6e gui=NONE
 hi IncSearch ctermfg=0 ctermbg=220 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Search ctermfg=0 ctermbg=226 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi CtrlPMatch ctermfg=154 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 
 hi Directory ctermfg=68 ctermbg=NONE cterm=NONE guifg=#3387cc guibg=NONE gui=NONE
 hi Folded ctermfg=98 ctermbg=0 cterm=NONE guifg=#9933cc guibg=#000000 gui=NONE
