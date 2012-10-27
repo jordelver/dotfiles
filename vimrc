@@ -61,6 +61,8 @@ map <leader>m :MarkedOpen<CR>
 nnoremap <CR> :nohlsearch<CR>
 nnoremap <leader>l :NumbersToggle<CR>
 nmap <silent> <leader>s :set spell!<CR>
+nmap <silent> <leader>ev :e $MYVIMRC<cr>
+nmap <silent> <leader>sv :so $MYVIMRC<cr>
 
 "" Unmap arrow keys!
 map <Left> <Nop>
