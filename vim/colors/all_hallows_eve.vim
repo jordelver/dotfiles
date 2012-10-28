@@ -54,7 +54,7 @@ hi StorageClass ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=N
 hi String ctermfg=77 ctermbg=NONE cterm=NONE guifg=#66cc33 guibg=NONE gui=NONE
 hi Tag ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Title ctermfg=15 ctermbg=NONE cterm=bold guifg=#ffffff guibg=NONE gui=bold
-hi Todo ctermfg=98 ctermbg=NONE cterm=inverse,bold guifg=#9933cc guibg=NONE gui=inverse,bold
+hi Todo ctermfg=98 ctermbg=NONE cterm=underline,bold guifg=#9933cc guibg=NONE gui=inverse,bold
 hi Type ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
 hi rubyClass ctermfg=173 ctermbg=NONE cterm=NONE guifg=#cc7833 guibg=NONE gui=NONE
