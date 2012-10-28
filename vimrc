@@ -34,6 +34,9 @@ set wildmenu
 "" Maintain 3 lines of context when the cursor approaches end of the window
 set scrolloff=3
 
+"" Always show the status bar
+set laststatus=2
+
 "" Set colorscheme (theme)
 colorscheme all_hallows_eve
 
