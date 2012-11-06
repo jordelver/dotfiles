@@ -67,6 +67,9 @@ nmap <silent> <leader>s :set spell!<CR>
 nmap <silent> <leader>ev :e $MYVIMRC<cr>
 nmap <silent> <leader>sv :so $MYVIMRC<cr>
 
+"" Add shortcut for adding the ticket number to git commit messages
+nmap <leader>cn jjf#s#
+
 "" Unmap arrow keys!
 map <Left> <Nop>
 map <Right> <Nop>
