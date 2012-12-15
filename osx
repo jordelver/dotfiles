@@ -1,3 +1,6 @@
 # Coming to a repo near you soon
 
-# Add defaults lines here
+# Enables text selection from a QuickView window
+# Source: http://mobiledevelopertips.com/mac-osx/how-to-select-text-in-quick-look.html
+defaults write com.apple.finder QLEnableTextSelection -bool true
+
