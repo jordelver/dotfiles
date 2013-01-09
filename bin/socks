@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+case ARGV.first
+when "on"
+  puts "SOCKS on"
+  `networksetup -setsocksfirewallproxy "Ethernet" localhost 8080`
+when "off"
+  puts "SOCKS off"
+  `networksetup -setsocksfirewallproxystate "Ethernet" off`
+else
+  puts
+  puts "  Usage: socks [on|off]"
+  puts
+end
+
