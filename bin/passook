@@ -1,0 +1,97 @@
+#!/usr/bin/perl
+
+srand;
+$p = 3; #default pronouce level
+$n = 1; #default number of passwords
+$delimiter = ' '; #default delimiter
+
+while ($_=shift) {
+	$p = shift if ($_ eq "-p");
+	$n = shift if ($_ eq "-n");
+	$usernames = shift if ($_ eq "-u");
+	$delimiter = shift if ($_ eq "-d");
+}
+
+$p = 1 if ($p<1);
+$p = 5 if ($p>5);
+
+if ($usernames) {
+	open (USERS,$usernames) || die ("Could not open $usernames");
+}
+
+for ($j=0;$j<$n;$j++) {
+	if ($p==1) {
+		@elements = (&threeletterword,&filler,&threeletterword,&filler);
+	} elsif ($p==5) {
+		@elements = (&fourletterword,&fourletterword);
+	} else {
+		@elements = (&fourletterword,&filler,&threeletterword);
+	}
+
+	if ($usernames) {
+		$_ = <USERS>;
+		chomp();
+		print "$_$delimiter";
+	}
+	print &shuffle(@elements);
+	print "\n";
+}
+
+sub fourletterword {
+	my $grepstring = 'egrep "^....$" /usr/share/dict/words';
+	my @fourletters = split(/\n/,`$grepstring`); 
+	my $word = $fourletters[rand(@fourletters)];
+        $word = &tangle($word) if ($p<5);
+	return $word;
+}
+
+sub threeletterword {
+	my $grepstring = 'egrep "^...$" /usr/share/dict/words';
+	my @threeletters = split(/\n/,`$grepstring`);
+	my $word = $threeletters[rand(@threeletters)];
+	$word = &tangle($word) if ($p<5);
+        return $word;
+}
+
+sub tangle {
+	my $word = shift;
+	$word = reverse $word if ($p<3);
+	$word = &randcapital($word) if ($p<4);
+	$word = &randreplace($word) if ($p<3);
+	return $word;
+}
+
+sub randcapital {
+	my $word = shift;
+	my $letter = rand(length $word);
+	substr($word,$letter,1)=uc(substr($word,$letter,1));
+	return $word;
+}
+
+sub randreplace {
+	my $word = shift; my $filler;
+	my $alphabet = "abcdefghijklmnopqrstuvwxyz";
+	$alphabet .= uc($alphabet);
+	$filler = substr($alphabet,rand(length $alphabet),1);
+	$filler = &filler() if ($p<2);
+	substr($word,rand(length $word),1)=$filler;
+	return $word;
+}
+	
+sub filler {
+	my $fillers;	
+	$fillers = '!@$%^&*():;,.?+_- ' if ($p<2);
+        $fillers = '#!@$%^&*():;,.?+_-0123456789' if ($p==2);
+	$fillers = '0123456789' if ($p>2);
+	return substr($fillers,rand(length $fillers),1);
+}
+
+sub shuffle {
+	my @elements = @_;
+	my $len = $#elements+1;
+	my $rand1 = int(rand($len)); my $rand2 = int(rand($len));
+	my $temp = $elements[$rand1];
+	$elements[$rand1] = $elements[$rand2];
+	$elements[$rand2] = $temp;
+	return @elements;
+}
