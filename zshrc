@@ -1,4 +1,4 @@
-PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Set history options
 HISTFILE=~/.histfile
