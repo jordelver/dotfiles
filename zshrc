@@ -8,3 +8,6 @@ SAVEHIST=1000
 # Use vi key bindings
 bindkey -v
 
+# Let's rbenv!
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
