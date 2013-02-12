@@ -1,5 +1,8 @@
 PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
+# Use vim as an editor
+EDITOR=vim
+
 # Set history options
 HISTFILE=~/.histfile
 HISTSIZE=1000
