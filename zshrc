@@ -8,6 +8,9 @@ SAVEHIST=1000
 # Use vi key bindings
 bindkey -v
 
+# Use incremental search with CTRL-R
+bindkey "^R" history-incremental-search-backward
+
 # Let's rbenv!
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
