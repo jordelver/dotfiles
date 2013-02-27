@@ -1,4 +1,4 @@
-PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+PATH="$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Use vim as an editor
 EDITOR=vim

@@ -1,8 +1,6 @@
-dotfiles
-========
+# dotfiles
 
-Inital setup
-------------
+## Inital setup
 
 Clone the repo to ~/.dotfiles
 
@@ -21,10 +19,9 @@ Run the install script to link the configs into ~/
 
 Copy git-commit-template to ~/.git-commit-template if required
 
-
-Adding a new vim plugin
------------------------
+## Adding a new vim plugin
 
 From the root of the repo
 
     git submodule add <git-repo-url> vim/bundle/<plugin-name>
+
