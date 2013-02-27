@@ -25,3 +25,16 @@ From the root of the repo
 
     git submodule add <git-repo-url> vim/bundle/<plugin-name>
 
+## Updating vim plugins
+
+Change into the plugin directory
+
+    cd vim/bundle/<plugin-name>
+
+Checkout the master (or which ever) branch and pull the latest commits
+
+    git co master
+    git pull origin master
+
+Commit the changes in the main repository
+
