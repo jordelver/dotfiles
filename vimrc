@@ -9,6 +9,9 @@ syntax enable
 "" Treat *.ru files as ruby files (remove this if using vim-ruby)
 au BufRead,BufNewFile *.ru setfiletype ruby
 
+"" Make the Sign Column always show up
+au BufRead,BufNewFile * call ShowSignColumn()
+
 set encoding=utf-8
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
@@ -115,5 +118,13 @@ function! <SID>SynStack()
     return
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Add a 'dummy' sign to the Sign Column to make it show up all the time
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! ShowSignColumn()
+  sign define dummy
+  execute 'sign place 9999 line=1 name=dummy buffer=' . bufnr('')
 endfunc
 
