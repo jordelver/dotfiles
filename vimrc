@@ -91,6 +91,10 @@ nnoremap ` '
 "" Ignore source control directories and friends in CTRL-P searches
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*.swp,.DS_Store,*cache*/*
 
+"" Bind :Q to :q
+command! Q q
+command! Qall qall
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " OpenChangedFiles COMMAND
 " Open a split for each dirty file in git
