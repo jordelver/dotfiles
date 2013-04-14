@@ -15,6 +15,7 @@ bindkey -v
 bindkey "^R" history-incremental-search-backward
 
 source $HOME/.dotfiles/zsh/aliases
+source $HOME/.dotfiles/zsh/functions
 
 # Let's rbenv!
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
