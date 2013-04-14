@@ -13,6 +13,7 @@ alias ll='ls -l'
 alias lh='ls -lAd .*' # List only hidden files and directories
 alias t='tail -f'
 alias c='clear'
+alias tree='tree -C'
 alias g="git"
 alias m='mate'
 alias o='open .'
