@@ -8,12 +8,7 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
-# Use vi key bindings
-bindkey -v
-
-# Use incremental search with CTRL-R
-bindkey "^R" history-incremental-search-backward
-
+source $HOME/.dotfiles/zsh/keybindings
 source $HOME/.dotfiles/zsh/aliases
 source $HOME/.dotfiles/zsh/functions
 

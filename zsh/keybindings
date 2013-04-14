@@ -1,0 +1,6 @@
+# Use vi key bindings
+bindkey -v
+
+# Use incremental search with CTRL-R
+bindkey "^R" history-incremental-search-backward
+
