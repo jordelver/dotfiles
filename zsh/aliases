@@ -3,7 +3,7 @@
 #
 #   brew install coreutils
 #
-if [ `which gls` ]; then
+if [[ -x $(which gls) ]]; then
   alias ls='gls -h --color --group-directories-first'
 else
   alias ls='ls -G'
