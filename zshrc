@@ -8,16 +8,10 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
-# Use vi key bindings
-bindkey -v
+source $HOME/.dotfiles/zsh/keybindings
+source $HOME/.dotfiles/zsh/aliases
+source $HOME/.dotfiles/zsh/functions
 
-# Use incremental search with CTRL-R
-bindkey "^R" history-incremental-search-backward
-
-# Enable completions
-autoload -U compinit
-compinit
-
-# Let's rbenv!
+# Use rbenv if available
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
