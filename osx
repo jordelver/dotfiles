@@ -4,3 +4,6 @@
 # Source: http://mobiledevelopertips.com/mac-osx/how-to-select-text-in-quick-look.html
 defaults write com.apple.finder QLEnableTextSelection -bool true
 
+# Speeds up the display of the dock
+defaults write com.apple.dock autohide-time-modifier -float 0.12;killall Dock
+
