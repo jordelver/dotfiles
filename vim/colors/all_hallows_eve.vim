@@ -23,7 +23,7 @@ hi StatusLine ctermfg=15 ctermbg=238 cterm=bold guifg=#ffffff guibg=#4a4a4a gui=
 hi StatusLineNC ctermfg=15 ctermbg=238 cterm=NONE guifg=#ffffff guibg=#4a4a4a gui=NONE
 hi Pmenu ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi PmenuSel ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#644d6e gui=NONE
-hi IncSearch ctermfg=0 ctermbg=220 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi IncSearch ctermfg=0 ctermbg=202 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Search ctermfg=0 ctermbg=226 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CtrlPMatch ctermfg=154 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi SpellBad ctermfg=255
