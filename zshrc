@@ -1,12 +1,12 @@
 PATH="$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Use vim as an editor
-EDITOR=vim
+export EDITOR=vim
 
 # Set history options
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+export HISTFILE=~/.histfile
+export HISTSIZE=1000
+export SAVEHIST=1000
 
 autoload -U compinit
 compinit
