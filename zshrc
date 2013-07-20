@@ -17,6 +17,10 @@ source $HOME/.dotfiles/zsh/functions
 source $HOME/.dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.dotfiles/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
+# Set grep colour options
+export GREP_COLOR="30;43"
+export GREP_OPTIONS="--color"
+
 # Use rbenv if available
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
