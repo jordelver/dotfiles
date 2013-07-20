@@ -12,6 +12,12 @@ au BufRead,BufNewFile *.ru setfiletype ruby
 "" Make the Sign Column always show up
 au BufRead,BufNewFile * call ShowSignColumn()
 
+"" Turn off the 80 character column for quickfix (search results, etc) windows
+au BufReadPost quickfix setlocal colorcolumn=0
+
+"" Turn off spell checking for quickfix (search results, etc) windows
+au BufReadPost quickfix setlocal nospell
+
 set encoding=utf-8
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
