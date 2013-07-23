@@ -26,4 +26,7 @@ alias be='bundle exec'
 alias bec='bundle exec cucumber'
 alias sc='script/console'
 alias ss='script/server'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
