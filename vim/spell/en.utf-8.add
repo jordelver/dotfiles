@@ -1,0 +1,13 @@
+plugin
+vim
+bindkey
+keycode
+CTRL
+grep
+rbenv
+init
+chruby
+repo
+dotfiles
+plugins
+configs
