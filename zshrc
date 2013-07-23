@@ -1,4 +1,16 @@
-PATH="$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+typeset -U path
+
+# Explicitly state PATH
+path=(
+  $HOME/bin
+  /usr/local/share/npm/bin
+  /usr/local/bin
+  /usr/local/sbin
+  /usr/bin
+  /bin
+  /usr/sbin
+  /sbin
+)
 
 # Use vim as an editor
 export EDITOR=vim
