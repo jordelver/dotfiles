@@ -1,6 +1,6 @@
 # dotfiles
 
-## Inital setup
+## Initial setup
 
 Clone the repo to ~/.dotfiles
 
