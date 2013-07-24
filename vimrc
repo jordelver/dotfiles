@@ -70,6 +70,17 @@ set spell
 "" Disable markdown folding
 let g:vim_markdown_folding_disabled=1
 
+"" Stop vim powerline taking ages to leave insert mode
+"" https://powerline.readthedocs.org/en/latest/tipstricks.html
+if ! has('gui_running')
+  set ttimeoutlen=10
+  augroup FastEscape
+    autocmd!
+    au InsertEnter * set timeoutlen=0
+    au InsertLeave * set timeoutlen=1000
+  augroup END
+endif
+
 "" Key bindings
 let mapleader="," " change the mapleader from \ to ,
 
