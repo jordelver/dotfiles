@@ -46,6 +46,9 @@ set scrolloff=3
 "" Always show the status bar
 set laststatus=2
 
+"" Hide the default mode text (e.g. -- INSERT -- below the statusline)
+set noshowmode
+
 "" Set colorscheme (theme)
 colorscheme all_hallows_eve
 
