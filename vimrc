@@ -33,6 +33,9 @@ set expandtab                   " use spaces, not tabs
 set backspace=indent,eol,start  " backspace through everything in insert mode
 set smarttab
 
+"" Automatically re-read files if they change on disk
+set autoread
+
 "" Searching
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
