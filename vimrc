@@ -19,8 +19,12 @@ au BufReadPost quickfix setlocal colorcolumn=0
 au BufReadPost quickfix setlocal nospell
 
 set encoding=utf-8
-set showcmd                     " display incomplete commands
-filetype plugin indent on       " load file type plugins + indentation
+
+"" Show current command information at the bottom of the screen
+set showcmd
+
+"" Load file type plugins + indentation
+filetype plugin indent on
 
 "" Whitespace
 set nowrap                      " don't wrap lines
