@@ -12,3 +12,5 @@ dotfiles
 plugins
 configs
 symlink
+zsh
+config
