@@ -36,6 +36,9 @@ set smarttab
 "" Automatically re-read files if they change on disk
 set autoread
 
+"" Briefly indicate closing brackets
+set showmatch
+
 "" Searching
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
