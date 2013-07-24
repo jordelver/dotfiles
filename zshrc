@@ -23,11 +23,11 @@ export SAVEHIST=1000
 autoload -U compinit
 compinit
 
-source $HOME/.dotfiles/zsh/keybindings
-source $HOME/.dotfiles/zsh/aliases
-source $HOME/.dotfiles/zsh/functions
-source $HOME/.dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $HOME/.dotfiles/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $HOME/.zsh/keybindings
+source $HOME/.zsh/aliases
+source $HOME/.zsh/functions
+source $HOME/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # Set grep colour options
 export GREP_COLOR="30;43"
