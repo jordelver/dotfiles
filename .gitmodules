@@ -61,3 +61,6 @@
 [submodule "vim/bundle/markdown"]
 	path = vim/bundle/markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "vim/bundle/bufferline"]
+	path = vim/bundle/bufferline
+	url = https://github.com/bling/vim-bufferline.git
