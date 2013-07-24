@@ -31,6 +31,7 @@ set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces
 set expandtab                   " use spaces, not tabs
 set backspace=indent,eol,start  " backspace through everything in insert mode
+set smarttab
 
 "" Searching
 set hlsearch                    " highlight matches
