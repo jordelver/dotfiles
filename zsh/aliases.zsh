@@ -21,6 +21,10 @@ alias n='nano -w'
 alias nas='ssh nas -t tmux a'
 alias m3lky='ssh m3lky'
 alias irc='ssh m3lky -t tmux a'
+
+# Setup a reverse SSH tunnel on port 8080
+alias tunnel='ssh -D 8080 -f -N -C m3lky'
+
 alias b='bundle'
 alias be='bundle exec'
 alias bec='bundle exec cucumber'
