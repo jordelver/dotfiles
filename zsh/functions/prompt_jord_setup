@@ -100,7 +100,7 @@ prompt_jord_setup() {
 	pc[scm_commitid]='Yellow'
 	pc[scm_status_dirty]='Red'
 	pc[scm_status_staged]='Green'
-	pc[#]='Yellow'
+	pc[#]='default'
 	for cn in ${(k)pc}; do
 		pc[${cn}]=$(colorword $pc[$cn])
 	done
@@ -116,25 +116,12 @@ prompt_jord_setup() {
 	p_line="$pc[line]%y$pc[reset]"
 
 	PROMPT=
-	if [ $verbose ]; then
-		PROMPT+="$pc[host]%m$pc[reset] "
-	fi
 	PROMPT+="$pc[path]%(2~.%~.%/)$pc[reset]"
 	PROMPT+="\$(prompt_jord_scm_status)"
 	PROMPT+="%(?.. $pc[rc]exited %1v$pc[reset])"
 	PROMPT+="
 "
-	PROMPT+="$pc[hist]%h$pc[reset] "
-	PROMPT+="$pc[shortpath]%1~$pc[reset]"
-	PROMPT+="\$(prompt_jord_scm_branch)"
-	PROMPT+=" $pc[#]%#$pc[reset] "
-
-	RPROMPT=
-	if [ $verbose ]; then
-		RPROMPT+="$p_date "
-	fi
-	RPROMPT+="$pc[user]%n$pc[reset]"
-	RPROMPT+=" $p_line"
+	PROMPT+="$pc[#]\$$pc[reset] "
 
 	export PROMPT RPROMPT
 	add-zsh-hook precmd prompt_jord_precmd
@@ -190,7 +177,7 @@ prompt_jord_scm_status() {
 			commits+="on $mess"
 		fi
 	elif [ -n "$gitcommit" ]; then
-		commits+="on $pc[scm_branch]$head$pc[punc]($pc[scm_commitid]$gitcommit$pc[punc])$pc[reset]"
+		commits+="on $pc[scm_branch]$head$pc[punc][$pc[scm_commitid]$gitcommit$pc[punc]]$pc[reset]"
 		local track_merge=$(zgit_tracking_merge)
 		if [ -n "$track_merge" ]; then
 			if git rev-parse --verify -q $track_merge >/dev/null; then
