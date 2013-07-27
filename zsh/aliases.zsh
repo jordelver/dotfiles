@@ -4,6 +4,9 @@
 #   brew install coreutils
 #
 
+# Miscellaneous
+alias reload='exec $SHELL'
+
 # File / Directory navigation
 if [[ -x $(which gls) ]]; then
   alias ls='gls -h --color --group-directories-first'
