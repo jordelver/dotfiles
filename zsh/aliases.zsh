@@ -42,3 +42,7 @@ alias bec='bundle exec cucumber --format=pretty'
 alias sc='script/console'
 alias ss='script/server'
 
+# Heroku
+alias hls='heroku logs -t -r staging'
+alias hlp='heroku logs -t -r production'
+
