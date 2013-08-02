@@ -14,6 +14,8 @@
   ci = commit
   br = branch -a
   a = add
+  ff = merge --ff-only
+  noff = merge --no-ff
   staged = diff --staged
   l = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s" -20
   ll = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s"
