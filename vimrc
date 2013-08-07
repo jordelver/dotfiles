@@ -81,6 +81,9 @@ set spell
 "" Disable markdown folding
 let g:vim_markdown_folding_disabled=1
 
+"" Enable matchmaker
+autocmd VimEnter * Matchmaker
+
 "" Stop vim powerline taking ages to leave insert mode
 "" https://powerline.readthedocs.org/en/latest/tipstricks.html
 if ! has('gui_running')
