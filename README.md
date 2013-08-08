@@ -38,3 +38,9 @@ Checkout the master (or which ever) branch and pull the latest commits
 
 Commit the changes in the main repository
 
+## Updating dotfiles on another machine
+
+    git pull
+    git submodule init
+    git submodule update
+

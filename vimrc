@@ -82,7 +82,7 @@ set spell
 let g:vim_markdown_folding_disabled=1
 
 "" Enable matchmaker
-autocmd VimEnter * Matchmaker
+let g:matchmaker_enable_startup=1
 
 "" Stop vim powerline taking ages to leave insert mode
 "" https://powerline.readthedocs.org/en/latest/tipstricks.html
