@@ -1,7 +1,38 @@
-"" Use to pathogen to manage plugins
-call pathogen#infect()
-
 set nocompatible                " choose no compatibility with legacy vi
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle required!
+Bundle 'gmarik/vundle'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'bling/vim-airline'
+Bundle 'bling/vim-bufferline'
+Bundle 'elixir-lang/vim-elixir'
+Bundle 'ervandew/supertab'
+Bundle 'guns/vim-clojure-static'
+Bundle 'guns/xterm-color-table.vim'
+Bundle 'itspriddle/vim-marked'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
+Bundle 'mattn/gist-vim'
+Bundle 'mattn/webapi-vim'
+Bundle 'mileszs/ack.vim'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'qstrahl/vim-matchmaker'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-classpath'
+Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-cucumber'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-eunuch'
+Bundle 'tpope/vim-fireplace'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
 
 "" Enable syntax highlighting
 syntax enable
