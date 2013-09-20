@@ -10,6 +10,7 @@ endif
 
 let g:colors_name = "All Hallow's Eve"
 
+hi Matchmaker ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Cursor ctermfg=NONE ctermbg=15 cterm=NONE guifg=NONE guibg=#ffffff gui=NONE
 hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#644d6e gui=NONE
 hi CursorLine ctermfg=NONE ctermbg=234 cterm=NONE guifg=NONE guibg=#191919 gui=NONE
