@@ -25,6 +25,7 @@ alias t='tail -f'
 alias c='clear'
 alias tree='tree -C'
 alias g="git"
+alias hb="hub browse"
 alias m='mate'
 alias o='open .'
 alias n='nano -w'
