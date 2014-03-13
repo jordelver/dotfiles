@@ -47,7 +47,8 @@ au BufRead,BufNewFile * call ShowSignColumn()
 au BufReadPost quickfix setlocal colorcolumn=0
 
 "" Turn off spell checking for quickfix (search results, etc) windows
-au BufReadPost quickfix setlocal nospell
+"" and Fugitive git blame windows
+au BufReadPost,FileType quickfix,fugitiveblame setlocal nospell
 
 "" Enter insert mode straight away when editing git commit messages
 au FileType gitcommit execute "normal! O" | startinsert
