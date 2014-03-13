@@ -49,6 +49,9 @@ au BufReadPost quickfix setlocal colorcolumn=0
 "" Turn off spell checking for quickfix (search results, etc) windows
 au BufReadPost quickfix setlocal nospell
 
+"" Enter insert mode straight away when editing git commit messages
+au FileType gitcommit execute "normal! O" | startinsert
+
 set encoding=utf-8
 
 "" Show current command information at the bottom of the screen
