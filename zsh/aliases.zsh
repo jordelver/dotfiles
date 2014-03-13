@@ -42,6 +42,7 @@ alias be='bundle exec'
 alias bec='bundle exec cucumber --format=pretty'
 alias sc='script/console'
 alias ss='script/server'
+alias circle="open 'https://circleci.com'"
 
 # Heroku
 alias hls='heroku logs -t -r staging'
