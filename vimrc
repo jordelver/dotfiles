@@ -1,38 +1,49 @@
 set nocompatible                " choose no compatibility with legacy vi
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+if !isdirectory(expand("~/.vim/bundle/Vundle.vim/.git"))
+  !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+endif
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Let Vundle manage Vundle required!
-Bundle 'gmarik/vundle'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'bling/vim-airline'
-Bundle 'bling/vim-bufferline'
-Bundle 'elixir-lang/vim-elixir'
-Bundle 'ervandew/supertab'
-Bundle 'guns/vim-clojure-static'
-Bundle 'guns/xterm-color-table.vim'
-Bundle 'itspriddle/vim-marked'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'kien/ctrlp.vim'
-Bundle 'mattn/gist-vim'
-Bundle 'mattn/webapi-vim'
-Bundle 'mileszs/ack.vim'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'qstrahl/vim-matchmaker'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-classpath'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-eunuch'
-Bundle 'tpope/vim-fireplace'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'bling/vim-airline'
+Plugin 'bling/vim-bufferline'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'ervandew/supertab'
+Plugin 'guns/vim-clojure-static'
+Plugin 'guns/xterm-color-table.vim'
+Plugin 'itspriddle/vim-marked'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mattn/gist-vim'
+Plugin 'mattn/webapi-vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'plasticboy/vim-markdown'
+" Plugin 'qstrahl/vim-matchmaker'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-classpath'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-eunuch'
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'ecomba/vim-ruby-refactoring'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'tpope/vim-tbone'
+Plugin 'jgdavey/vim-turbux'
+
+call vundle#end()
+filetype plugin indent on
 
 "" Enable syntax highlighting
 syntax enable
