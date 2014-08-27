@@ -1,4 +1,4 @@
-set nocompatible                " choose no compatibility with legacy vi
+set nocompatible
 filetype off
 
 if !isdirectory(expand("~/.vim/bundle/Vundle.vim/.git"))
