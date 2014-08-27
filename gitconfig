@@ -14,6 +14,7 @@
   ci = commit
   br = branch -a
   a = add
+  wip = commit -m "WIP"
   ff = merge --ff-only
   noff = merge --no-ff
   staged = diff --staged
