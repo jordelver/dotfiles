@@ -2,7 +2,8 @@ set nocompatible                " choose no compatibility with legacy vi
 filetype off
 
 if !isdirectory(expand("~/.vim/bundle/Vundle.vim/.git"))
-  !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  silent !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  silent !vim +PluginInstall +qall
 endif
 
 set rtp+=~/.vim/bundle/Vundle.vim
