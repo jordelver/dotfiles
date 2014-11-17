@@ -1,5 +1,9 @@
 autoload zmv
 
+# Load the edit-command-line widget
+autoload edit-command-line
+zle -N edit-command-line
+
 function rrg {
   rake routes | grep $1
 }
