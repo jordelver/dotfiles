@@ -39,6 +39,7 @@ alias tunnel='ssh -D 8080 -f -N -C m3lky' # Setup a reverse SSH tunnel
 # Rails / Ruby
 alias b='bundle'
 alias be='bundle exec'
+alias bo='bundle open'
 alias bec='bundle exec cucumber --format=pretty'
 alias sc='script/console'
 alias ss='script/server'
