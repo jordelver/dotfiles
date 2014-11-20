@@ -10,3 +10,7 @@ set completion-prefix-display-length 2
 
 # Immediately add a trailing slash when autocompleting symlinks to directories
 set mark-symlinked-directories on
+
+# Vim keybindings in programs that use readline
+set keymap vi
+set editing-mode vi

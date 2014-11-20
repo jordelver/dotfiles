@@ -1,1 +1,4 @@
 bind "^R" em-inc-search-prev
+
+# Vim keybindings in programs that use editline
+bind -v
