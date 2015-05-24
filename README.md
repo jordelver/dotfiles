@@ -12,15 +12,17 @@ Run the install script to link the configs into ~/
 
     ./install.sh
 
-## Vim
+## Vim (Neovim)
 
 ### Adding a new plugin
 
-Add a `Plugin` line to `~/.vimrc`
+Add a `Plug` line to `~/.nvimrc`
 
-Save the file, source it `<leader>sv` and run `:PluginInstall`
+Save the file, source it `<leader>sv` and run `:PlugInstall`
+
+un `:PlugStatus` to see what needs installing and what doesn't
 
 ### Updating a plugin
 
-Run `:PluginUpdate` from within Vim
+Run `:PlugUpdate` from within Vim
 
