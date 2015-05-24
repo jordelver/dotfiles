@@ -1,6 +1,3 @@
-" Vim color file
-" Converted from Textmate theme All Hallow's Eve using Coloration v0.3.2 (http://github.com/sickill/coloration)
-
 set background=dark
 highlight clear
 
@@ -10,7 +7,6 @@ endif
 
 let g:colors_name = "all_hallows_eve"
 
-hi Matchmaker ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Cursor ctermfg=NONE ctermbg=15 cterm=NONE guifg=NONE guibg=#ffffff gui=NONE
 hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#644d6e gui=NONE
 hi CursorLine ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=#191919 gui=NONE
@@ -27,14 +23,11 @@ hi Pmenu ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi PmenuSel ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#644d6e gui=NONE
 hi IncSearch ctermfg=0 ctermbg=202 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Search ctermfg=0 ctermbg=226 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi CtrlPMatch ctermfg=154 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi SpellBad ctermfg=255
 hi WildMenu ctermfg=22 ctermbg=148 cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi StatusLine ctermfg=255 ctermbg=236 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-
 hi Directory ctermfg=68 ctermbg=NONE cterm=NONE guifg=#3387cc guibg=NONE gui=NONE
 hi Folded ctermfg=98 ctermbg=0 cterm=NONE guifg=#9933cc guibg=#000000 gui=NONE
-
 hi Normal ctermfg=15 ctermbg=0 cterm=NONE guifg=#ffffff guibg=#000000 gui=NONE
 hi Boolean ctermfg=68 ctermbg=NONE cterm=NONE guifg=#3387cc guibg=NONE gui=NONE
 hi Character ctermfg=68 ctermbg=NONE cterm=NONE guifg=#3387cc guibg=NONE gui=NONE
