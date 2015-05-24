@@ -56,6 +56,8 @@ highlight Title ctermfg=15 ctermbg=NONE cterm=bold guifg=#ffffff guibg=NONE gui=
 highlight Todo ctermfg=98 ctermbg=NONE cterm=underline,bold guifg=#9933cc guibg=NONE gui=inverse,bold
 highlight Type ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 highlight Underlined ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
+
+" Ruby
 highlight rubyClass ctermfg=173 ctermbg=NONE cterm=NONE guifg=#cc7833 guibg=NONE gui=NONE
 highlight rubyFunction ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 highlight rubyInterpolationDelimiter ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -82,18 +84,26 @@ highlight rubyRailsMethod ctermfg=167 ctermbg=NONE cterm=NONE guifg=#c83730 guib
 highlight erubyDelimiter ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 highlight erubyComment ctermfg=98 ctermbg=NONE cterm=NONE guifg=#9933cc guibg=NONE gui=NONE
 highlight erubyRailsMethod ctermfg=167 ctermbg=NONE cterm=NONE guifg=#c83730 guibg=NONE gui=NONE
+
+" HTML
 highlight htmlTag ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 highlight htmlEndTag ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 highlight htmlTagName ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 highlight htmlArg ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 highlight htmlSpecialChar ctermfg=68 ctermbg=NONE cterm=NONE guifg=#3387cc guibg=NONE gui=NONE
+
+" JavaScript
 highlight javaScriptFunction ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 highlight javaScriptRailsFunction ctermfg=167 ctermbg=NONE cterm=NONE guifg=#c83730 guibg=NONE gui=NONE
 highlight javaScriptBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+
+" YAML
 highlight yamlKey ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 highlight yamlAnchor ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 highlight yamlAlias ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 highlight yamlDocumentHeader ctermfg=77 ctermbg=NONE cterm=NONE guifg=#66cc33 guibg=NONE gui=NONE
+
+" CSS
 highlight cssURL ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 highlight cssFunctionName ctermfg=167 ctermbg=NONE cterm=NONE guifg=#c83730 guibg=NONE gui=NONE
 highlight cssColor ctermfg=68 ctermbg=NONE cterm=NONE guifg=#3387cc guibg=NONE gui=NONE
@@ -102,3 +112,4 @@ highlight cssClassName ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NON
 highlight cssValueLength ctermfg=68 ctermbg=NONE cterm=NONE guifg=#3387cc guibg=NONE gui=NONE
 highlight cssCommonAttr ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 highlight cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+
