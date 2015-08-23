@@ -23,19 +23,9 @@
   ll = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s"
   last = log -1 HEAD
   d = diff
-  dt = difftool
   timeline=log --oneline --graph --all
 [branch]
   autosetuprebase = always
-[github]
-  user = jordelver
-  token = fd049392c4c32ed7ff2543a50a18c7c9
-[difftool "Kaleidoscope"]
-  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
-[difftool]
-  prompt = false
-[diff]
-  tool = Kaleidoscope
 [commit]
   template = "~/.git-commit-template"
 [push]
