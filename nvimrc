@@ -99,6 +99,9 @@ map <C-l> <C-w>l
 command! Q q
 command! Qall qall
 
+" Alias :Wq to :wq
+command! Wq wq
+
 " Show the 80 character column gutter
 set colorcolumn=80
 
