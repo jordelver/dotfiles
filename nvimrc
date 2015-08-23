@@ -124,11 +124,18 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-haml'
+Plug 'kchmck/vim-coffee-script'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'bling/vim-airline'
 Plug 'bling/vim-bufferline'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree'
+Plug 'ap/vim-css-color'
+Plug 'groenewege/vim-less'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'elixir-lang/vim-elixir'
 
 call plug#end()
 
