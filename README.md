@@ -20,7 +20,7 @@ Add a `Plug` line to `~/.nvimrc`
 
 Save the file, source it `<leader>sv` and run `:PlugInstall`
 
-un `:PlugStatus` to see what needs installing and what doesn't
+Run `:PlugStatus` to see what needs installing and what doesn't
 
 ### Updating a plugin
 
