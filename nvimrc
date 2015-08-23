@@ -71,6 +71,9 @@ nnoremap <cr> :nohlsearch<cr>
 " Toggle line numbers on/off
 nnoremap <leader>l :NumbersToggle<cr>
 
+" Toggle NERDTree
+map <leader>n :NERDTreeToggle<CR>
+
 " Toggle spellcheck
 nmap <silent> <leader>s :set spell!<cr>
 
