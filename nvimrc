@@ -139,6 +139,7 @@ Plug 'groenewege/vim-less'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'elixir-lang/vim-elixir'
+Plug 'dag/vim-fish'
 
 call plug#end()
 
