@@ -14,6 +14,10 @@ Run the install script to link the configs into ~/
 
 ## Vim (Neovim)
 
+### To update
+
+`brew reinstall neovim --HEAD`
+
 ### Adding a new plugin
 
 Add a `Plug` line to `~/.nvimrc`
