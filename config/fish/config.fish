@@ -3,6 +3,9 @@ set PATH ~/.bin $PATH
 source /usr/local/opt/fry/share/fry/fry.fish
 alias be "bundle exec"
 alias hb "hub browse"
+alias cb "cargo build"
+alias cr "cargo run"
+alias ct "cargo test"
 alias vim "nvim"
 eval (hub alias -s)
 
