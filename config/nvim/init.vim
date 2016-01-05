@@ -116,7 +116,7 @@ autocmd FileType gitcommit execute "normal! O" | startinsert
 autocmd BufReadPost,FileType quickfix,fugitiveblame setlocal nospell
 
 " Plugins
-call plug#begin('~/.nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
