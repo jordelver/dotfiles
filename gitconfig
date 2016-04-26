@@ -9,24 +9,24 @@
   excludesfile = "~/.gitignore"
   editor = /usr/local/bin/nvim
 [alias]
-  st = status
-  s = status
-  co = checkout
-  ci = commit
-  branches = branch -a
-  stashes = stast list
-  discard = checkout --
-  remotes = remote -v
   a = add
-  wip = commit -m "WIP"
-  staged = diff --staged
-  unstage = reset -q HEAD --
   amend = commit --amend
-  l = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s" -20
-  ll = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s"
-  last = log -1 HEAD
+  branches = branch -a
+  ci = commit
+  co = checkout
   d = diff
+  discard = checkout --
+  l = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s" -20
+  last = log -1 HEAD
+  ll = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s"
+  remotes = remote -v
+  s = status
+  st = status
+  staged = diff --staged
+  stashes = stast list
   timeline=log --oneline --graph --all
+  unstage = reset -q HEAD --
+  wip = commit -m "WIP"
 [branch]
   autosetuprebase = always
 [commit]
