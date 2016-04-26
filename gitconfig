@@ -13,12 +13,15 @@
   s = status
   co = checkout
   ci = commit
-  br = branch -a
+  branches = branch -a
+  stashes = stast list
+  discard = checkout --
+  remotes = remote -v
   a = add
   wip = commit -m "WIP"
-  ff = merge --ff-only
-  noff = merge --no-ff
   staged = diff --staged
+  unstage = reset -q HEAD --
+  amend = commit --amend
   l = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s" -20
   ll = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s"
   last = log -1 HEAD
