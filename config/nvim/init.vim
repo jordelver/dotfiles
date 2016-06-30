@@ -60,7 +60,7 @@ set wildmenu
 set scrolloff=3
 
 " Map the leader key to , (default: \)
-let mapleader=","
+let mapleader=" "
 
 " Fuzzy file search
 map <C-p> :FZF<cr>
