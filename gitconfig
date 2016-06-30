@@ -25,7 +25,7 @@
   st = status
   staged = diff --staged
   stashes = stash list
-  timeline=log --oneline --graph --all
+  timeline = log --oneline --graph --all
   unstage = reset -q HEAD --
   wip = commit -m "WIP"
 [branch]
