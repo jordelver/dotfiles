@@ -140,6 +140,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'elixir-lang/vim-elixir'
 Plug 'dag/vim-fish'
+Plug 'rust-lang/rust.vim'
 Plug 'timakro/vim-searchant'
 
 call plug#end()
