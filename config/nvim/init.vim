@@ -66,7 +66,7 @@ let mapleader=" "
 map <C-p> :FZF<cr>
 
 " Clear search highlights when hitting <enter>
-nnoremap <cr> :nohlsearch<cr>
+nmap <cr> <Plug>SearchantStop
 
 " Toggle line numbers on/off
 nnoremap <leader>l :NumbersToggle<cr>
@@ -140,6 +140,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'elixir-lang/vim-elixir'
 Plug 'dag/vim-fish'
+Plug 'timakro/vim-searchant'
 
 call plug#end()
 
