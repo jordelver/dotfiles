@@ -10,6 +10,7 @@
   editor = /usr/local/bin/nvim
 [alias]
   a = add
+  ap = add --patch
   amend = commit --amend
   branches = branch -a
   ci = commit
