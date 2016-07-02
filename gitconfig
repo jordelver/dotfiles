@@ -22,7 +22,6 @@
   nope = "!git reset --soft HEAD~; git reset"
   remotes = remote -v
   s = status
-  st = status
   staged = diff --staged
   stashes = stash list
   timeline = log --oneline --graph --all
