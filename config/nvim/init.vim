@@ -115,6 +115,10 @@ autocmd FileType gitcommit execute "normal! O" | startinsert
 " and Fugitive git blame windows
 autocmd BufReadPost,FileType quickfix,fugitiveblame setlocal nospell
 
+" Tab highlighting and settings for Golang files
+autocmd BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
+autocmd BufNewFile,BufRead *.go highlight SpecialKey ctermfg=238 ctermbg=NONE cterm=NONE
+
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 
@@ -140,6 +144,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'elixir-lang/vim-elixir'
 Plug 'dag/vim-fish'
+Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
 Plug 'timakro/vim-searchant'
 
