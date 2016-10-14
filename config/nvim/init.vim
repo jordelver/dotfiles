@@ -95,6 +95,19 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" Mappings for yanking/pasting to system clipboard (+)
+vnoremap <leader>d "+d
+vnoremap <leader>y "+y
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
+nnoremap <leader>d "+d
+nnoremap <leader>y "+y
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+
+" Copy whole file (keeping cursor position)
+nnoremap <Leader>c :%y+<CR>
+
 " Alias :Q to :q
 command! Q q
 command! Qall qall
