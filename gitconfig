@@ -14,7 +14,7 @@
   amend = commit --amend
   branches = branch -a
   ci = commit
-  co = checkout
+  co = "!git branch | fzf | cut -c3- | xargs -o git checkout"
   d = diff
   discard = checkout --
   l = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s" -20
