@@ -3,3 +3,5 @@ config/nvim/plugged/
 config/hub
 config/fish/fish_history
 config/fish/fishd.*
+config/asciinema
+config/direnv
