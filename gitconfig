@@ -21,7 +21,7 @@
   l = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s" -20
   last = log -1 HEAD
   ll = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s"
-  nope = "!git reset --soft HEAD~; git reset"
+  undo = "!git reset --soft HEAD~; git reset"
   remotes = remote -v
   s = status
   staged = diff --staged
