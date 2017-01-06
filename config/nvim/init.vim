@@ -128,6 +128,9 @@ autocmd FileType gitcommit execute "normal! O" | startinsert
 " and Fugitive git blame windows
 autocmd BufReadPost,FileType quickfix,fugitiveblame setlocal nospell
 
+" Treat `.envrc` files as shell for ENV variable highlighting
+autocmd BufNewFile,BufRead .envrc set filetype=sh
+
 " Tab highlighting and settings for Golang files
 autocmd BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
 autocmd BufNewFile,BufRead *.go highlight SpecialKey ctermfg=238 ctermbg=NONE cterm=NONE
