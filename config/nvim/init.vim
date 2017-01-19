@@ -160,6 +160,8 @@ Plug 'dag/vim-fish'
 Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
 Plug 'timakro/vim-searchant'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'godlygeek/tabular'
 
 call plug#end()
 
