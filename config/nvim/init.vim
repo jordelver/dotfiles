@@ -168,6 +168,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'timakro/vim-searchant'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'godlygeek/tabular'
+Plug 'vim-scripts/OnSyntaxChange'
 
 call plug#end()
 
