@@ -135,6 +135,9 @@ autocmd BufNewFile,BufRead .envrc set filetype=sh
 autocmd BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
 autocmd BufNewFile,BufRead *.go highlight SpecialKey ctermfg=238 ctermbg=NONE cterm=NONE
 
+" Wrap Markdown files to 80 characters
+autocmd FileType markdown setlocal textwidth=80
+
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 
