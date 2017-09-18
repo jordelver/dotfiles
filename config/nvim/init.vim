@@ -59,7 +59,7 @@ set wildmenu
 " Maintain 3 lines of context when the cursor approaches end of the window
 set scrolloff=3
 
-" Map the leader key to , (default: \)
+" Map the leader key to <space>
 let mapleader=" "
 
 " Fuzzy file search
