@@ -124,6 +124,9 @@ autocmd BufReadPost quickfix setlocal colorcolumn=0
 " Enter insert mode straight away when editing git commit messages
 autocmd FileType gitcommit execute "normal! O" | startinsert
 
+" Wrap git commit message buffers to 80 characters
+autocmd FileType gitcommit setlocal textwidth=80
+
 " Turn off spell checking for quickfix (search results, etc) windows
 " and Fugitive git blame windows
 autocmd BufReadPost,FileType quickfix,fugitiveblame setlocal nospell
