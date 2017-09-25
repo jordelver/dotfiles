@@ -71,6 +71,9 @@ nmap <cr> <Plug>SearchantStop
 " Toggle line numbers on/off
 nnoremap <leader>l :NumbersToggle<cr>
 
+" Split lines, opposite of `J`
+nnoremap S :SplitLine<cr>
+
 " Toggle NERDTree
 map <leader>n :NERDTreeToggle<CR>
 
@@ -169,6 +172,7 @@ Plug 'timakro/vim-searchant'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'godlygeek/tabular'
 Plug 'vim-scripts/OnSyntaxChange'
+Plug 'drzel/vim-split-line'
 
 call plug#end()
 
