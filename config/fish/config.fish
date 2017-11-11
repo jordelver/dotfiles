@@ -1,5 +1,5 @@
 set -U EDITOR nvim
-set PATH ~/.bin $PATH
+set PATH ~/.bin ~/.cargo/bin $PATH
 source /usr/local/opt/fry/share/fry/fry.fish
 alias be "bundle exec"
 alias hb "hub browse"
