@@ -20,3 +20,7 @@ function fish_user_key_bindings
 end
 
 set -x GOPATH $HOME/Projects/go
+
+# Use `fd` instead of default `find`
+# Search hidden files, but exclude `.git` and respect `.gitignore`
+set -x FZF_DEFAULT_COMMAND 'fd --type f --hidden --follow --exclude .git'
