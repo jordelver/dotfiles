@@ -1,6 +1,20 @@
+# Use nvim as our editor
 set -U EDITOR nvim
+
+# Add various PATHs
 set PATH ~/.bin ~/.cargo/bin $PATH
+
+# Set the `GOPATH` for Go projects :rolleyes:
+set -x GOPATH $HOME/Projects/go
+
+# Use `fd` instead of default `find`
+# Search hidden files, but exclude `.git` and respect `.gitignore`
+set -x FZF_DEFAULT_COMMAND 'fd --type f --hidden --follow --exclude .git'
+
+# Include the Fish Ruby version manager
 source /usr/local/opt/fry/share/fry/fry.fish
+
+# Aliases
 alias be "bundle exec"
 alias hb "hub browse"
 alias pr "hub pull-request"
@@ -8,10 +22,14 @@ alias cb "cargo build"
 alias cr "cargo run"
 alias ct "cargo test"
 alias vim "nvim"
+
+# Setup `hub` Git wrapper
 eval (hub alias -s)
 
-set fish_greeting # Turn off the fish welcome message
+# Turn off the fish welcome message
+set fish_greeting
 
+# Magic to enable vi keybindings
 function fish_user_key_bindings
   fish_vi_mode
   bind -M insert \cf accept-autosuggestion
@@ -19,8 +37,6 @@ function fish_user_key_bindings
   bind -M insert \cl 'clear; commandline -f repaint'
 end
 
-set -x GOPATH $HOME/Projects/go
+# Turn on direnv to manage per directory environment variables
+eval (direnv hook fish)
 
-# Use `fd` instead of default `find`
-# Search hidden files, but exclude `.git` and respect `.gitignore`
-set -x FZF_DEFAULT_COMMAND 'fd --type f --hidden --follow --exclude .git'
