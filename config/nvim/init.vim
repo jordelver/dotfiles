@@ -176,6 +176,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'godlygeek/tabular'
 Plug 'vim-scripts/OnSyntaxChange'
 Plug 'drzel/vim-split-line'
+Plug 'slim-template/vim-slim'
 
 call plug#end()
 
