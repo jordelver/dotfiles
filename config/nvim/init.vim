@@ -147,6 +147,9 @@ autocmd FileType markdown setlocal textwidth=80
 " Turn spell check on for Markdown
 autocmd BufReadPost,FileType markdown setlocal spell
 
+" Turn off folding for git buffers (specifically this is for `:GV`)
+autocmd! FileType git setlocal foldlevel=1
+
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 
@@ -155,6 +158,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-endwise'
