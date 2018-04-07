@@ -11,3 +11,6 @@ Thumbs.db
 *.xcuserstate
 project.xcworkspace/
 xcuserdata/
+
+# direnv environment variable files
+.envrc
