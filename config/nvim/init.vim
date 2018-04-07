@@ -144,6 +144,9 @@ autocmd BufNewFile,BufRead *.go highlight SpecialKey ctermfg=238 ctermbg=NONE ct
 " Wrap Markdown files to 80 characters
 autocmd FileType markdown setlocal textwidth=80
 
+" Turn spell check on for Markdown
+autocmd BufReadPost,FileType markdown setlocal spell
+
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 
