@@ -121,6 +121,9 @@ command! Wq wq
 " Show the 80 character column gutter
 set colorcolumn=80
 
+" Show Git Gutter signs more quickly
+set updatetime=100
+
 " Turn off the 80 character column for quickfix (search results, etc) windows
 autocmd BufReadPost quickfix setlocal colorcolumn=0
 
