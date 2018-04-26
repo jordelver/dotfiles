@@ -183,6 +183,7 @@ Plug 'dag/vim-fish'
 Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
 Plug 'slim-template/vim-slim'
+Plug 'posva/vim-vue'
 
 call plug#end()
 
