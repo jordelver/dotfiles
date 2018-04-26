@@ -171,6 +171,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'godlygeek/tabular'
 Plug 'vim-scripts/OnSyntaxChange'
 Plug 'drzel/vim-split-line'
+Plug 'w0rp/ale'
 
 " Language/framework specific plugins
 Plug 'tpope/vim-rails'
