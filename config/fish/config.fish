@@ -40,3 +40,9 @@ end
 # Turn on direnv to manage per directory environment variables
 eval (direnv hook fish)
 
+# Fuzzy finding for changing Ruby version with Fry
+function cr -d "Switch Rubies fuzzily"
+  set ruby (fry | cut -c 3- | sed 's/ruby-//' | fzf --ansi)
+  fry use $ruby
+end
+
