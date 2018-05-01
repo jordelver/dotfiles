@@ -33,6 +33,7 @@
   co = checkout
   c = "!git branch | fzf | cut -c3- | xargs -o git checkout"
   d = diff
+  db = "!git branch | fzf | cut -c3- | xargs -o git branch -D"
   discard = checkout --
   l = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s" -20
   last = log -1 HEAD
