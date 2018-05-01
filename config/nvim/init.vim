@@ -62,7 +62,7 @@ set scrolloff=3
 " Map the leader key to <space>
 let mapleader=" "
 
-" Fuzzy file search
+" Fuzzily open files
 map <C-p> :FZF<cr>
 
 " Clear search highlights when hitting <enter>
