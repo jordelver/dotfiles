@@ -35,6 +35,7 @@
   d = diff
   db = "!git branch | fzf | cut -c3- | xargs -o git branch -D"
   discard = checkout --
+  fixup = "!git log --pretty=format:'%h %s' | fzf | cut -c -7 | xargs -o git commit --fixup"
   l = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s" -20
   last = log -1 HEAD
   ll = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s"
