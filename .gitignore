@@ -3,6 +3,10 @@ config/nvim/plugged/
 config/hub
 config/fish/fish_history
 config/fish/fishd.*
-config/asciinema
-config/direnv
+config/asciinema/
+config/diren/
 config/heroku/
+config/yarn/
+config/karabiner/
+config/configstore/
+config/direnv/
