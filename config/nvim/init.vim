@@ -165,7 +165,8 @@ Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-endwise'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree'
 Plug 'ap/vim-css-color'
