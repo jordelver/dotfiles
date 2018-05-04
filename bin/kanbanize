@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+# Requires `curl` and `jq`
+#
+# Create ~/.kanbanize with the following key/values
+#
+# SUBDOMAIN=<value>
+# APIKEY=<value>
+# USERNAME=<value>
+# BOARDID=<value>
+#
+
+if [ ! -f ~/.kanbanize ]; then
+  echo "~/.kanbanize config file not found"
+  exit
+fi
+
+source ~/.kanbanize
+
+curl -s \
+  -H "apikey: $APIKEY" \
+  -H "Accept: application/json" \
+  -H "Content-Type: application/json" \
+  -d "{\"boardid\":${BOARDID}}" \
+  https://$SUBDOMAIN.kanbanize.com/index.php/api/kanbanize/get_all_tasks \
+| jq -M -r -c --arg username $USERNAME '.[] | select(.assignee | contains($username)) | (.taskid + " " + .title)'
