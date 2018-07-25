@@ -32,6 +32,7 @@
   ci = commit
   co = checkout
   c = "!git branch | fzf | cut -c3- | xargs -o git checkout"
+  cot = "!tickets | fzf | sed 's/ /-je-/' | sed 's/ /-/g' | awk '{print tolower($0)}' | xargs -o git checkout -b"
   d = diff
   db = "!git branch | fzf | cut -c3- | xargs -o git branch -D"
   discard = checkout --
