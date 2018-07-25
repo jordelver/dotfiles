@@ -1,0 +1,1 @@
+/Users/jord/.fzf/shell/key-bindings.fish
