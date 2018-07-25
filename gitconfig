@@ -40,6 +40,7 @@
   l = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s" -20
   last = log -1 HEAD
   ll = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s"
+  pr = "!ticketno=`git branch | grep '*' | cut -c3- | cut -d- -f1`;tickets | fzf -q $ticketno | hub pull-request -F -"
   undo = "!git reset --soft HEAD~; git reset"
   remotes = remote -v
   rbc = rebase --continue
