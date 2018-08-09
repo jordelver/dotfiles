@@ -11,9 +11,6 @@ set -x GOPATH $HOME/Projects/go
 # Search hidden files, but exclude `.git` and respect `.gitignore`
 set -x FZF_DEFAULT_COMMAND 'fd --type f --hidden --follow --exclude .git'
 
-# Include the Fish Ruby version manager
-source /usr/local/opt/fry/share/fry/fry.fish
-
 # Aliases
 alias be "bundle exec"
 alias hb "hub browse"
@@ -38,9 +35,10 @@ end
 # Turn on direnv to manage per directory environment variables
 eval (direnv hook fish)
 
-# Fuzzy finding for changing Ruby version with Fry
-function cr -d "Switch Rubies fuzzily"
-  set ruby (fry | cut -c 3- | sed 's/ruby-//' | fzf --ansi)
-  fry use $ruby
+# Use ASDF to manage versions for Ruby, Elixir, and others
+if test -e ~/.asdf/asdf.fish
+  source ~/.asdf/asdf.fish
+else
+  echo "Install asdf"
 end
 
