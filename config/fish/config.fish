@@ -2,7 +2,7 @@
 set -U EDITOR nvim
 
 # Add various PATHs
-set PATH ~/.bin ~/.cargo/bin $PATH
+set PATH ~/.bin $PATH
 
 # Set the `GOPATH` for Go projects :rolleyes:
 set -x GOPATH $HOME/Projects/go
