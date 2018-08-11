@@ -4,9 +4,6 @@ set -U EDITOR nvim
 # Add various PATHs
 set PATH ~/.bin $PATH
 
-# Set the `GOPATH` for Go projects :rolleyes:
-set -x GOPATH $HOME/Projects/go
-
 # Use `fd` instead of default `find`
 # Search hidden files, but exclude `.git` and respect `.gitignore`
 set -x FZF_DEFAULT_COMMAND 'fd --type f --hidden --follow --exclude .git'
