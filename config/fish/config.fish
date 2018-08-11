@@ -17,6 +17,7 @@ alias hb "hub browse"
 alias pr "hub pull-request"
 alias vim "nvim"
 alias o "open ."
+alias gh "fg"
 
 # Setup `hub` Git wrapper
 eval (hub alias -s)
