@@ -1,6 +1,7 @@
 [user]
   name = Jordan Elver
   email = jordan.elver@gmail.com
+  signingkey = EDC99D201FBBE29B
 [color]
   branch=auto
   diff=auto
@@ -57,6 +58,7 @@
 [commit]
   template = "~/.git-commit-template"
   verbose = true
+  gpgsign = true
 [push]
   default = simple
 [help]
