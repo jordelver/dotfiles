@@ -201,6 +201,10 @@ endif
 " Set colorscheme (theme)
 colorscheme night-owl
 
+" ale options so linters only run on save
+" let g:ale_lint_on_text_changed = 'never'
+" let g:ale_lint_on_enter = 0
+
 " Show syntax highlighting groups for word under cursor
 " Useful for changing theme colours
 nmap <leader>sp :call <SID>SynStack()<CR>
