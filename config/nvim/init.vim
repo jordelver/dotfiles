@@ -9,9 +9,6 @@ set shell=/bin/bash
 " Enable syntax highlighting
 syntax enable
 
-" Set colorscheme (theme)
-colorscheme all_hallows_eve
-
 " Highlight matches
 set hlsearch
 
@@ -191,7 +188,18 @@ Plug 'rust-lang/rust.vim'
 Plug 'slim-template/vim-slim'
 Plug 'posva/vim-vue'
 
+" Colorschemes
+Plug 'haishanh/night-owl.vim'
+
 call plug#end()
+
+" Use 24-bit colour
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+" Set colorscheme (theme)
+colorscheme night-owl
 
 " Show syntax highlighting groups for word under cursor
 " Useful for changing theme colours
