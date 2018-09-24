@@ -8,6 +8,10 @@ set PATH ~/.bin $PATH
 # Search hidden files, but exclude `.git` and respect `.gitignore`
 set -x FZF_DEFAULT_COMMAND 'fd --type f --hidden --follow --exclude .git'
 
+# Fix GPG not prompting for passphrase
+# https://www.gnupg.org/documentation/manuals/gnupg/Common-Problems.html
+set -x GPG_TTY (tty)
+
 # Aliases
 alias be "bundle exec"
 alias hb "hub browse"
