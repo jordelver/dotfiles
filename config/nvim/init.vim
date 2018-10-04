@@ -198,6 +198,9 @@ endif
 " Set colorscheme (theme)
 colorscheme night-owl
 
+" Override nightowl's `CursorLine` highlighting
+highlight CursorLine ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=#191919 gui=NONE
+
 " ale options so linters only run on save
 " let g:ale_lint_on_text_changed = 'never'
 " let g:ale_lint_on_enter = 0
