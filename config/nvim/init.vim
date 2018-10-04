@@ -203,6 +203,7 @@ highlight CursorLine ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=#19191
 
 " Override search highlighting
 highlight Search ctermfg=NONE ctermbg=NONE guifg=#080808 guibg=#ffd700 gui=NONE cterm=NONE
+highlight SearchCurrent ctermfg=NONE ctermbg=NONE guifg=#080808 guibg=#ffaf00 gui=NONE cterm=NONE
 
 " Highlight text that goes over 50 characters in git commit messages
 highlight gitcommitOverflow ctermfg=NONE ctermbg=NONE guifg=#cc0000 guibg=NONE gui=NONE cterm=NONE
