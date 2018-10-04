@@ -208,6 +208,10 @@ highlight SearchCurrent ctermfg=NONE ctermbg=NONE guifg=#080808 guibg=#ffaf00 gu
 " Highlight text that goes over 50 characters in git commit messages
 highlight gitcommitOverflow ctermfg=NONE ctermbg=NONE guifg=#cc0000 guibg=NONE gui=NONE cterm=NONE
 
+" Highlight TODO comments
+highlight rubyTODO ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
+highlight vimTODO ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
+
 " ale options so linters only run on save
 " let g:ale_lint_on_text_changed = 'never'
 " let g:ale_lint_on_enter = 0
