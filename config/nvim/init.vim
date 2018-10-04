@@ -201,6 +201,9 @@ colorscheme night-owl
 " Override nightowl's `CursorLine` highlighting
 highlight CursorLine ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=#191919 gui=NONE
 
+" Override search highlighting
+highlight Search ctermfg=NONE ctermbg=NONE guifg=#080808 guibg=#ffd700 gui=NONE cterm=NONE
+
 " ale options so linters only run on save
 " let g:ale_lint_on_text_changed = 'never'
 " let g:ale_lint_on_enter = 0
