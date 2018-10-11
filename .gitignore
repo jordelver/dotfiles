@@ -3,6 +3,7 @@ config/nvim/plugged/
 config/hub
 config/fish/fish_history
 config/fish/fishd.*
+config/fish/functions/fzf_key_bindings.fish
 config/asciinema/
 config/diren/
 config/heroku/

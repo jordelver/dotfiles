@@ -37,6 +37,16 @@ function fish_user_key_bindings
 
   # CTRL-L to clear the screen
   bind -M insert \cl 'clear; commandline -f repaint'
+
+  # Loads the keybindings for fzf
+  # The keybindings (and functions) themselves are shipped with fzf,
+  # and installed by running `cd ~/.fzf; ./install --key-bindings`.
+  #
+  # The install process will create a symlink to the functions in ~/.fzf
+  #
+  #   config/fish/functions/fzf_key_bindings.fish -> ~/.fzf/shell/key-bindings.fish
+  #
+  fzf_key_bindings
 end
 
 # Turn on direnv to manage per directory environment variables
