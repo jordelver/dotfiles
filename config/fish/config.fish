@@ -29,8 +29,12 @@ set fish_greeting
 # Magic to enable vi keybindings
 function fish_user_key_bindings
   fish_vi_mode
+
+  # Accept fish auto suggestions with CTRL-F
   bind -M insert \cf accept-autosuggestion
   bind \cf accept-autosuggestion
+
+  # CTRL-L to clear the screen
   bind -M insert \cl 'clear; commandline -f repaint'
 end
 
