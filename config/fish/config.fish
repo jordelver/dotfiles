@@ -26,9 +26,10 @@ eval (hub alias -s)
 # Turn off the fish welcome message
 set fish_greeting
 
-# Magic to enable vi keybindings
 function fish_user_key_bindings
-  fish_vi_mode
+
+  # Vi mode keybindings
+  fish_vi_key_bindings
 
   # Accept fish auto suggestions with CTRL-F
   bind -M insert \cf accept-autosuggestion
