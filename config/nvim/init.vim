@@ -213,7 +213,7 @@ highlight vimTODO ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c
 
 " Show syntax highlighting groups for word under cursor
 " Useful for changing theme colours
-nmap <leader>sp :call <SID>SynStack()<CR>
+nmap <leader>hg :call <SID>SynStack()<CR>
 function! <SID>SynStack()
   if !exists("*synstack")
     return
