@@ -134,10 +134,6 @@ autocmd BufReadPost,FileType quickfix,fugitiveblame setlocal nospell
 " Treat `.envrc` files as shell for ENV variable highlighting
 autocmd BufNewFile,BufRead .envrc set filetype=sh
 
-" Tab highlighting and settings for Golang files
-autocmd BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
-autocmd BufNewFile,BufRead *.go highlight SpecialKey ctermfg=238 ctermbg=NONE cterm=NONE
-
 " Wrap Markdown files to 80 characters
 autocmd FileType markdown setlocal textwidth=80
 
@@ -180,7 +176,6 @@ Plug 'groenewege/vim-less'
 Plug 'pangloss/vim-javascript'
 Plug 'elixir-lang/vim-elixir'
 Plug 'dag/vim-fish'
-Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
 Plug 'slim-template/vim-slim'
 Plug 'posva/vim-vue'
