@@ -12,6 +12,9 @@ set -x FZF_DEFAULT_COMMAND 'fd --type f --hidden --follow --exclude .git'
 # https://www.gnupg.org/documentation/manuals/gnupg/Common-Problems.html
 set -x GPG_TTY (tty)
 
+# Turn on shell history for Elixir's iex
+set -x ERL_AFLAGS '-kernel shell_history enabled'
+
 # Aliases
 alias be "bundle exec"
 alias hb "hub browse"
