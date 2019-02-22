@@ -61,12 +61,12 @@ let mapleader=" "
 
 " Fuzzily open files
 map <C-p> :FZF<cr>
+map <leader>f :Files<cr>
+map <leader>b :Buffers<cr>
+map <leader>l :Lines<cr>
 
 " Clear search highlights when hitting <enter>
 nmap <cr> <Plug>SearchantStop
-
-" Toggle line numbers on/off
-nnoremap <leader>l :NumbersToggle<cr>
 
 " Split lines, opposite of `J`
 nnoremap S :SplitLine<cr>
