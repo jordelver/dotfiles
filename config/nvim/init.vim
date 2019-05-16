@@ -172,6 +172,7 @@ Plug 'drzel/vim-split-line'
 Plug 'w0rp/ale'
 
 " Language/framework specific plugins
+Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-haml'
 Plug 'kchmck/vim-coffee-script'
@@ -241,3 +242,49 @@ command! OpenChangedFiles :call OpenChangedFiles()
 command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
+" Ruby indentation settings
+
+" Indent assignments like this...
+"
+"     x = if condition
+"       something
+"     end
+"
+" ...not this
+"
+"     x = if condition
+"           something
+"         end
+"
+let g:ruby_indent_assignment_style = 'variable'
+
+" Indent blocks like this...
+"
+"     first
+"       .second do |x|
+"       something
+"     end
+
+" ...not this
+"
+"     first
+"       .second do |x|
+"         something
+"       end
+"
+let g:ruby_indent_block_style = 'do'
+
+" " Indent method access modifiers like this...
+"
+"     class Indent
+"       private :method
+"       protected :method
+"       private
+"       def method; end
+"       protected
+"       def method; end
+"       public
+"       def method; end
+"     end
+"
+" let g:ruby_indent_access_modifier_style = 'normal'
