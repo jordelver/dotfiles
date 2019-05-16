@@ -50,6 +50,9 @@ set laststatus=2
 " Highlight the current line
 set cursorline
 
+" Highlight the current column
+set cursorcolumn
+
 " Show tab completions for commands (`:<tab>`)
 set wildmenu
 
@@ -195,6 +198,7 @@ colorscheme night-owl
 
 " Override nightowl's `CursorLine` highlighting
 highlight CursorLine ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=#191919 gui=NONE
+highlight CursorColumn ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=#191919 gui=NONE
 
 " Override search highlighting
 highlight Search ctermfg=NONE ctermbg=NONE guifg=#080808 guibg=#ffd700 gui=NONE cterm=NONE
