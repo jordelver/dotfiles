@@ -28,6 +28,7 @@ brew "httpie"
 brew "hub"
 brew "icdiff"
 brew "imagemagick"
+brew "interactive-rebase-tool"
 brew "imgcat"
 brew "jq"
 brew "neovim", args: ["HEAD"]
