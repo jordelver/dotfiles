@@ -1,7 +1,7 @@
 [user]
   name = Jordan Elver
   email = jordan.elver@gmail.com
-  signingkey = EDC99D201FBBE29B
+  signingkey = 9D643F8DA49A88AC
 [color]
   branch=auto
   diff=auto
