@@ -289,3 +289,5 @@ let g:ruby_indent_block_style = 'do'
 "     end
 "
 " let g:ruby_indent_access_modifier_style = 'normal'
+
+let g:rustfmt_autosave = 1
