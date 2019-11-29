@@ -2,7 +2,7 @@
 set -U EDITOR nvim
 
 # Add various PATHs
-set PATH ~/.bin $PATH
+set PATH $HOME/.cargo/bin $HOME/.bin $PATH
 
 # Use `fd` instead of default `find`
 # Search hidden files, but exclude `.git` and respect `.gitignore`
