@@ -11,3 +11,5 @@ config/yarn/
 config/karabiner/
 config/configstore/
 config/direnv/
+config/exercism
+config/pgcli
