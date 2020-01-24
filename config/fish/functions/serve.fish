@@ -5,6 +5,6 @@ function serve
     set PORT 8080
   end
 
-  ruby -r webrick -e "s = WEBrick::HTTPServer.new(:Port => $PORT, :DocumentRoot => Dir.pwd); trap('INT') { s.shutdown }; s.start"
+  ruby -run -ehttpd . -p$PORT
 end
 
