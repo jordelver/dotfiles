@@ -67,3 +67,5 @@
   colorMoved = zebra
 [rebase]
   autosquash = true
+[interactive]
+  singleKey = true
