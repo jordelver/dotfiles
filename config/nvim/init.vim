@@ -63,7 +63,6 @@ set scrolloff=3
 let mapleader=" "
 
 " Fuzzily open files
-map <C-p> :FZF<cr>
 map <leader>f :Files<cr>
 map <leader>b :Buffers<cr>
 map <leader>l :Lines<cr>
