@@ -37,7 +37,7 @@ function fish_user_key_bindings
   bind -M insert \cf accept-autosuggestion
   bind \cf accept-autosuggestion
 
-  # CTRL-L to clear the screen
+  # CTRL-l to clear the screen
   bind -M insert \cl 'clear; commandline -f repaint'
 
   # Loads the keybindings for fzf
