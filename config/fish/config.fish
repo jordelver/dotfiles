@@ -40,6 +40,11 @@ function fish_user_key_bindings
   # CTRL-l to clear the screen
   bind -M insert \cl 'clear; commandline -f repaint'
 
+  # Use CTRL-k and CTRL-j to move up and down through history
+  # Usually up and down arrow keys
+  bind -M insert \ck up-or-search
+  bind -M insert \cj down-or-search
+
   # Loads the keybindings for fzf
   # The keybindings (and functions) themselves are shipped with fzf,
   # and installed by running `cd ~/.fzf; ./install --key-bindings`.
