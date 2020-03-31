@@ -62,6 +62,9 @@ set scrolloff=3
 " Map the leader key to <space>
 let mapleader=" "
 
+" Open fzf in a floating window - looks well snazzy
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
+
 " Fuzzily open files
 map <leader>f :Files<cr>
 map <leader>b :Buffers<cr>
