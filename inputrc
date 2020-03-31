@@ -1,7 +1,4 @@
-# ~/.inputrc is read by readline, which is used by bash
-# zsh does NOT use readline so settings here do not take affect
-#
-# https://wiki.archlinux.org/index.php/Zsh#Key_Bindings
+# ~/.inputrc is read by readline, which is used by bash and other many programs
 
 # Ignore case when <tab> completing
 set completion-ignore-case on
@@ -14,3 +11,8 @@ set mark-symlinked-directories on
 # Vim keybindings in programs that use readline
 set keymap vi
 set editing-mode vi
+
+# Map vim-style CTRL-k and CTRL-j to move up and down history
+# https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Commands-For-History
+"\C-k": previous-history
+"\C-j": next-history
