@@ -1,5 +1,5 @@
 # Use nvim as our editor
-set -U EDITOR nvim
+set -x EDITOR nvim
 
 # Add various PATHs
 set PATH $HOME/.cargo/bin $HOME/.bin $PATH
