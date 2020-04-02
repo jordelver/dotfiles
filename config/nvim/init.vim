@@ -203,6 +203,8 @@ Plug 'posva/vim-vue'
 
 " Colorschemes
 Plug 'haishanh/night-owl.vim'
+Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
