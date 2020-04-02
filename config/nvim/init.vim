@@ -139,12 +139,6 @@ autocmd BufReadPost,FileType quickfix,fugitiveblame setlocal nospell
 " Treat `.envrc` files as shell for ENV variable highlighting
 autocmd BufNewFile,BufRead .envrc set filetype=sh
 
-" Wrap Markdown files to 80 characters
-autocmd FileType markdown setlocal textwidth=80
-
-" Turn spell check on for Markdown
-autocmd BufReadPost,FileType markdown setlocal spell
-
 " Turn off folding for git buffers (specifically this is for `:GV`)
 autocmd! FileType git setlocal foldlevel=1
 
