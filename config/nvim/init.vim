@@ -226,10 +226,6 @@ highlight rubyTODO ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2
 highlight vimTODO ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
 highlight jsCommentTodo ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
 
-" ale options so linters only run on save
-" let g:ale_lint_on_text_changed = 'never'
-" let g:ale_lint_on_enter = 0
-
 " Show syntax highlighting groups for word under cursor
 " Useful for changing theme colours
 nmap <leader>hg :call <SID>SynStack()<CR>
