@@ -62,9 +62,6 @@ set scrolloff=3
 " Map the leader key to <space>
 let mapleader=" "
 
-" Open fzf in a floating window - looks well snazzy
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
-
 " Fuzzily open files
 map <leader>f :Files<cr>
 map <leader>b :Buffers<cr>
@@ -155,8 +152,14 @@ Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-endwise'
+
+" FZF fuzzy finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+
+" Open fzf in a floating window - looks well snazzy
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
+
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree'
 Plug 'ap/vim-css-color'
