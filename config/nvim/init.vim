@@ -194,7 +194,13 @@ Plug 'groenewege/vim-less'
 Plug 'pangloss/vim-javascript'
 Plug 'elixir-lang/vim-elixir'
 Plug 'dag/vim-fish'
+
+" Rust language support
 Plug 'rust-lang/rust.vim'
+
+" Automatically format rust files upon save
+let g:rustfmt_autosave = 1
+
 Plug 'slim-template/vim-slim'
 Plug 'posva/vim-vue'
 
@@ -255,5 +261,3 @@ command! OpenChangedFiles :call OpenChangedFiles()
 " Make FZF preview files when searching
 command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
-
-let g:rustfmt_autosave = 1
