@@ -223,6 +223,7 @@ highlight gitcommitOverflow ctermfg=NONE ctermbg=NONE guifg=#cc0000 guibg=NONE g
 
 " Highlight TODO comments
 highlight rubyTODO ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
+highlight elixirTodo ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
 highlight vimTODO ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
 highlight jsCommentTodo ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
 
