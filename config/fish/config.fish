@@ -17,7 +17,7 @@ set -x ERL_AFLAGS '-kernel shell_history enabled'
 
 # Aliases
 alias be "bundle exec"
-alias hb "hub browse"
+alias hb "gh repo view --web"
 alias pr "hub pull-request"
 alias vim "nvim"
 alias o "open ."
