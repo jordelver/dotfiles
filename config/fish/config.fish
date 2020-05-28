@@ -54,6 +54,20 @@ function fish_user_key_bindings
   #   config/fish/functions/fzf_key_bindings.fish -> ~/.fzf/shell/key-bindings.fish
   #
   fzf_key_bindings
+
+  # Bind the fzf-cd-widget to ALT-C
+  #
+  # This is a workaround because the offical fix is to change ALT-C to
+  # send Meta, but we can't do that because we will lose the ability to
+  # type a # symbol.
+  #
+  # The other workaround is use use ESC-C, but we can't use that either
+  # because we're using Vim keybindings as when ESC is pressed we go
+  # out of insert mode.
+  #
+  # https://github.com/junegunn/fzf/issues/164
+  #
+  bind -M insert "ç" fzf-cd-widget
 end
 
 # Turn on direnv to manage per directory environment variables
