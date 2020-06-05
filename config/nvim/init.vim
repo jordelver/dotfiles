@@ -191,9 +191,13 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-haml'
 Plug 'kchmck/vim-coffee-script'
 Plug 'groenewege/vim-less'
-Plug 'pangloss/vim-javascript'
 Plug 'elixir-lang/vim-elixir'
 Plug 'dag/vim-fish'
+
+" JavaScript / TypeScript / JSX
+Plug 'yuezk/vim-js'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'maxmellon/vim-jsx-pretty'
 
 " Rust language support
 Plug 'rust-lang/rust.vim'
