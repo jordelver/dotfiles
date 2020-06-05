@@ -4,6 +4,9 @@ set -x EDITOR nvim
 # Add various PATHs
 set PATH $HOME/.cargo/bin $HOME/.bin $PATH
 
+# Use nvim as manpager `:h Man`
+set -x MANPAGER 'nvim +Man!'
+
 # Use `fd` instead of default `find`
 # Search hidden files, but exclude `.git` and respect `.gitignore`
 set -x FZF_DEFAULT_COMMAND 'fd --type f --hidden --follow --exclude .git'
