@@ -1,6 +1,6 @@
 # dotfiles
 
-## Setup
+## Install dotfiles
 
 Clone the repo to ~/.dotfiles
 
@@ -28,12 +28,13 @@ This will link configs into ~/
     git pull
     cp ~/.asdf/completions/asdf.fish ~/.config/fish/completions
 
-## Install FZF
+## Configure fzf
 
-Installed fzf using this method
+fzf is installed via Homebrew, but we need to configure it after install.
 
-    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-    ~/.fzf/install
+Run the installer to install shell completions and keybindings.
+
+Say "yes" to the fuzzy autocomplete and keybindings questions.
 
 ## Vim (Neovim)
 
