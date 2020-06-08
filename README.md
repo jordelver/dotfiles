@@ -13,6 +13,12 @@ This will link configs into ~/
     cd ~/.dotfiles
     ./install.sh
 
+## Install Homebrew
+
+First we need to install Homebrew.
+
+    bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
 ## Install utilities
 
     cd ~/.dotfiles/
