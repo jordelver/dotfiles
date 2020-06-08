@@ -15,3 +15,5 @@ config/configstore/
 config/direnv/
 config/exercism
 config/pgcli
+config/devkit/
+gnupg/
