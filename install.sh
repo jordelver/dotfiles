@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# Install everything from Brewfile
-brew bundle
-
 # Link dotfiles into place
 echo "Linking config files into place"
 for dotfile in *; do

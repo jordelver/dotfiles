@@ -8,11 +8,15 @@ Clone the repo to ~/.dotfiles
 
 Run the install
 
-This will install everything from the `Brewfile` and link configs into ~/
+This will link configs into ~/
 
     cd ~/.dotfiles
-
     ./install.sh
+
+## Install utilities
+
+    cd ~/.dotfiles/
+    brew bundle
 
 ## Install ASDF
 
