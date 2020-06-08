@@ -77,6 +77,6 @@ eval (direnv hook fish)
 if test -e ~/.asdf/asdf.fish
   source ~/.asdf/asdf.fish
 else
-  echo "Install asdf"
+  echo "WARNING: You need to install asdf"
 end
 
