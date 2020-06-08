@@ -25,9 +25,6 @@ alias pr "hub pull-request"
 alias vim "nvim"
 alias o "open ."
 
-# Setup `hub` Git wrapper
-eval (hub alias -s)
-
 # Turn off the fish welcome message
 set fish_greeting
 
