@@ -23,6 +23,7 @@ alias be "bundle exec"
 alias hb "gh repo view --web"
 alias pr "hub pull-request"
 alias vim "nvim"
+alias v "nvim"
 alias o "open ."
 
 # Turn off the fish welcome message
