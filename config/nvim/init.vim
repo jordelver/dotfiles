@@ -15,6 +15,9 @@ set hlsearch
 " Incremental searching
 set incsearch
 
+" Show substitutions 'live' as you type
+set inccommand=nosplit
+
 " Searches are case insensitive...
 set ignorecase
 
