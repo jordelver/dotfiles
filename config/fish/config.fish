@@ -18,14 +18,6 @@ set -x GPG_TTY (tty)
 # Turn on shell history for Elixir's iex
 set -x ERL_AFLAGS '-kernel shell_history enabled'
 
-# Aliases
-alias be "bundle exec"
-alias hb "gh repo view --web"
-alias pr "hub pull-request"
-alias vim "nvim"
-alias v "nvim"
-alias o "open ."
-
 # Turn off the fish welcome message
 set fish_greeting
 
