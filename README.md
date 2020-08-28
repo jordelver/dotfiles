@@ -46,7 +46,7 @@ Run the install script
 
 ### To update
 
-`brew reinstall neovim --HEAD`
+`brew upgrade neovim`
 
 ### Adding a new plugin
 
