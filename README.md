@@ -38,9 +38,9 @@ First we need to install Homebrew.
 
 fzf is installed via Homebrew, but we need to configure it after install.
 
-Run the installer to install shell completions and keybindings.
+Run the install script
 
-Say "yes" to the fuzzy autocomplete and keybindings questions.
+    /usr/local/opt/fzf/install --key-bindings --no-completion --no-bash --no-zsh --no-update-rc
 
 ## Vim (Neovim)
 
