@@ -142,6 +142,13 @@ autocmd BufNewFile,BufRead .envrc set filetype=sh
 " Turn off folding for git buffers (specifically this is for `:GV`)
 autocmd! FileType git setlocal foldlevel=1
 
+" Override colorscheme with my own highlights every
+" time a colorscheme is sourced
+augroup OverrideColorScheme
+  autocmd!
+  autocmd ColorScheme * call ColorSchemeOverrides()
+augroup END
+
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 
@@ -223,25 +230,28 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
+" Highlight commands to override the main colorscheme
+function! ColorSchemeOverrides() abort
+  " Override nightowl's `CursorLine` highlighting
+  highlight CursorLine        ctermfg=NONE ctermbg=233  cterm=NONE guifg=NONE    guibg=#191919 gui=NONE
+  highlight CursorColumn      ctermfg=NONE ctermbg=233  cterm=NONE guifg=NONE    guibg=#191919 gui=NONE
+
+  " Override search highlighting
+  highlight Search            ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#080808 guibg=#ffd700 gui=NONE
+  highlight SearchCurrent     ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#080808 guibg=#ffaf00 gui=NONE
+
+  " Highlight text that goes over 50 characters in git commit messages
+  highlight gitcommitOverflow ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#cc0000 guibg=NONE    gui=NONE
+
+  " Highlight TODO comments
+  highlight rubyTODO          ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
+  highlight elixirTodo        ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
+  highlight vimTODO           ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
+  highlight jsCommentTodo     ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
+endfunction
+
 " Set colorscheme (theme)
 colorscheme night-owl
-
-" Override nightowl's `CursorLine` highlighting
-highlight CursorLine ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=#191919 gui=NONE
-highlight CursorColumn ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=#191919 gui=NONE
-
-" Override search highlighting
-highlight Search ctermfg=NONE ctermbg=NONE guifg=#080808 guibg=#ffd700 gui=NONE cterm=NONE
-highlight SearchCurrent ctermfg=NONE ctermbg=NONE guifg=#080808 guibg=#ffaf00 gui=NONE cterm=NONE
-
-" Highlight text that goes over 50 characters in git commit messages
-highlight gitcommitOverflow ctermfg=NONE ctermbg=NONE guifg=#cc0000 guibg=NONE gui=NONE cterm=NONE
-
-" Highlight TODO comments
-highlight rubyTODO ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
-highlight elixirTodo ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
-highlight vimTODO ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
-highlight jsCommentTodo ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
 
 " Show syntax highlighting groups for word under cursor
 " Useful for changing theme colours
