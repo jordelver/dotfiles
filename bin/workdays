@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+# Outputs all the "work" days in a given month
+# One day per line.
+# Working weeks separated by a new line.
+
+require "date"
+
+# Stolen from Rails
+def ordinalize(number)
+  abs_number = number.to_i.abs
+
+  if (11..13).include?(abs_number % 100)
+    "th"
+  else
+    case abs_number % 10
+    when 1; "st"
+    when 2; "nd"
+    when 3; "rd"
+    else    "th"
+    end
+  end
+end
+
+def days_in_month(date)
+  Date.new(date.year, date.month, -1).mday
+end
+
+def work_days(date:)
+  (1..days_in_month(date))
+    .map { |day| Date.new(date.year, date.month, day) }
+    .reject { |date| date.saturday? || date.sunday? }
+end
+
+def format_date(date)
+  date.strftime("%-d#{ordinalize(date.mday)} %B %Y")
+end
+
+work_days(date: Date.today).each do |work_day|
+  puts format_date(work_day)
+  puts if work_day.friday?
+end
