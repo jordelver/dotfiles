@@ -1,0 +1,58 @@
+#!/usr/bin/env ruby -W0
+
+require "date"
+require "logger"
+require "open3"
+require "shellwords"
+
+LOGGER = Logger.new("paperwork.log")
+PDFTOTEXT = "/usr/local/bin/pdftotext"
+
+def extract_text(filename)
+  stdout, stderr, status =
+    Open3.capture3("#{PDFTOTEXT} #{Shellwords.escape(filename)} -")
+
+  if status.success?
+    stdout.force_encoding(Encoding::UTF_8)
+  else
+    raise StandardError.new(stderr)
+  end
+end
+
+AWS_INVOICE = /^[A-Z\d]+-\d+.pdf$/ # EINGB20-1354463.pdf
+
+def invoice?(filename)
+  filename =~ AWS_INVOICE
+end
+
+def extract_date(filename)
+  date_match = /^[a-zA-Z]+ \d{1,2}, \d{4}/ # September 3, 2020
+  extract_text(filename).scan(date_match).first
+end
+
+def format_date(date)
+  Date.parse(date).strftime("%Y-%m-%d")
+end
+
+if ARGF.argv.length != 1
+  puts "USAGE: paperwork <filename>"
+  exit 1
+end
+
+path = ARGF.argv.first
+filename = File.basename(path)
+
+exit 0 unless invoice?(filename)
+
+LOGGER.info("Found invoice file '#{filename}'")
+
+extracted_date = extract_date(path)
+LOGGER.info("Extracted date: #{extracted_date}")
+
+formatted_date = format_date(extracted_date)
+new_filename = "#{formatted_date}-#{filename}"
+
+LOGGER.info("Renaming #{filename} -> #{new_filename}")
+File.rename(filename, new_filename)
+
+exit 0
