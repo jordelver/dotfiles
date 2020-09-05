@@ -1,3 +1,3 @@
 function vim -d "Alias for Vim"
-  nvim
+  nvim $argv
 end
