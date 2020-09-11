@@ -1,0 +1,10 @@
+# Ruby/Rails
+*.gemspec diff=ruby
+*.ru diff=ruby
+*.rb diff=ruby
+Gemfile diff=ruby
+Rakefile diff=ruby
+
+# Elixir
+*.ex diff=elixir
+*.exs diff=elixir
