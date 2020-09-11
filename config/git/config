@@ -23,7 +23,6 @@
   diff = diff-so-fancy | less --tabs=4 -RFX
   show = diff-so-fancy | less --tabs=4 -RFX
 [core]
-  excludesfile = "~/.gitignore"
   editor = /usr/local/bin/nvim
 [alias]
   a = add
