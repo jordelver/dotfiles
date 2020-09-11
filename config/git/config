@@ -55,7 +55,6 @@
 [branch]
   autosetuprebase = always
 [commit]
-  template = "~/.git-commit-template"
   verbose = true
   gpgsign = true
 [push]
