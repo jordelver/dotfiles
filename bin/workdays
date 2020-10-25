@@ -36,7 +36,15 @@ def format_date(date)
   date.strftime("%-d#{ordinalize(date.mday)} %B %Y")
 end
 
-work_days(date: Date.today).each do |work_day|
+def current_month(date)
+  return Date.today if date.nil?
+  Date.parse(date)
+rescue ArgumentError
+  puts "Please supply a date in yyyy-mm-dd format"
+  exit
+end
+
+work_days(date: current_month(ARGV.first)).each do |work_day|
   puts format_date(work_day)
   puts if work_day.friday?
 end
