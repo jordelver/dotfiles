@@ -63,6 +63,8 @@
   autocorrect = 1
 [diff]
   colorMoved = zebra
+[diff "rspec"]
+  xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"
 [rebase]
   autosquash = true
 [interactive]
