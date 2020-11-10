@@ -113,6 +113,13 @@ nnoremap <leader>P "+P
 " Copy whole file (keeping cursor position)
 nnoremap <Leader>c :%y+<CR>
 
+" vim-test mappings
+nmap <silent> t<C-n> :TestNearest<CR>
+nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuite<CR>
+nmap <silent> t<C-l> :TestLast<CR>
+nmap <silent> t<C-g> :TestVisit<CR>
+
 " Alias :Q to :q
 command! Q q
 command! Qall qall
@@ -158,6 +165,16 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-dispatch'
+
+" Make the dispatch tmux window bigger
+let g:dispatch_quickfix_height = 20
+
+Plug 'vim-test/vim-test'
+
+" Make test commands execute using dispatch.vim
+let test#strategy = "dispatch"
+
 Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-bundler'
