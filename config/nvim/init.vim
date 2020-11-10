@@ -9,6 +9,10 @@ set shell=/bin/bash
 " Enable syntax highlighting
 syntax enable
 
+" Allow easy switching of buffers by only confirming save when closing them
+set hidden
+set confirm
+
 " Highlight matches
 set hlsearch
 
