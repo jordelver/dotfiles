@@ -117,6 +117,18 @@ nnoremap <leader>P "+P
 " Copy whole file (keeping cursor position)
 nnoremap <Leader>c :%y+<CR>
 
+" Move lines up and down whilst in NORMAL mode
+nnoremap <c-j> :m .+1<CR>==
+nnoremap <c-k> :m .-2<CR>==
+
+" Move lines up and down whilst in INSERT mode
+inoremap <c-j> <Esc>:m .+1<CR>==gi
+inoremap <c-k> <Esc>:m .-2<CR>==gi
+
+" Move lines up and down whilst in VISUAL mode
+vnoremap <c-j> :m '>+1<CR>gv=gv
+vnoremap <c-k> :m '<-2<CR>gv=gv
+
 " vim-test mappings
 nmap <silent> t<C-n> :TestNearest<CR>
 nmap <silent> t<C-f> :TestFile<CR>
