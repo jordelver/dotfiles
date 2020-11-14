@@ -159,9 +159,6 @@ autocmd FileType gitcommit execute "normal! O" | startinsert
 " and Fugitive git blame windows
 autocmd BufReadPost,FileType quickfix,fugitiveblame setlocal nospell
 
-" Treat `.envrc` files as shell for ENV variable highlighting
-autocmd BufNewFile,BufRead .envrc set filetype=sh
-
 " Turn off folding for git buffers (specifically this is for `:GV`)
 autocmd! FileType git setlocal foldlevel=1
 
