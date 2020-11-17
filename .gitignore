@@ -1,5 +1,6 @@
 vim/bundle/
 config/nvim/plugged/
+config/nvim/undodir/
 config/gh
 config/hub
 config/fish/fish_history

@@ -66,6 +66,10 @@ set wildmenu
 " Maintain 3 lines of context when the cursor approaches end of the window
 set scrolloff=3
 
+" Maintain undo history between sessions
+set undofile
+set undodir=~/.config/nvim/undodir/
+
 " Map the leader key to <space>
 let mapleader=" "
 
