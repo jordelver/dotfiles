@@ -204,6 +204,7 @@ Plug 'junegunn/fzf.vim'
 " Open fzf in a floating window - looks well snazzy
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
 
+Plug 'maxjacobson/vim-fzf-coauthorship'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree'
 Plug 'ap/vim-css-color'
