@@ -14,3 +14,8 @@ xcuserdata/
 
 # direnv environment variable files
 .envrc
+
+# per project .gemrc files
+# override .gemrc with the `GEMRC` environment variable
+# this is useful for secrets in the .gemrc that you don't want to commit
+.gemrc
