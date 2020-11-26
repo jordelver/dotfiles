@@ -233,9 +233,6 @@ let g:rcsv_colorpairs = [
 " Language/framework specific plugins
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
-Plug 'tpope/vim-haml'
-Plug 'kchmck/vim-coffee-script'
-Plug 'groenewege/vim-less'
 Plug 'elixir-lang/vim-elixir'
 Plug 'dag/vim-fish'
 
@@ -249,9 +246,6 @@ Plug 'rust-lang/rust.vim'
 
 " Automatically format rust files upon save
 let g:rustfmt_autosave = 1
-
-Plug 'slim-template/vim-slim'
-Plug 'posva/vim-vue'
 
 " Colorschemes
 Plug 'haishanh/night-owl.vim'
