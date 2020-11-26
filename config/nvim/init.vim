@@ -140,6 +140,10 @@ nmap <silent> t<C-s> :TestSuite<CR>
 nmap <silent> t<C-l> :TestLast<CR>
 nmap <silent> t<C-g> :TestVisit<CR>
 
+" Move function arguments left and right
+nnoremap <c-h> :SidewaysLeft<cr>
+nnoremap <c-l> :SidewaysRight<cr>
+
 " Alias :Q to :q
 command! Q q
 command! Qall qall
@@ -210,6 +214,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'ap/vim-css-color'
 Plug 'timakro/vim-searchant'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'AndrewRadev/sideways.vim'
 Plug 'godlygeek/tabular'
 Plug 'vim-scripts/OnSyntaxChange'
 Plug 'drzel/vim-split-line'
