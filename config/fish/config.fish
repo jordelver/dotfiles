@@ -1,6 +1,9 @@
 # Use nvim as our editor
 set -x EDITOR nvim
 
+# Name of macos keychain to use
+set -gx AWS_VAULT_KEYCHAIN_NAME login
+
 # Add various PATHs
 set PATH $HOME/.cargo/bin $HOME/.bin $PATH
 
