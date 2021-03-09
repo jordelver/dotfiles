@@ -28,8 +28,9 @@ set ignorecase
 " ... unless they contain at least one capital letter
 set smartcase
 
-" Turn on line numbers
+" Turn on hybrid line numbers
 set number
+set relativenumber
 
 " Don't wrap lines
 set nowrap
@@ -219,6 +220,7 @@ Plug 'godlygeek/tabular'
 Plug 'vim-scripts/OnSyntaxChange'
 Plug 'drzel/vim-split-line'
 Plug 'w0rp/ale'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 " Highlight columns in CSV files
 Plug 'mechatroner/rainbow_csv'
