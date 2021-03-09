@@ -41,7 +41,7 @@
   last = log -1 HEAD
   ll = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s"
   pf = push --force-with-lease
-  pr = "!ticketno=`git branch | grep '*' | cut -c3- | cut -d- -f1`;tickets | fzf -q $ticketno | hub pull-request -F -"
+  pr = "!funct() { open \"`git web-url`/pull/`git pr-number $1`\" ;}; funct"
   undo = "!git reset --soft HEAD~; git reset"
   remotes = remote -v
   rbc = rebase --continue
@@ -52,6 +52,9 @@
   timeline = log --oneline --graph --all
   unstage = reset -q HEAD --
   wip = commit -m "WIP"
+  merge-commits = "!funct() { git log --merges --reverse --oneline --ancestry-path $1..origin | grep \"Merge pull request\";  }; funct"
+  pr-number = "!funct() { git merge-commits $1 | head -n1 | sed -n \"s/^.*Merge pull request #\\s*\\([0-9]*\\).*$/\\1/p\"; }; funct"
+  web-url = "!funct() { git config remote.origin.url | sed -e\"s/git@/https:\\/\\//\" -e\"s/\\.git$//\" | sed -E \"s/(\\/\\/[^:]*):/\\1\\//\"; }; funct"
 [branch]
   autosetuprebase = always
 [commit]
