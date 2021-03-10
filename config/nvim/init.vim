@@ -263,7 +263,7 @@ call plug#end()
 
 " Use 24-bit colour
 if (has("termguicolors"))
- set termguicolors
+  set termguicolors
 endif
 
 " Highlight commands to override the main colorscheme
