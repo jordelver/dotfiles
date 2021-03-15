@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Rectangle.app
+#
+# Make the "Almost Maximize" settings smaller so the overall window size is reduced.
+# https://github.com/rxhanson/Rectangle#almost-maximize
+defaults write com.knollsoft.Rectangle almostMaximizeWidth -float 0.7
+defaults write com.knollsoft.Rectangle almostMaximizeHeight 0.7
