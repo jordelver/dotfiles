@@ -1,0 +1,2 @@
+aliases:
+    prs: pr list --assignee=jordelver

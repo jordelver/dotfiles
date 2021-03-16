@@ -1,7 +1,8 @@
 vim/bundle/
 config/nvim/plugged/
 config/nvim/undodir/
-config/gh
+config/gh/state.yml
+config/gh/hosts.yml
 config/hub
 config/fish/fish_history
 config/fish/fish_variables
