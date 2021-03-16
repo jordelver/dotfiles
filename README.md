@@ -60,3 +60,11 @@ Run `:PlugStatus` to see what needs installing and what doesn't
 
 Run `:PlugUpdate` from within Vim
 
+## Fonts
+
+My current font of choice is [Jet Brains Mono](https://www.jetbrains.com/lp/mono/)
+set to 18pts in iTerm. The font lives in this repo at `fonts/JetBrainsMono-Regular.ttf`.
+
+To install, the font should be copied to `~/Library/Fonts/`.
+
+I currently have ligatures turned on but I'm not sure if it will stick.
