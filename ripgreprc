@@ -1,0 +1,9 @@
+# Add type for Ruby RSpec tests
+# This means we can use `-trspec` to search tests only
+--type-add
+rspec:*_spec.rb
+
+# Add type for Elixir ExUnit tests
+# This means we can use `-texunit` to search tests only
+--type-add
+exunit:*_test.exs

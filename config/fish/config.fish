@@ -14,6 +14,9 @@ set -x MANPAGER 'nvim +Man!'
 # Search hidden files, but exclude `.git` and respect `.gitignore`
 set -x FZF_DEFAULT_COMMAND 'fd --type f --hidden --follow --exclude .git'
 
+# Set a custom ripgrep config file
+set -x RIPGREP_CONFIG_PATH $HOME/.ripgreprc
+
 # Fix GPG not prompting for passphrase
 # https://www.gnupg.org/documentation/manuals/gnupg/Common-Problems.html
 set -x GPG_TTY (tty)
