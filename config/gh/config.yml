@@ -1,2 +1,3 @@
 aliases:
     prs: pr list --assignee=jordelver
+    co: '!id="$(gh pr list -L100 | fzf --preview ''gh pr view {1}'' | cut -f1)"; [ -n "$id" ] && gh pr checkout "$id"'
