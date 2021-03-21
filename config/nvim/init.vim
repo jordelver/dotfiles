@@ -243,6 +243,9 @@ Plug 'tpope/vim-rails'
 Plug 'elixir-lang/vim-elixir'
 Plug 'dag/vim-fish'
 
+" Terraform
+Plug 'hashivim/vim-terraform'
+
 " JavaScript / TypeScript / JSX
 Plug 'yuezk/vim-js'
 Plug 'HerringtonDarkholme/yats.vim'
