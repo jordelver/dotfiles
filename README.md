@@ -67,4 +67,6 @@ set to 18pts in iTerm. The font lives in this repo at `fonts/JetBrainsMono-Regul
 
 To install, the font should be copied to `~/Library/Fonts/`.
 
+    cp ~/.dotfiles/fonts/JetBrainsMono-Regular.ttf ~/Library/Fonts/
+
 I currently have ligatures turned on but I'm not sure if it will stick.
