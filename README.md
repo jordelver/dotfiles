@@ -26,7 +26,7 @@ First we need to install Homebrew.
 
 ## Install ASDF
 
-    git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.8
+    git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
 
 ### To upgrade
 
