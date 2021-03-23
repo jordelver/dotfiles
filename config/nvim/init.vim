@@ -203,7 +203,7 @@ Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-endwise'
 
 " FZF fuzzy finder
-Plug '/usr/local/opt/fzf'
+Plug '/opt/homebrew/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 " Open fzf in a floating window - looks well snazzy
