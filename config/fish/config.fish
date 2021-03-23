@@ -45,12 +45,11 @@ function fish_user_key_bindings
   bind -M insert \cj down-or-search
 
   # Loads the keybindings for fzf
-  # The keybindings (and functions) themselves are shipped with fzf,
-  # and installed by running `cd ~/.fzf; ./install --key-bindings`.
+  # The keybindings (and functions) themselves are shipped with fzf.
   #
-  # The install process will create a symlink to the functions in ~/.fzf
+  # The install process will create a symlink to the functions.
   #
-  #   config/fish/functions/fzf_key_bindings.fish -> ~/.fzf/shell/key-bindings.fish
+  #   ln -s /opt/homebrew/Cellar/fzf/0.26.0/shell/key-bindings.fish ~/.config/fish/functions/fzf_key_bindings.fish
   #
   fzf_key_bindings
 
