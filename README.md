@@ -24,7 +24,7 @@ First we need to install Homebrew.
     cd ~/.dotfiles/
     brew bundle
 
-## Install ASDF
+## Install asdf
 
     git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
 
