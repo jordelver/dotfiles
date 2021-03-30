@@ -927,6 +927,12 @@
         "options": {
           "full_name": "hazel"
         }
+      },
+      "discord": {
+        "version": "0.0.261",
+        "options": {
+          "full_name": "discord"
+        }
       }
     },
     "mas": {
