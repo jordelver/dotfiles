@@ -34,7 +34,7 @@
   c = "!git branch | fzf | cut -c3- | xargs -o git checkout"
   cot = "!tickets | fzf | sed 's/ /-je-/' | sed 's/ /-/g' | awk '{print tolower($0)}' | xargs -o git checkout -b"
   d = diff
-  db = "!git branch | fzf | cut -c3- | xargs -o git branch -D"
+  db = "!f() { git branch | grep --invert-match '\\*' | cut -c 3- | fzf --multi --preview='git log {}' | xargs git branch --delete --force ;}; f"
   discard = checkout --
   fixup = "!git log -n 50 --pretty=format:'%h %s' --no-merges | fzf | cut -c -7 | xargs -o git commit --fixup"
   l = log --pretty=format:"%C(yellow)%h%C(cyan)%x09%an%Creset%x09%C(magenta)%ar%x09%Creset%s" -20
