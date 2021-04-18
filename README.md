@@ -28,6 +28,28 @@ First we need to install Homebrew.
 
     git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
 
+### Install plugins
+
+Ruby
+
+    asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+
+Erlang
+
+    asdf plugin-add https://github.com/asdf-vm/asdf-erlang
+
+Elixir
+
+    asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
+
+NodeJS
+
+    asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs
+
+PostgreSQL
+
+    asdf plugin-add postgres
+
 ### To upgrade
 
     cd ~/.asdf
