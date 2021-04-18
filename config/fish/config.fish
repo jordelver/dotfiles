@@ -5,7 +5,7 @@ set -x EDITOR nvim
 set -gx AWS_VAULT_KEYCHAIN_NAME login
 
 # Add various PATHs
-set PATH $HOME/.cargo/bin $HOME/.bin /opt/homebrew/bin $PATH
+set PATH $HOME/.cargo/bin $HOME/.bin /usr/local/bin /usr/local/sbin $PATH
 
 # Use nvim as manpager `:h Man`
 set -x MANPAGER 'nvim +Man!'
@@ -49,7 +49,7 @@ function fish_user_key_bindings
   #
   # The install process will create a symlink to the functions.
   #
-  #   ln -s /opt/homebrew/Cellar/fzf/0.26.0/shell/key-bindings.fish ~/.config/fish/functions/fzf_key_bindings.fish
+  #   ln -s /usr/local/opt/fzf/shell/key-bindings.fish ~/.config/fish/functions/fzf_key_bindings.fish
   #
   fzf_key_bindings
 
