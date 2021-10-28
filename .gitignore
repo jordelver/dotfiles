@@ -19,3 +19,8 @@ config/exercism
 config/pgcli
 config/devkit/
 gnupg/
+config/.mono/
+config/gcloud/
+config/htop/
+config/iterm2/
+config/nnn/
