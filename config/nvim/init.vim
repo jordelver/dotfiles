@@ -119,7 +119,7 @@ nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 
 " Copy whole file (keeping cursor position)
-nnoremap <Leader>c :%y+<CR>
+nnoremap <leader>c :%y+<CR>
 
 " Move lines up and down whilst in NORMAL mode
 nnoremap <c-j> :m .+1<CR>==
