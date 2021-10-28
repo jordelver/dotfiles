@@ -30,7 +30,6 @@ set smartcase
 
 " Turn on hybrid line numbers
 set number
-set relativenumber
 
 " Don't wrap lines
 set nowrap
