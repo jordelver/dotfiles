@@ -19,3 +19,6 @@ xcuserdata/
 # override .gemrc with the `GEMRC` environment variable
 # this is useful for secrets in the .gemrc that you don't want to commit
 .gemrc
+
+# Ignore Postgres log files
+logfile
