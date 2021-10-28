@@ -78,3 +78,4 @@ else
   echo "WARNING: You need to install asdf"
 end
 
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
