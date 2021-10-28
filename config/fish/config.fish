@@ -21,6 +21,9 @@ set -x RIPGREP_CONFIG_PATH $HOME/.ripgreprc
 # https://www.gnupg.org/documentation/manuals/gnupg/Common-Problems.html
 set -x GPG_TTY (tty)
 
+# Disable Rails' `spring` app reloader
+set -x DISABLE_SPRING true
+
 # Turn on shell history for Elixir's iex
 set -x ERL_AFLAGS '-kernel shell_history enabled'
 
