@@ -298,7 +298,7 @@ function! ColorSchemeOverrides() abort
 endfunction
 
 " Set colorscheme (theme)
-colorscheme night-owl
+colorscheme moonlight
 
 " Show syntax highlighting groups for word under cursor
 " Useful for changing theme colours
