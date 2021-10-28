@@ -217,7 +217,10 @@ Plug 'AndrewRadev/sideways.vim'
 Plug 'godlygeek/tabular'
 Plug 'vim-scripts/OnSyntaxChange'
 Plug 'drzel/vim-split-line'
+
 Plug 'w0rp/ale'
+let g:ale_linters = {'ruby': ['standardrb'], 'rust': ['rustfmt', 'analyzer']}
+
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 " Highlight columns in CSV files
