@@ -79,7 +79,7 @@ map <leader>b :Buffers<cr>
 map <leader>l :Lines<cr>
 
 " Clear search highlights when hitting <enter>
-nmap <cr> <Plug>SearchantStop
+nmap <cr> :nohlsearch<cr>
 
 " Split lines, opposite of `J`
 nnoremap S :SplitLine<cr>
