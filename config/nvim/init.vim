@@ -322,6 +322,19 @@ function! OpenChangedFiles()
 endfunction
 command! OpenChangedFiles :call OpenChangedFiles()
 
+" Restart Rails from within Vim using
+" Stolen from http://joncairns.com/2012/11/restarting-thin-or-passenger-rails-server-from-vim/
+function! RestartRails(dir)
+  let l:ret = system("touch ".a:dir."/tmp/restart.txt")
+  if l:ret == ""
+    echo "Restarting Rails"
+  else
+    echohl Error | echo "Failed to restart Rails - is your working directory a Rails app?" | echohl None
+  endif
+endfunction
+command! RestartRails call RestartRails(getcwd())
+nmap <leader>rr :call RestartRails(getcwd())<cr>
+
 " Make FZF preview files when searching
 command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
