@@ -272,6 +272,9 @@ let g:material_style = 'deep ocean'
 
 call plug#end()
 
+" Configure languages so we get syntax highlighting in Markdown files
+let g:markdown_fenced_languages = ['bash', 'elixir', 'fish', 'html', 'javascript', 'ruby', 'rust', 'typescript', 'vim']
+
 " Use 24-bit colour
 if (has("termguicolors"))
   set termguicolors
