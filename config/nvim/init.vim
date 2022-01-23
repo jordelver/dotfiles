@@ -241,6 +241,10 @@ let g:rcsv_colorpairs = [
 " Language/framework specific plugins
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
+
+Plug 'rlue/vim-fold-rspec'
+let g:fold_rspec_foldlevel = 2
+
 Plug 'elixir-lang/vim-elixir'
 Plug 'dag/vim-fish'
 
