@@ -218,6 +218,8 @@ Plug 'godlygeek/tabular'
 Plug 'vim-scripts/OnSyntaxChange'
 Plug 'drzel/vim-split-line'
 
+Plug 'PeterRincker/vim-searchlight'
+
 Plug 'w0rp/ale'
 let g:ale_linters = {'ruby': ['standardrb'], 'rust': ['rustfmt', 'analyzer']}
 
@@ -288,7 +290,8 @@ function! ColorSchemeOverrides() abort
 
   " Override search highlighting
   highlight Search            ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#080808 guibg=#ffd700 gui=NONE
-  highlight SearchCurrent     ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#080808 guibg=#ffaf00 gui=NONE
+  highlight Searchlight       ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#080808 guibg=#ffaf00 gui=NONE
+  " highlight Searchlight       ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#080808 guibg=#ff002f gui=NONE
 
   " Highlight text that goes over 50 characters in git commit messages
   highlight gitcommitOverflow ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#cc0000 guibg=NONE    gui=NONE
