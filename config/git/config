@@ -70,6 +70,8 @@
   colorMoved = dimmed-zebra
 [diff "rspec"]
   xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"
+[merge]
+  conflictStyle = diff3
 [rebase]
   autosquash = true
 [interactive]
