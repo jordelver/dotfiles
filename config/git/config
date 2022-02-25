@@ -66,6 +66,7 @@
 [help]
   autocorrect = 1
 [diff]
+  algorithm = histogram
   colorMoved = dimmed-zebra
 [diff "rspec"]
   xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"
