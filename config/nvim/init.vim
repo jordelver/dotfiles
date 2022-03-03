@@ -311,6 +311,7 @@ function! ColorSchemeOverrides() abort
   highlight elixirTodo        ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
   highlight vimTODO           ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
   highlight jsCommentTodo     ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
+  highlight rustTodo          ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
 endfunction
 
 " Set colorscheme (theme)
