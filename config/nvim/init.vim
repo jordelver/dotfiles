@@ -73,10 +73,12 @@ set undodir=~/.config/nvim/undodir/
 " Map the leader key to <space>
 let mapleader=" "
 
-" Fuzzily open files
-map <leader>f :Files<cr>
-map <leader>b :Buffers<cr>
-map <leader>l :Lines<cr>
+" Fuzzily find, open, grep etc using Telescope
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>fc <cmd>Telescope git_commits<cr>
 
 " Clear search highlights when hitting <enter>
 nmap <cr> :nohlsearch<cr>
@@ -207,6 +209,10 @@ Plug 'junegunn/fzf.vim'
 
 " Open fzf in a floating window - looks well snazzy
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
+
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 Plug 'maxjacobson/vim-fzf-coauthorship'
 Plug 'ervandew/supertab'
