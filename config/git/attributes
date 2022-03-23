@@ -5,8 +5,14 @@
 *.rake diff=ruby
 Gemfile diff=ruby
 Rakefile diff=ruby
-*_spec.rb diff=rspec
+*_spec.rb diff=spec
+Gemfile.lock merge=binary
 
 # Elixir
 *.ex diff=elixir
 *.exs diff=elixir
+mix.lock merge=binary
+
+# JavaScript
+package-lock.json merge=binary
+yarn.lock merge=binary
