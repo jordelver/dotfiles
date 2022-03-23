@@ -2,4 +2,5 @@ ruby 3.1.0
 elixir 1.12.3-otp-23
 erlang 23.2
 nodejs 15.13.0
+yarn 1.22.17
 postgres 13.2
