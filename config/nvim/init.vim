@@ -218,8 +218,8 @@ Plug 'maxjacobson/vim-fzf-coauthorship'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree'
 Plug 'ap/vim-css-color'
-Plug 'AndrewRadev/splitjoin.vim'
-Plug 'AndrewRadev/sideways.vim'
+Plug 'AndrewRadev/splitjoin.vim', { 'branch' : 'main' }
+Plug 'AndrewRadev/sideways.vim', { 'branch' : 'main' }
 Plug 'godlygeek/tabular'
 Plug 'vim-scripts/OnSyntaxChange'
 Plug 'drzel/vim-split-line'
