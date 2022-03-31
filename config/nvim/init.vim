@@ -269,18 +269,9 @@ Plug 'rust-lang/rust.vim'
 let g:rustfmt_autosave = 1
 
 " Colorschemes
-Plug 'haishanh/night-owl.vim'
-Plug 'bluz71/vim-nightfly-guicolors'
-Plug 'dracula/vim', { 'as': 'dracula' }
-
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-let g:tokyonight_style = "night"
-
 Plug 'shaunsingh/moonlight.nvim', { 'branch': 'pure-lua' }
 let g:moonlight_style = 'moonlight'
 
-Plug 'marko-cerovac/material.nvim', { 'branch': 'pure-lua' }
-let g:material_style = 'deep ocean'
 
 call plug#end()
 
