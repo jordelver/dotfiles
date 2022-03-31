@@ -210,9 +210,6 @@ Plug 'tpope/vim-endwise'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
-" Open fzf in a floating window - looks well snazzy
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
-
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -345,10 +342,6 @@ function! RestartRails(dir)
 endfunction
 command! RestartRails call RestartRails(getcwd())
 nmap <leader>rr :call RestartRails(getcwd())<cr>
-
-" Make FZF preview files when searching
-command! -bang -nargs=? -complete=dir Files
-  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
 " FZF Buffer Delete
 " https://www.reddit.com/r/neovim/comments/mlqyca/fzf_buffer_delete/
