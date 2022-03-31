@@ -60,7 +60,10 @@ set cursorline
 " Highlight the current column
 set cursorcolumn
 
-" Show tab completions for commands (`:<tab>`)
+" Use enhanced command-line completion when hitting :<tab>
+"
+" This will show a popup menu from which you can choose rather than cycling
+" through the completions, which is default
 set wildmenu
 
 " Maintain 3 lines of context when the cursor approaches end of the window
