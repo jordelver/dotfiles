@@ -35,12 +35,18 @@ set cursorline
 " Highlight the current column
 set cursorcolumn
 
+" Show the 80 character column gutter
+set colorcolumn=80
+
 " Maintain 3 lines of context when the cursor approaches end of the window
 set scrolloff=3
 
 " Maintain undo history between sessions
 set undofile
 set undodir=~/.config/nvim/undodir/
+
+" Show Git Gutter signs more quickly
+set updatetime=100
 
 " Map the leader key to <space>
 let mapleader=" "
@@ -124,12 +130,6 @@ command! Qall qall
 
 " Alias :Wq to :wq
 command! Wq wq
-
-" Show the 80 character column gutter
-set colorcolumn=80
-
-" Show Git Gutter signs more quickly
-set updatetime=100
 
 " Turn off the 80 character column for quickfix (search results, etc) windows
 autocmd BufReadPost quickfix setlocal colorcolumn=0
