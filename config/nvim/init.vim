@@ -26,7 +26,7 @@ set tabstop=2 shiftwidth=2
 set expandtab
 
 " Show 'invisible' characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_,extends:#
+set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_,extends:#
 set list
 
 " Highlight the current line
