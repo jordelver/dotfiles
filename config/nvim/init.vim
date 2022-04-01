@@ -13,7 +13,7 @@ set ignorecase
 " ... unless they contain at least one capital letter
 set smartcase
 
-" Turn on hybrid line numbers
+" Turn on line numbers
 set number
 
 " Don't wrap lines
