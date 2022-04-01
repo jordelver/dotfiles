@@ -1,23 +1,8 @@
-filetype off
-
-" Load file type plugins + indentation
-filetype plugin indent on
-
 " Set the shell explicitly as we're using Fish
 set shell=/bin/bash
 
-" Enable syntax highlighting
-syntax enable
-
 " Allow easy switching of buffers by only confirming save when closing them
-set hidden
 set confirm
-
-" Highlight matches
-set hlsearch
-
-" Incremental searching
-set incsearch
 
 " Show substitutions 'live' as you type
 set inccommand=nosplit
@@ -40,31 +25,15 @@ set tabstop=2 shiftwidth=2
 " Use spaces, not tabs
 set expandtab
 
-" Backspace through everything in insert mode
-set backspace=indent,eol,start
-set smarttab
-
 " Show 'invisible' characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_,extends:#
 set list
-
-" Automatically re-read files if they change on disk
-set autoread
-
-" Always show the status bar (ensures vim-airline bar is always shown)
-set laststatus=2
 
 " Highlight the current line
 set cursorline
 
 " Highlight the current column
 set cursorcolumn
-
-" Use enhanced command-line completion when hitting :<tab>
-"
-" This will show a popup menu from which you can choose rather than cycling
-" through the completions, which is default
-set wildmenu
 
 " Maintain 3 lines of context when the cursor approaches end of the window
 set scrolloff=3
