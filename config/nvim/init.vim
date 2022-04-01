@@ -241,7 +241,6 @@ let g:rustfmt_autosave = 1
 Plug 'shaunsingh/moonlight.nvim', { 'branch': 'pure-lua' }
 let g:moonlight_style = 'moonlight'
 
-
 call plug#end()
 
 " Configure languages so we get syntax highlighting in Markdown files
