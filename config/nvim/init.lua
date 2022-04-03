@@ -53,6 +53,10 @@ vim.opt.undodir = vim.fn.expand("~/.config/nvim/undodir/")
 -- Show Git Gutter signs more quickly
 vim.opt.updatetime = 100
 
+-- Enable 24-bit colour
+-- Uses "gui" attributes instead of "cterm" attributes.
+vim.opt.termguicolors = true
+
 -- Map the leader key to <space>
 vim.g.mapleader = " "
 
@@ -257,8 +261,6 @@ vim.call('plug#end')
 
 -- Configure languages so we get syntax highlighting in Markdown files
 vim.g.markdown_fenced_languages = {'bash', 'elixir', 'fish', 'html', 'javascript', 'ruby', 'rust', 'typescript', 'vim'}
-
-vim.opt.termguicolors = true
 
 -- Highlight commands to override the main colorscheme
 vim.cmd [[
