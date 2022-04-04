@@ -265,24 +265,23 @@ vim.g.markdown_fenced_languages = {'bash', 'elixir', 'fish', 'html', 'javascript
 -- Highlight commands to override the main colorscheme
 vim.cmd [[
   function! ColorSchemeOverrides() abort
-    " Override nightowl's `CursorLine` highlighting
-    highlight CursorLine        ctermfg=NONE ctermbg=233  cterm=NONE guifg=NONE    guibg=#191919 gui=NONE
-    highlight CursorColumn      ctermfg=NONE ctermbg=233  cterm=NONE guifg=NONE    guibg=#191919 gui=NONE
+    " Override `CursorLine` highlighting
+    highlight CursorLine        guifg=NONE guibg=#191919
+    highlight CursorColumn      guifg=NONE guibg=#191919
 
     " Override search highlighting
-    highlight Search            ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#080808 guibg=#ffd700 gui=NONE
-    highlight Searchlight       ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#080808 guibg=#ffaf00 gui=NONE
-    " highlight Searchlight       ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#080808 guibg=#ff002f gui=NONE
+    highlight Search            guifg=#080808 guibg=#ffd700 gui=NONE
+    highlight Searchlight       guifg=#080808 guibg=#ffaf00 gui=NONE
 
     " Highlight text that goes over 50 characters in git commit messages
-    highlight gitcommitOverflow ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#cc0000 guibg=NONE    gui=NONE
+    highlight gitcommitOverflow guifg=#cc0000 guibg=NONE
 
     " Highlight TODO comments
-    highlight rubyTODO          ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
-    highlight elixirTodo        ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
-    highlight vimTODO           ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
-    highlight jsCommentTodo     ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
-    highlight rustTodo          ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#eeeeee guibg=#2d2c5d gui=NONE
+    highlight rubyTODO          guifg=#eeeeee guibg=#2d2c5d
+    highlight elixirTodo        guifg=#eeeeee guibg=#2d2c5d
+    highlight vimTODO           guifg=#eeeeee guibg=#2d2c5d
+    highlight jsCommentTodo     guifg=#eeeeee guibg=#2d2c5d
+    highlight rustTodo          guifg=#eeeeee guibg=#2d2c5d
   endfunction
 ]]
 
