@@ -282,6 +282,7 @@ vim.cmd [[
     highlight vimTODO           guifg=#eeeeee guibg=#2d2c5d
     highlight jsCommentTodo     guifg=#eeeeee guibg=#2d2c5d
     highlight rustTodo          guifg=#eeeeee guibg=#2d2c5d
+    highlight luaTodo           guifg=#eeeeee guibg=#2d2c5d
   endfunction
 ]]
 
