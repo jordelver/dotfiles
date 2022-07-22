@@ -57,6 +57,10 @@ vim.opt.updatetime = 100
 -- Uses "gui" attributes instead of "cterm" attributes.
 vim.opt.termguicolors = true
 
+-- Use a programming dictionary from https://github.com/psliwka/vim-dirtytalk/
+-- as well as English
+vim.opt.spelllang = {"en", "programming"}
+
 -- Map the leader key to <space>
 vim.g.mapleader = " "
 
@@ -259,6 +263,8 @@ vim.g.rustfmt_autosave = 1
 -- Colorschemes
 Plug('shaunsingh/moonlight.nvim', { branch = 'pure-lua' })
 vim.g.moonlight_style = 'moonlight'
+
+Plug('psliwka/vim-dirtytalk', {['do'] = ':DirtytalkUpdate' })
 
 vim.call('plug#end')
 
