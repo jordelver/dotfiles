@@ -264,6 +264,11 @@ vim.g.rustfmt_autosave = 1
 Plug('shaunsingh/moonlight.nvim', { branch = 'pure-lua' })
 vim.g.moonlight_style = 'moonlight'
 
+-- vim-mark - Allows marking several words at one time in different colours using `<leader>m`
+Plug 'inkarkat/vim-ingo-library'
+Plug 'inkarkat/vim-mark'
+vim.g.mwDefaultHighlightingPalette = 'maximum'
+
 Plug('psliwka/vim-dirtytalk', {['do'] = ':DirtytalkUpdate' })
 
 -- Allows checking `- [ ]` checkboxes using `<leader>tt`
