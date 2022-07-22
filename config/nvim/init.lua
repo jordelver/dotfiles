@@ -266,6 +266,9 @@ vim.g.moonlight_style = 'moonlight'
 
 Plug('psliwka/vim-dirtytalk', {['do'] = ':DirtytalkUpdate' })
 
+-- Allows checking `- [ ]` checkboxes using `<leader>tt`
+Plug 'jkramer/vim-checkbox'
+
 vim.call('plug#end')
 
 -- Configure languages so we get syntax highlighting in Markdown files
