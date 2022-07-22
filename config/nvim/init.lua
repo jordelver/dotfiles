@@ -129,6 +129,9 @@ vim.keymap.set('n', 't<C-s>', ':TestSuite<cr>', { silent = true })
 vim.keymap.set('n', 't<C-l>', ':TestLast<cr>', { silent = true })
 vim.keymap.set('n', 't<C-g>', ':TestVisit<cr>', { silent = true })
 
+-- plenary test runner
+vim.keymap.set('n', '<leader>t', '<Plug>PlenaryTestFile', { silent = true })
+
 -- Move function arguments left and right
 vim.keymap.set('n', '<C-h>', ':SidewaysLeft<cr>', { noremap = true })
 vim.keymap.set('n', '<C-l>', ':SidewaysRight<cr>', { noremap = true })
