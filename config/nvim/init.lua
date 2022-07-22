@@ -212,7 +212,7 @@ Plug 'PeterRincker/vim-searchlight'
 
 Plug 'w0rp/ale'
 vim.g.ale_linters = {
-  ruby = {'standardrb'},
+  ruby = {'standardrb', 'rubocop'},
   rust = {'rustfmt', 'analyzer'}
 }
 
