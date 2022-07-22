@@ -74,7 +74,7 @@ vim.keymap.set('n', '<cr>', ':nohlsearch<cr>')
 vim.keymap.set('n', 'S', ':SplitLine<cr>', { noremap = true })
 
 -- Toggle NERDTree
-vim.keymap.set('', '<leader>n', ':NERDTreeToggle<cr>')
+vim.keymap.set('', '<leader>nt', ':NERDTreeToggle<cr>', { noremap = true })
 
 -- Toggle spellcheck
 vim.keymap.set('n', '<leader>s', ':set spell!<cr>')
