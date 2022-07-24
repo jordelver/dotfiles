@@ -21,6 +21,7 @@ config/nnn/
 config/nvim/plugged/
 config/nvim/undodir/
 config/pgcli
+config/raycast/
 config/stripe/
 config/yarn/
 gnupg/
