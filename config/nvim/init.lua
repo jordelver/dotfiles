@@ -64,11 +64,19 @@ vim.opt.spelllang = {"en", "programming"}
 -- Map the leader key to <space>
 vim.g.mapleader = " "
 
--- Fuzzily find, open, grep etc using Telescope
+-- Fuzzily find files
 vim.keymap.set('n', '<Leader>ff', '<cmd>Telescope find_files<cr>', { noremap = true })
+
+-- Grep the entire codebase
 vim.keymap.set('n', '<Leader>fg', '<cmd>Telescope live_grep<cr>', { noremap = true })
+
+-- Fuzzily find open buffers
 vim.keymap.set('n', '<Leader>fb', '<cmd>Telescope buffers<cr>', { noremap = true })
+
+-- Fuzzily find Neovim help topics
 vim.keymap.set('n', '<Leader>fh', '<cmd>Telescope help_tags<cr>', { noremap = true })
+
+-- Fuzzily find Git commits
 vim.keymap.set('n', '<Leader>fc', '<cmd>Telescope git_commits<cr>', { noremap = true })
 
 -- Clear search highlights when hitting <enter>
