@@ -88,7 +88,7 @@ vim.keymap.set('n', '<cr>', ':nohlsearch<cr>')
 -- Split lines, opposite of `J`
 vim.keymap.set('n', 'S', ':SplitLine<cr>', { noremap = true })
 
--- Toggle NERDTree
+-- Toggle NERDTree visibility
 vim.keymap.set('', '<leader>nt', ':NERDTreeToggle<cr>', { noremap = true })
 
 -- Toggle spellcheck
