@@ -79,6 +79,9 @@ vim.keymap.set('n', '<Leader>fh', '<cmd>Telescope help_tags<cr>', { noremap = tr
 -- Fuzzily find Git commits
 vim.keymap.set('n', '<Leader>fc', '<cmd>Telescope git_commits<cr>', { noremap = true })
 
+-- Grep for the word under the cursor
+vim.keymap.set('n', '<Leader>fw', '<cmd>Telescope grep_string<cr>', { noremap = true })
+
 -- Clear search highlights when hitting <enter>
 vim.keymap.set('n', '<cr>', ':nohlsearch<cr>')
 
