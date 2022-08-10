@@ -160,19 +160,6 @@ vim.cmd [[
   " Alias :Wq to :wq
   command! Wq wq
 
-  " Turn off the 80 character column for quickfix (search results, etc) windows
-  autocmd BufReadPost quickfix setlocal colorcolumn=0
-
-  " Enter insert mode straight away when editing git commit messages
-  autocmd FileType gitcommit execute "normal! O" | startinsert
-
-  " Turn off spell checking for quickfix (search results, etc) windows
-  " and Fugitive git blame windows
-  autocmd BufReadPost,FileType quickfix,fugitiveblame setlocal nospell
-
-  " Turn off folding for git buffers (specifically this is for `:GV`)
-  autocmd! FileType git setlocal foldlevel=1
-
   " Override colorscheme with my own highlights every
   " time a colorscheme is sourced
   augroup OverrideColorScheme

@@ -4,4 +4,4 @@
 " comment charactor # rather that using the ERB-style comments that
 " `eruby.yaml` uses.
 "
-autocmd FileType eruby.yaml setlocal commentstring=#\ %s
+setlocal commentstring=#\ %s
