@@ -72,15 +72,13 @@ Run the install script
 
 ### Adding a new plugin
 
-Add a `Plug` line to `~/.nvimrc`
+Add to `~/.config/nvim/lua/plugins.lua` and run `:PackerSync`
 
-Save the file, source it `<leader>sv` and run `:PlugInstall`
-
-Run `:PlugStatus` to see what needs installing and what doesn't
+Run `:PackerStatus` to see what needs installing and what doesn't.
 
 ### Updating a plugin
 
-Run `:PlugUpdate` from within Vim
+Run `:PackerSync` will update all plugins.
 
 ## Fonts
 
