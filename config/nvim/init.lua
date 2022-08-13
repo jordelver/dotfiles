@@ -97,6 +97,9 @@ vim.keymap.set('n', '<leader>s', ':set spell!<cr>')
 -- Edit this file
 vim.keymap.set('n', '<leader>ev', ':edit $MYVIMRC<cr>', { silent = true })
 
+-- Edit plugins
+vim.keymap.set('n', '<leader>ep', ':edit ~/.config/nvim/lua/plugins.lua<cr>', { silent = true })
+
 -- Source this file
 vim.keymap.set('n', '<leader>sv', ':source $MYVIMRC<cr>', { silent = true })
 
