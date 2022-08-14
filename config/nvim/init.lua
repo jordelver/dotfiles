@@ -173,9 +173,6 @@ vim.cmd [[
 
 require("plugins")
 
--- Configure languages so we get syntax highlighting in Markdown files
-vim.g.markdown_fenced_languages = {'bash', 'elixir', 'fish', 'html', 'javascript', 'ruby', 'rust', 'typescript', 'vim'}
-
 -- Highlight commands to override the main colorscheme
 vim.cmd [[
   function! ColorSchemeOverrides() abort
