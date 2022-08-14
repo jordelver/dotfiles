@@ -102,7 +102,7 @@ packer.startup(function(use)
         show_deleted = true,
         signcolumn = true,
         numhl = true,
-        linehl = true,
+        linehl = false,
         current_line_blame = true
       })
     end
