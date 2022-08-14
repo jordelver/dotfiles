@@ -93,6 +93,21 @@ packer.startup(function(use)
   -- Simple commit browser
   use { "junegunn/gv.vim" }
 
+  -- Show various git UI
+  use {
+    "lewis6991/gitsigns.nvim",
+    tag = "release",
+    config = function()
+      require("gitsigns").setup({
+        show_deleted = true,
+        signcolumn = true,
+        numhl = true,
+        linehl = true,
+        current_line_blame = true
+      })
+    end
+  }
+
   ------------------------------------------------------------------------------
   -- Treesitter
   ------------------------------------------------------------------------------
@@ -188,9 +203,6 @@ packer.startup(function(use)
   ------------------------------------------------------------------------------
   -- UI
   ------------------------------------------------------------------------------
-
-  -- Shows which lines have changed in the gutter
-  use { "airblade/vim-gitgutter" }
 
   -- Allows marking several words at one time in different colours using `<leader>m`
   use { "inkarkat/vim-ingo-library" }
