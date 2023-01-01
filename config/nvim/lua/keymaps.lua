@@ -38,6 +38,9 @@ vim.keymap.set('n', '<leader>ev', ':edit $MYVIMRC<cr>', { silent = true })
 -- Edit plugins
 vim.keymap.set('n', '<leader>ep', ':edit ~/.config/nvim/lua/plugins.lua<cr>', { silent = true })
 
+-- Edit keymaps
+vim.keymap.set('n', '<leader>ek', ':edit ~/.config/nvim/lua/keymaps.lua<cr>', { silent = true })
+
 -- Source this file
 vim.keymap.set('n', '<leader>sv', ':source $MYVIMRC<cr>', { silent = true })
 
