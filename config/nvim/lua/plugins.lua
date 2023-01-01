@@ -157,14 +157,6 @@ packer.startup(function(use)
   -- Rails helpers
   use { "tpope/vim-rails" }
 
-  -- Better RSpec folding
-  use {
-    "rlue/vim-fold-rspec",
-    config = function ()
-      vim.g.fold_rspec_foldlevel = 2
-    end
-  }
-
   -- Support for Ruby's Bundler
   use { "tpope/vim-bundler" }
 
