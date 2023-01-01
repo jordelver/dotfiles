@@ -83,6 +83,9 @@ vim.keymap.set('n', '<Leader>fc', '<cmd>Telescope git_commits<cr>', { noremap = 
 -- Grep for the word under the cursor
 vim.keymap.set('n', '<Leader>fw', '<cmd>Telescope grep_string<cr>', { noremap = true })
 
+-- Grep for the visually selected word(s) under the cursor
+vim.keymap.set('v', '<Leader>fw', '<cmd>Telescope grep_string<cr>', { noremap = true })
+
 -- Clear search highlights when hitting <enter>
 vim.keymap.set('n', '<cr>', ':nohlsearch<cr>')
 
