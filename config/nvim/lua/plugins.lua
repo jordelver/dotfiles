@@ -114,6 +114,10 @@ packer.startup(function(use)
 
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
 
+  -- Show the context of the current module, method, function etc if the full
+  -- definition doesn't fit in the available screen space
+  use { "nvim-treesitter/nvim-treesitter-context" }
+
   ------------------------------------------------------------------------------
   -- Searching etc
   ------------------------------------------------------------------------------
