@@ -80,6 +80,12 @@ vim.keymap.set('n', '<Leader>fh', '<cmd>Telescope help_tags<cr>', { noremap = tr
 -- Fuzzily find Git commits
 vim.keymap.set('n', '<Leader>fc', '<cmd>Telescope git_commits<cr>', { noremap = true })
 
+-- Fuzzily find Git commits authored by me
+vim.keymap.set('n', '<Leader>fmc', function ()
+    require("telescope.builtin").git_commits({ git_command = { "git", "log", "--pretty=oneline", "--abbrev-commit", "--author=Jordan Elver", "--", "." }})
+end
+, { noremap = true })
+
 -- Grep for the word under the cursor
 vim.keymap.set('n', '<Leader>fw', '<cmd>Telescope grep_string<cr>', { noremap = true })
 
