@@ -1,5 +1,5 @@
 ruby 3.2.0
-elixir 1.12.3-otp-23
+elixir 1.14.2-otp-23
 erlang 23.2
 nodejs 18.10.0
 yarn 1.22.17
