@@ -1,0 +1,35 @@
+#!/usr/local/bin/fish
+
+if test (count $argv) -lt 1
+  echo "Usage: check_deploy <url> [seconds]"
+  exit
+end
+
+function get_deployed_version --argument-names 'url'
+  curl -I -s $url | grep "X-Deployed-Version"
+end
+
+# Get the URL to check
+set url $argv[1]
+
+# Default the check interval value if missing
+if set -q argv[2]; or test -z argv[2]
+  set check_interval $argv[2]
+else
+  set check_interval 5
+end
+
+set last_version (get_deployed_version $url)
+
+while true
+  set current_deployed_version (get_deployed_version $url)
+
+  echo "Checking $url for new version"
+
+  if [ "$current_deployed_version" != "$last_version" ]
+    say "New version deployed"
+    break
+  end
+
+  sleep $check_interval
+end
