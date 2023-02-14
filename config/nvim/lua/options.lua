@@ -63,3 +63,7 @@ vim.opt.spelllang = {"en", "programming"}
 
 -- Open new splits below the current one
 vim.opt.splitbelow = true
+
+-- Turn off mouse support
+-- When focussing the terminal by clicking it's window the cursor is moves which I find undesirable.
+vim.opt.mouse = ""
