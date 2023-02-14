@@ -60,3 +60,6 @@ vim.opt.termguicolors = true
 -- Use a programming dictionary from https://github.com/psliwka/vim-dirtytalk/
 -- as well as English
 vim.opt.spelllang = {"en", "programming"}
+
+-- Open new splits below the current one
+vim.opt.splitbelow = true
