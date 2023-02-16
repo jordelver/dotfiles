@@ -67,3 +67,8 @@ vim.opt.splitbelow = true
 -- Turn off mouse support
 -- When focussing the terminal by clicking it's window the cursor is moves which I find undesirable.
 vim.opt.mouse = ""
+
+-- Turn on and set the winbar contents
+-- The winbar is a statusbar-like UI element that shows at the top of each buffer
+-- Show the full filename right-aligned
+vim.opt.winbar = '%=%m %f'
