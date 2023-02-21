@@ -58,7 +58,8 @@ packer.startup(function(use)
       'hrsh7th/cmp-nvim-lsp',
       'L3MON4D3/LuaSnip',
       'saadparwaiz1/cmp_luasnip',
-      'onsails/lspkind.nvim'
+      'onsails/lspkind.nvim',
+      'hrsh7th/cmp-nvim-lsp-signature-help',
     },
   }
 
@@ -422,6 +423,7 @@ cmp.setup {
   sources = {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
+    { name = 'nvim_lsp_signature_help' },
   },
 
   -- Shows completion text as grayed as you type
