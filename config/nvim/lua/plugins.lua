@@ -57,7 +57,8 @@ packer.startup(function(use)
     requires = {
       'hrsh7th/cmp-nvim-lsp',
       'L3MON4D3/LuaSnip',
-      'saadparwaiz1/cmp_luasnip'
+      'saadparwaiz1/cmp_luasnip',
+      'onsails/lspkind.nvim'
     },
   }
 
@@ -358,6 +359,7 @@ require('fidget').setup()
 -- nvim-cmp setup
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'
+local lspkind = require 'lspkind'
 
 cmp.setup {
 
@@ -426,5 +428,30 @@ cmp.setup {
   -- Hard to explain, so see `:h cmp-config.experimental.ghost_text`
   experimental = {
     ghost_text = true,
+  },
+
+  -- Formatting of the menu
+  formatting = {
+    format = lspkind.cmp_format({
+      -- Show the icon, then the text description
+      mode = 'symbol_text',
+
+      -- Prevent the popup from showing more than provided characters
+      -- (e.g 50 will not show more than 50 characters)
+      maxwidth = 50,
+
+      -- When popup menu exceed maxwidth, the truncated part would show
+      -- ellipsis_char instead (must define maxwidth first)
+      ellipsis_char = '...',
+
+      -- Show abbreviated source next to each entry
+      menu = {
+        buffer = "[BUF]",
+        nvim_lsp = "[LSP]",
+        nvim_lua = "[LUA]",
+        path = "[PATH]",
+        luasnip = "[SNIP]",
+      },
+    })
   },
 }
