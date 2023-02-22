@@ -9,6 +9,9 @@
 # ASSIGNEE="<value>"  # Full name in Jira URL encoded, like "Fred%20Bloggs"
 # SUBDOMAIN=<value>   # This is the subdomain e.g. https://<subdomain>.atlassian.net
 #
+# To create an API token log in to your Atlassian account and then navigate to
+# Manage Profile -> Security -> Create and manage API tokens -> Create API token
+#
 
 if [ ! -f ~/.jira ]; then
   echo "~/.jira config file not found"
