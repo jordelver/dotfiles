@@ -7,6 +7,7 @@
 # USERNAME=<value>    # Jira account email
 # API_KEY=<value>     # https://id.atlassian.com/manage-profile/security/api-tokens
 # ASSIGNEE="<value>"  # Full name in Jira URL encoded, like "Fred%20Bloggs"
+# SUBDOMAIN=<value>   # This is the subdomain e.g. https://<subdomain>.atlassian.net
 #
 
 if [ ! -f ~/.jira ]; then
@@ -16,7 +17,7 @@ fi
 
 source ~/.jira
 
-API_ROOT_URL="https://carescribe.atlassian.net/rest/api/2/search"
+API_ROOT_URL="https://$SUBDOMAIN.atlassian.net/rest/api/2/search"
 
 # Forgive me father, for I have sinned
 QUERY="jql=assignee%20%3D%20%22${ASSIGNEE}%22%20AND%20status%20%21%3D%20Done"
