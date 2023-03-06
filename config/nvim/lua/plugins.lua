@@ -435,7 +435,6 @@ cmp.setup {
     { name = 'nvim_lsp_signature_help' },
     { name = 'buffer' },
     { name = 'path' },
-    { name = 'git' },
   },
 
   -- Shows completion text as grayed as you type
@@ -469,6 +468,17 @@ cmp.setup {
     })
   },
 }
+
+-- Set completion sources for `gitcommit` buffers
+cmp.setup.filetype('gitcommit', {
+
+  -- Look for git completions first and then fallback to buffer if there are none
+  sources = cmp.config.sources({
+    { name = 'git' },
+  }, {
+    { name = 'buffer' },
+  })
+})
 
 local format = require("cmp_git.format")
 local sort = require("cmp_git.sort")
