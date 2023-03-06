@@ -273,6 +273,18 @@ packer.startup(function(use)
   -- Colorize hex css-like colours in code
   use { "ap/vim-css-color" }
 
+  -- Highlight word under cursor on hover
+  use {
+    "RRethy/vim-illuminate",
+    config = function()
+      require('illuminate').configure({
+        filetypes_denylist = {
+          "markdown",
+        }
+      })
+    end
+  }
+
   ------------------------------------------------------------------------------
   -- Colorschemes
   ------------------------------------------------------------------------------
