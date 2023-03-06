@@ -136,6 +136,7 @@ packer.startup(function(use)
   ------------------------------------------------------------------------------
 
   -- Git from Vim
+  -- Adds a _lot_ of commands for interacting with Git including `:Gbrowse`
   use { "tpope/vim-fugitive" }
 
   -- Add GitHub support to Fugitive
