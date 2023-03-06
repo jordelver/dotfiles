@@ -163,7 +163,14 @@ packer.startup(function(use)
   -- Treesitter
   ------------------------------------------------------------------------------
 
-  use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
+  -- Highlight, edit, and navigate code
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function()
+      pcall(require('nvim-treesitter.install').update { with_sync = true })
+    end,
+  }
+
 
   -- Show the context of the current module, method, function etc if the full
   -- definition doesn't fit in the available screen space
