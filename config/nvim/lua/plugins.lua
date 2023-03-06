@@ -155,7 +155,15 @@ packer.startup(function(use)
         signcolumn = true,
         numhl = true,
         linehl = false,
-        current_line_blame = true
+        word_diff  = true,
+        current_line_blame = true,
+        current_line_blame_opts = {
+          virt_text_pos = 'right_align',
+        },
+        current_line_blame_formatter = '<author> [<author_time>] <summary>',
+        current_line_blame_formatter_opts = {
+          relative_time = true,
+        },
       })
     end
   }
