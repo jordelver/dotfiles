@@ -72,6 +72,13 @@ packer.startup(function(use)
     }
   }
 
+  use {
+    '~/Projects/cmp-jira',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    }
+  }
+
   ------------------------------------------------------------------------------
   -- Editing
   ------------------------------------------------------------------------------
@@ -469,12 +476,15 @@ cmp.setup {
   },
 }
 
+require("cmp_jira").setup()
+
 -- Set completion sources for `gitcommit` buffers
 cmp.setup.filetype('gitcommit', {
 
-  -- Look for git completions first and then fallback to buffer if there are none
+  -- Look for git and Jira completions first and then fallback to buffer if there are none
   sources = cmp.config.sources({
     { name = 'git' },
+    { name = 'jira' },
   }, {
     { name = 'buffer' },
   })
