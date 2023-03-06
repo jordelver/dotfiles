@@ -180,7 +180,6 @@ packer.startup(function(use)
     end,
   }
 
-
   -- Show the context of the current module, method, function etc if the full
   -- definition doesn't fit in the available screen space
   use { "nvim-treesitter/nvim-treesitter-context" }
