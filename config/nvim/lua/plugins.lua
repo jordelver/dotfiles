@@ -60,6 +60,8 @@ packer.startup(function(use)
       'saadparwaiz1/cmp_luasnip',
       'onsails/lspkind.nvim',
       'hrsh7th/cmp-nvim-lsp-signature-help',
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-path',
     },
   }
 
@@ -431,6 +433,8 @@ cmp.setup {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
     { name = 'nvim_lsp_signature_help' },
+    { name = 'buffer' },
+    { name = 'path' },
     { name = 'git' },
   },
 
