@@ -22,6 +22,3 @@ xcuserdata/
 
 # Ignore Postgres log files
 logfile
-
-# Ignore local notes folders
-notes/
