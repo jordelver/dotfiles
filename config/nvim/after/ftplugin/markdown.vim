@@ -1,3 +1,6 @@
+" Tab settings
+setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
 " Wrap Markdown files to 80 characters
 setlocal textwidth=80
 
