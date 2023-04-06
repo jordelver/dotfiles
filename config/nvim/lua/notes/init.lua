@@ -58,7 +58,7 @@ function M.create_note(note_path)
 end
 
 function M.open_note(note_path)
-  vim.cmd(string.format("below split %s", note_path))
+  vim.cmd(string.format("tab drop %s", note_path))
 end
 
 function M.prepopulate_note(file_contents)
