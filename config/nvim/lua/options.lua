@@ -78,3 +78,7 @@ vim.opt.mouse = ""
 -- The winbar is a statusbar-like UI element that shows at the top of each buffer
 -- Show the full filename right-aligned
 vim.opt.winbar = '%=%m %f'
+
+-- Frankly, I don't care. Just use all the memory. kthx
+-- I was running out of memory whilst using Telescope and I ain't got time for that.
+vim.opt.maxmempattern = 2000000
