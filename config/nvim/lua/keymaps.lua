@@ -87,6 +87,12 @@ vim.keymap.set('n', '<Leader>fmc', function ()
 end
 , { noremap = true })
 
+-- Resume the last picker including any state
+vim.keymap.set('n', '<Leader>fr', function ()
+    require("telescope.builtin").resume()
+end
+, { noremap = true })
+
 -- Grep for the word under the cursor
 vim.keymap.set('n', '<Leader>fw', '<cmd>Telescope grep_string<cr>', { noremap = true })
 
