@@ -61,8 +61,11 @@ vim.opt.termguicolors = true
 -- as well as English
 vim.opt.spelllang = {"en", "programming"}
 
--- Open new splits below the current one
+-- Open new horizontal splits below the current one
 vim.opt.splitbelow = true
+
+-- Open new vertical splits to the right of the current one
+vim.opt.splitright = true
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
