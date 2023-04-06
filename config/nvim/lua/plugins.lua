@@ -151,7 +151,7 @@ packer.startup(function(use)
     tag = "release",
     config = function()
       require("gitsigns").setup({
-        show_deleted = true,
+        show_deleted = false,
         signcolumn = true,
         numhl = true,
         linehl = false,
