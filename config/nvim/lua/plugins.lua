@@ -440,10 +440,13 @@ cmp.setup {
     --
     ['<C-Space>'] = cmp.mapping.complete {},
 
+    -- Close the completion menu and don't complete anything when pressing <Esc>
+    ['<C-e>'] = cmp.mapping.close(),
+
     -- Confirm the suggested completion
     ['<CR>'] = cmp.mapping.confirm {
       behavior = cmp.ConfirmBehavior.Replace,
-      select = true,
+      select = false,
     },
 
     -- Move to the next completion option
