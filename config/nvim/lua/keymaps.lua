@@ -102,7 +102,6 @@ vim.keymap.set('v', '<Leader>fw', '<cmd>Telescope grep_string<cr>', { noremap = 
 -- Clear search highlights when hitting <enter>
 vim.keymap.set('n', '<cr>', ':nohlsearch<cr>')
 
-
 --------------------------------------------------------------------------------
 -- Diagnostic keymaps
 --------------------------------------------------------------------------------
