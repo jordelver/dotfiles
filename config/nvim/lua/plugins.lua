@@ -155,7 +155,7 @@ packer.startup(function(use)
         signcolumn = true,
         numhl = true,
         linehl = false,
-        word_diff  = true,
+        word_diff = false,
         current_line_blame = true,
         current_line_blame_opts = {
           virt_text_pos = 'eol',
