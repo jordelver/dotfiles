@@ -299,6 +299,16 @@ packer.startup(function(use)
     end
   })
 
+  -- Add Tailwind CSS colour swatches to the nvim-cmp completion menu
+  use({
+    "roobert/tailwindcss-colorizer-cmp.nvim",
+    config = function()
+      require("tailwindcss-colorizer-cmp").setup({
+        color_square_width = 2,
+      })
+    end
+  })
+
   -- Highlight word under cursor on hover
   use {
     "RRethy/vim-illuminate",
@@ -400,6 +410,8 @@ local servers = {
       },
     },
   },
+
+  tailwindcss = {},
 }
 
 -- Setup neovim lua configuration
@@ -534,6 +546,13 @@ cmp.setup {
         path = "[PATH]",
         luasnip = "[SNIP]",
       },
+
+      -- We want to keep the existing formatting provided by lspkind whilst
+      -- also using `tailwindcss-colorizer-cmp` to add colours for the
+      -- Tailwind CSS LSP so we call the `tailwindcss-colorizer-cmp` formatter here.
+      before = function (entry, vim_item)
+        return require('tailwindcss-colorizer-cmp').formatter(entry, vim_item)
+      end
     })
   },
 }
