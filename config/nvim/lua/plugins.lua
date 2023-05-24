@@ -269,7 +269,23 @@ packer.startup(function(use)
   use { "maxjacobson/vim-fzf-coauthorship" }
 
   -- Tree view
-  use { "scrooloose/nerdtree" }
+  use {
+    "nvim-tree/nvim-tree.lua",
+    requires = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function ()
+      require("nvim-tree").setup({
+        filters = {
+          -- Hide .git and node_modules directories
+          custom = {
+            "^\\.git$",
+            "node_modules",
+          },
+        },
+      })
+    end
+  }
 
   -- Colorize hex css-like colours in code
   use({
@@ -322,6 +338,7 @@ packer.startup(function(use)
         },
         filetypes_denylist = {
           "markdown",
+          "NvimTree",
         }
       })
     end

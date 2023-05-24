@@ -136,7 +136,7 @@ vim.keymap.set('', '<Up>', '<Nop>')
 vim.keymap.set('', '<Down>', '<Nop>')
 
 -- Toggle NERDTree visibility
-vim.keymap.set('', '<leader>nt', ':NERDTreeToggle<cr>', { noremap = true })
+vim.keymap.set('', '<leader>nt', ':NvimTreeToggle<cr>', { noremap = true })
 
 -- Toggle spellcheck
 vim.keymap.set('n', '<leader>s', ':set spell!<cr>')
