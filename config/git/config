@@ -76,7 +76,5 @@
   autosquash = true
 [interactive]
   singleKey = true
-[url "git@github.com:"]
-  insteadOf = https://github.com/
 [init]
   defaultBranch = main
