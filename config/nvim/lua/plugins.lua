@@ -190,7 +190,7 @@ packer.startup(function(use)
   ------------------------------------------------------------------------------
 
   -- FZF
-  use "/usr/local/opt/fzf"
+  use "junegunn/fzf"
   use "junegunn/fzf.vim"
 
   -- Telescope
