@@ -208,6 +208,9 @@ packer.startup(function(use)
   -- Language/framework specific plugins
   ------------------------------------------------------------------------------
 
+  -- Projectionist provides granular project configuration using "projections"
+  use { "tpope/vim-projectionist" }
+
   -- Ruby language
   use { "vim-ruby/vim-ruby" }
 
@@ -219,6 +222,16 @@ packer.startup(function(use)
 
   -- Elixir language
   use { "elixir-lang/vim-elixir" }
+
+  use {
+    "elixir-tools/elixir-tools.nvim",
+    requires = {
+      "nvim-lua/plenary.nvim"
+    },
+    config = function ()
+      require("elixir").setup()
+    end
+  }
 
   -- Fish shell
   use { "dag/vim-fish" }
