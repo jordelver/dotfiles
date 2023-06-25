@@ -39,7 +39,7 @@ packer.startup(function(use)
 
       -- Shown LSP progress information
       -- https://github.com/j-hui/fidget.nvim
-      'j-hui/fidget.nvim',
+      { 'j-hui/fidget.nvim', tag = 'legacy' },
 
       -- Additional lua configuration, makes nvim stuff amazing
       --
