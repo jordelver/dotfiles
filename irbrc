@@ -3,3 +3,6 @@
 def pbcopy(data)
   IO.popen("pbcopy", "w") { _1.write(data) }
 end
+
+# Autocomplete is currently not very good
+IRB.conf[:USE_AUTOCOMPLETE] = false
