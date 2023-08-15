@@ -6,3 +6,6 @@ end
 
 # Autocomplete is currently not very good
 IRB.conf[:USE_AUTOCOMPLETE] = false
+
+# Make irb prompt less noisy
+IRB.conf[:PROMPT_MODE] = :SIMPLE
