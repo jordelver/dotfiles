@@ -195,10 +195,18 @@ packer.startup(function(use)
 
   -- Telescope
   use {
-    "nvim-telescope/telescope.nvim", branch = "0.1.x",
+    "nvim-telescope/telescope.nvim", commit = "master",
     requires = {
       {"nvim-lua/plenary.nvim"}
-    }
+    },
+    config = function ()
+      require("telescope").setup({
+        defaults = {
+          -- Until this is fixed: https://github.com/nvim-telescope/telescope.nvim/issues/2667
+          sorting_strategy = 'ascending'
+        }
+      })
+    end
   }
 
   -- Highlight current search matches
