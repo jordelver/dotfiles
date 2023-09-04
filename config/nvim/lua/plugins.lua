@@ -229,7 +229,24 @@ packer.startup(function(use)
           },
 
           -- Until this is fixed: https://github.com/nvim-telescope/telescope.nvim/issues/2667
-          sorting_strategy = 'ascending'
+          sorting_strategy = 'ascending',
+
+          -- Stack windows vertically, rather than the default
+          layout_strategy = 'vertical',
+
+          -- Configure the layout
+          layout_config = {
+
+            -- Take up nearly all of the available space
+            height = 0.95,
+            width = 0.95,
+
+            -- Make the preview window take up more vertical space
+            preview_height = 0.60,
+
+            -- Makes sure that the prompt, results, and preview windows all show at once
+            preview_cutoff = 0,
+          },
         }
       })
     end
