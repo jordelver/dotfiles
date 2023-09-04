@@ -231,6 +231,9 @@ packer.startup(function(use)
           -- Until this is fixed: https://github.com/nvim-telescope/telescope.nvim/issues/2667
           sorting_strategy = 'ascending',
 
+          -- How transparent to make the Telescope window
+          winblend = 5,
+
           -- Stack windows vertically, rather than the default
           layout_strategy = 'vertical',
 
