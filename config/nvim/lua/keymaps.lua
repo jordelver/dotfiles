@@ -67,37 +67,37 @@ vim.keymap.set('n', '<leader>c', ':%y+<cr>', { noremap = true })
 --------------------------------------------------------------------------------
 
 -- Fuzzily find files
-vim.keymap.set('n', '<Leader>ff', '<cmd>Telescope find_files<cr>', { noremap = true })
+vim.keymap.set('n', '<leader>ff', '<cmd>Telescope find_files<cr>', { noremap = true })
 
 -- Grep the entire codebase
-vim.keymap.set('n', '<Leader>fg', '<cmd>Telescope live_grep<cr>', { noremap = true })
+vim.keymap.set('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', { noremap = true })
 
 -- Fuzzily find open buffers
-vim.keymap.set('n', '<Leader>fb', '<cmd>Telescope buffers<cr>', { noremap = true })
+vim.keymap.set('n', '<leader>fb', '<cmd>Telescope buffers<cr>', { noremap = true })
 
 -- Fuzzily find Neovim help topics
-vim.keymap.set('n', '<Leader>fh', '<cmd>Telescope help_tags<cr>', { noremap = true })
+vim.keymap.set('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', { noremap = true })
 
 -- Fuzzily find Git commits
-vim.keymap.set('n', '<Leader>fc', '<cmd>Telescope git_commits<cr>', { noremap = true })
+vim.keymap.set('n', '<leader>fc', '<cmd>Telescope git_commits<cr>', { noremap = true })
 
 -- Fuzzily find Git commits authored by me
-vim.keymap.set('n', '<Leader>fmc', function ()
+vim.keymap.set('n', '<leader>fmc', function ()
     require("telescope.builtin").git_commits({ git_command = { "git", "log", "--pretty=oneline", "--abbrev-commit", "--author=Jordan Elver", "--", "." }})
 end
 , { noremap = true })
 
 -- Resume the last picker including any state
-vim.keymap.set('n', '<Leader>fr', function ()
+vim.keymap.set('n', '<leader>fr', function ()
     require("telescope.builtin").resume()
 end
 , { noremap = true })
 
 -- Grep for the word under the cursor
-vim.keymap.set('n', '<Leader>fw', '<cmd>Telescope grep_string<cr>', { noremap = true })
+vim.keymap.set('n', '<leader>fw', '<cmd>Telescope grep_string<cr>', { noremap = true })
 
 -- Grep for the visually selected word(s) under the cursor
-vim.keymap.set('v', '<Leader>fw', '<cmd>Telescope grep_string<cr>', { noremap = true })
+vim.keymap.set('v', '<leader>fw', '<cmd>Telescope grep_string<cr>', { noremap = true })
 
 -- Clear search highlights when hitting <enter>
 vim.keymap.set('n', '<cr>', ':nohlsearch<cr>')
