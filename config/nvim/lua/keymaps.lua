@@ -138,6 +138,9 @@ vim.keymap.set('', '<Down>', '<Nop>')
 -- Toggle NERDTree visibility
 vim.keymap.set('', '<leader>nt', ':NvimTreeToggle<cr>', { noremap = true })
 
+-- Easier git blaming
+vim.keymap.set('', '<leader>gb', ':Git blame<cr>', { noremap = true })
+
 -- Toggle spellcheck
 vim.keymap.set('n', '<leader>s', ':set spell!<cr>')
 
