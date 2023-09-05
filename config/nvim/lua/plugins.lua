@@ -159,7 +159,7 @@ packer.startup(function(use)
         current_line_blame = true,
         current_line_blame_opts = {
           virt_text_pos = 'eol',
-          delay = 2000,
+          delay = 1500,
         },
         current_line_blame_formatter = '<author> [<author_time>] <summary>',
         current_line_blame_formatter_opts = {
