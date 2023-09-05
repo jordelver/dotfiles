@@ -228,8 +228,8 @@ packer.startup(function(use)
             }
           },
 
-          -- Until this is fixed: https://github.com/nvim-telescope/telescope.nvim/issues/2667
-          sorting_strategy = 'ascending',
+          -- Sort results bottom up
+          sorting_strategy = 'descending',
 
           -- How transparent to make the Telescope window
           winblend = 5,
