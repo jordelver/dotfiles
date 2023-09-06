@@ -34,16 +34,16 @@ vim.keymap.set('n', '<C-l>', ':SidewaysRight<cr>', { noremap = true })
 --------------------------------------------------------------------------------
 
 -- Edit this file
-vim.keymap.set('n', '<leader>ev', ':edit $MYVIMRC<cr>', { silent = true })
+vim.keymap.set('n', '<leader>ev', ':edit $MYVIMRC<cr>', { silent = true, desc = 'Edit init.lua' })
 
 -- Edit plugins
-vim.keymap.set('n', '<leader>ep', ':edit ~/.config/nvim/lua/plugins.lua<cr>', { silent = true })
+vim.keymap.set('n', '<leader>ep', ':edit ~/.config/nvim/lua/plugins.lua<cr>', { silent = true, desc = 'Edit plugins' })
 
 -- Edit keymaps
-vim.keymap.set('n', '<leader>ek', ':edit ~/.config/nvim/lua/keymaps.lua<cr>', { silent = true })
+vim.keymap.set('n', '<leader>ek', ':edit ~/.config/nvim/lua/keymaps.lua<cr>', { silent = true, desc = 'Edit keymaps' })
 
 -- Source this file
-vim.keymap.set('n', '<leader>sv', ':source $MYVIMRC<cr>', { silent = true })
+vim.keymap.set('n', '<leader>sv', ':source $MYVIMRC<cr>', { silent = true, desc = 'Source config' })
 
 --------------------------------------------------------------------------------
 -- Yanking/pasting
@@ -95,13 +95,13 @@ vim.keymap.set('n', '<leader>fmc', function ()
     }
   })
 end
-, { noremap = true })
+, { noremap = true, desc = 'Telescope filter my git commits' })
 
 -- Resume the last picker including any state
 vim.keymap.set('n', '<leader>fr', function ()
     require("telescope.builtin").resume()
 end
-, { noremap = true })
+, { noremap = true, desc = 'Telescope resume previous' })
 
 -- Grep for the word under the cursor
 vim.keymap.set('n', '<leader>fw', '<cmd>Telescope grep_string<cr>', { noremap = true })
@@ -152,7 +152,7 @@ vim.keymap.set('', '<leader>nt', '<cmd>NvimTreeToggle<cr>', { noremap = true })
 vim.keymap.set('', '<leader>gb', '<cmd>Git blame<cr>', { noremap = true })
 
 -- Toggle spellcheck
-vim.keymap.set('n', '<leader>s', ':set spell!<cr>')
+vim.keymap.set('n', '<leader>s', ':set spell!<cr>', { desc = 'Toggle spellcheck' })
 
 -- Move windows without having to press w
 vim.keymap.set('', '<C-h>', '<C-w>h')
