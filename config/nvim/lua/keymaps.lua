@@ -83,7 +83,17 @@ vim.keymap.set('n', '<leader>fc', '<cmd>Telescope git_commits<cr>', { noremap = 
 
 -- Fuzzily find Git commits authored by me
 vim.keymap.set('n', '<leader>fmc', function ()
-    require("telescope.builtin").git_commits({ git_command = { "git", "log", "--pretty=oneline", "--abbrev-commit", "--author=Jordan Elver", "--", "." }})
+  require("telescope.builtin").git_commits({
+    git_command = {
+      "git",
+      "log",
+      "--pretty=oneline",
+      "--abbrev-commit",
+      "--author=Jordan Elver",
+      "--",
+      "."
+    }
+  })
 end
 , { noremap = true })
 
