@@ -151,6 +151,9 @@ vim.keymap.set('', '<leader>nt', '<cmd>NvimTreeToggle<cr>', { noremap = true })
 -- Easier git blaming
 vim.keymap.set('', '<leader>gb', '<cmd>Git blame<cr>', { noremap = true })
 
+-- Open a Rails console in a tmux split
+vim.keymap.set('n', '<leader>rc', ":silent !tmux split-window 'bin/rails c'<cr>", { silent = true, desc = 'Open a Rails console' })
+
 -- Toggle spellcheck
 vim.keymap.set('n', '<leader>s', ':set spell!<cr>', { desc = 'Toggle spellcheck' })
 
