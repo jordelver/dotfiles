@@ -157,6 +157,9 @@ vim.keymap.set('n', '<leader>rc', ":silent !tmux split-window 'bin/rails c'<cr>"
 -- Open fuzzily searchable Rails routes in a tmux split
 vim.keymap.set('n', '<leader>rr', ":silent !tmux split-window 'bin/rails routes | fzf'<cr>", { silent = true, desc = 'Search `rails routes`' })
 
+-- Restart the Rails server
+vim.keymap.set('n', '<leader>rs', ':RestartRails<cr>', { silent = true, desc = 'Restart the Rails server' })
+
 -- Toggle spellcheck
 vim.keymap.set('n', '<leader>s', ':set spell!<cr>', { desc = 'Toggle spellcheck' })
 

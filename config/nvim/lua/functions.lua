@@ -22,7 +22,6 @@ vim.cmd [[
     endif
   endfunction
   command! RestartRails call RestartRails(getcwd())
-  nmap <leader>rr :call RestartRails(getcwd())<cr>
 
   " FZF Buffer Delete
   " https://www.reddit.com/r/neovim/comments/mlqyca/fzf_buffer_delete/
