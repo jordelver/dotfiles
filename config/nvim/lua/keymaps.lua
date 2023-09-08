@@ -145,7 +145,7 @@ vim.keymap.set('', '<Right>', '<Nop>')
 vim.keymap.set('', '<Up>', '<Nop>')
 vim.keymap.set('', '<Down>', '<Nop>')
 
--- Toggle NERDTree visibility
+-- Toggle nvim-tree visibility
 vim.keymap.set('', '<leader>nt', '<cmd>NvimTreeToggle<cr>', { noremap = true })
 
 -- Easier git blaming
