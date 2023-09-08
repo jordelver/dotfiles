@@ -154,6 +154,9 @@ vim.keymap.set('', '<leader>gb', '<cmd>Git blame<cr>', { noremap = true })
 -- Open a Rails console in a tmux split
 vim.keymap.set('n', '<leader>rc', ":silent !tmux split-window 'bin/rails c'<cr>", { silent = true, desc = 'Open a Rails console' })
 
+-- Open fuzzily searchable Rails routes in a tmux split
+vim.keymap.set('n', '<leader>rr', ":silent !tmux split-window 'bin/rails routes | fzf'<cr>", { silent = true, desc = 'Search `rails routes`' })
+
 -- Toggle spellcheck
 vim.keymap.set('n', '<leader>s', ':set spell!<cr>', { desc = 'Toggle spellcheck' })
 
