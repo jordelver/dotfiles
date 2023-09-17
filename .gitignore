@@ -20,6 +20,7 @@ config/karabiner/
 config/nnn/
 config/nvim/plugged/
 config/nvim/undodir/
+config/nvim/lua/.luarc.json
 config/pgcli
 config/raycast/
 config/stripe/
