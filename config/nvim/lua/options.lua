@@ -74,6 +74,11 @@ vim.o.completeopt = 'menuone,noselect'
 -- When focussing the terminal by clicking it's window the cursor is moves which I find undesirable.
 vim.opt.mouse = ""
 
+-- Don't show the mode ("-- INSERT --" etc) in the Cmdline
+-- We have lualine.nvim setup as a statusline replacement and it would show up
+-- twice every time we change mode - ick.
+vim.opt.showmode = false
+
 -- Turn on and set the winbar contents
 -- The winbar is a statusbar-like UI element that shows at the top of each buffer
 -- Show the full filename right-aligned
