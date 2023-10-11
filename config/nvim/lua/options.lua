@@ -61,6 +61,13 @@ vim.opt.termguicolors = true
 -- as well as English
 vim.opt.spelllang = {"en", "programming"}
 
+-- When a word is CamelCased, assume "Cased" is a separate word: every
+-- upper-case character in a word that comes after a lower case character
+-- indicates the start of a new word.
+--
+-- So, "LiveBook" would not be considered a spelling mistake.
+vim.opt.spelloptions = "camel"
+
 -- Open new horizontal splits below the current one
 vim.opt.splitbelow = true
 
