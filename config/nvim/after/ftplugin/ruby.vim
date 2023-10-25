@@ -1,3 +1,11 @@
+" This setting tells Neovim what to consider a word. In particular, this
+" affects word motions using `w` and searching using `*`.
+" https://vi.stackexchange.com/a/18508/28669
+"
+" For Ruby it is common for methods to end with `?` and `!` so we include
+" those characters here so that we can search for whole method names.
+setlocal iskeyword+=?,!
+
 " Align (line up) hashes when splitting them out
 let b:splitjoin_align = 1
 
