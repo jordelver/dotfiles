@@ -250,7 +250,22 @@ packer.startup(function(use)
             -- Makes sure that the prompt, results, and preview windows all show at once
             preview_cutoff = 0,
           },
-        }
+        },
+        pickers = {
+          -- For the buffers picker only
+          buffers = {
+            mappings = {
+              i = {
+                -- Delete buffers using CTRL-D. Works for multiple selections.
+                ["<C-d>"] = require("telescope.actions").delete_buffer,
+              },
+              n = {
+                -- Delete buffers using CTRL-D. Works for multiple selections.
+                ["<C-d>"] = require("telescope.actions").delete_buffer,
+              },
+            },
+          },
+        },
       })
     end
   }
