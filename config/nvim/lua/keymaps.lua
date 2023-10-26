@@ -73,7 +73,13 @@ vim.keymap.set('n', '<leader>ff', '<cmd>Telescope find_files<cr>', { noremap = t
 vim.keymap.set('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', { noremap = true })
 
 -- Fuzzily find open buffers
-vim.keymap.set('n', '<leader>fb', '<cmd>Telescope buffers<cr>', { noremap = true })
+vim.keymap.set('n', '<leader>fb', function ()
+  require("telescope.builtin").buffers({
+    -- Sorts all buffers by most recently used
+    sort_mru = true,
+  })
+end
+, { noremap = true, desc = 'Telescope buffers' })
 
 -- Fuzzily find Neovim help topics
 vim.keymap.set('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', { noremap = true })
