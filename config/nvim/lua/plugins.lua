@@ -98,6 +98,14 @@ packer.startup(function(use)
   -- Automatically inserts ending structures such as `end`
   use { "tpope/vim-endwise" }
 
+  -- Various utilities for dealing words
+  --
+  -- > It's three superficially unrelated plugins in one that share a common
+  -- > theme: working with variants of a word.
+  --
+  -- Allows case-insensitive substitution using `%S` instead of `%s`
+  use { "tpope/vim-abolish" }
+
   -- Switch between single-line and multiline forms of code using `gS` and `gJ`
   use { "AndrewRadev/splitjoin.vim", branch = "main" }
 
