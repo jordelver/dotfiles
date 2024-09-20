@@ -1,6 +1,6 @@
 ruby 3.2.2
-elixir 1.15.7-otp-26
-erlang 26.0
+elixir 1.17.2-otp-27
+erlang 27.0.1
 nodejs 18.10.0
 yarn 1.22.17
 postgres 15.2
