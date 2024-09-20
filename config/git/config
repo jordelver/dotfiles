@@ -44,6 +44,7 @@
   pf = push --force-with-lease
   pr = "!f() { open \"`git web-url`/pull/`git pr-number $1`\" ;}; f"
   undo = "!git reset --soft HEAD~; git reset"
+  redo = "!git commit --amend --date=now"
   remotes = remote -v
   rbc = rebase --continue
   rba = rebase --abort
