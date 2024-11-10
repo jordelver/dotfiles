@@ -37,10 +37,6 @@ packer.startup(function(use)
       'williamboman/mason.nvim',
       'williamboman/mason-lspconfig.nvim',
 
-      -- Shown LSP progress information
-      -- https://github.com/j-hui/fidget.nvim
-      { 'j-hui/fidget.nvim', tag = 'legacy' },
-
       -- Additional lua configuration, makes nvim stuff amazing
       --
       -- > Neovim setup for init.lua and plugin development with full signature
@@ -603,9 +599,6 @@ mason_lspconfig.setup_handlers {
     }
   end,
 }
-
--- Turn on lsp status information
-require('fidget').setup()
 
 -- nvim-cmp setup
 local cmp = require 'cmp'
