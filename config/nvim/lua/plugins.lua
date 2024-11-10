@@ -89,9 +89,6 @@ packer.startup(function(use)
   -- Provides `[<Space>` and `]<Space>` for adding space above and below lines amongst others
   use { "tpope/vim-unimpaired" }
 
-  -- Provides `gc` mapping to comment out code correctly for a given language
-  use { "tpope/vim-commentary" }
-
   -- Wraps unix commands in Vim commands i.e. :Delete, :Remove, etc
   use { "tpope/vim-eunuch" }
 
