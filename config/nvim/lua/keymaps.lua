@@ -115,8 +115,14 @@ vim.keymap.set('n', '<leader>fw', '<cmd>Telescope grep_string<cr>', { noremap = 
 -- Grep for the visually selected word(s) under the cursor
 vim.keymap.set('v', '<leader>fw', '<cmd>Telescope grep_string<cr>', { noremap = true })
 
--- Clear search highlights when hitting <enter>
-vim.keymap.set('n', '<cr>', ':nohlsearch<cr>')
+-- Clear search highlighting when hitting <enter> in normal mode, but not in the command-line window
+vim.keymap.set('n', '<cr>', function()
+    if vim.fn.getcmdwintype() == '' then
+        return ':nohlsearch<cr>'
+    else
+        return '<cr>'
+    end
+end, { expr = true })
 
 --------------------------------------------------------------------------------
 -- Diagnostic keymaps
