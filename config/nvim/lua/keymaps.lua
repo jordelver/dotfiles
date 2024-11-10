@@ -42,9 +42,6 @@ vim.keymap.set('n', '<leader>ep', ':edit ~/.config/nvim/lua/plugins.lua<cr>', { 
 -- Edit keymaps
 vim.keymap.set('n', '<leader>ek', ':edit ~/.config/nvim/lua/keymaps.lua<cr>', { silent = true, desc = 'Edit keymaps' })
 
--- Source this file
-vim.keymap.set('n', '<leader>sv', ':source $MYVIMRC<cr>', { silent = true, desc = 'Source config' })
-
 --------------------------------------------------------------------------------
 -- Yanking/pasting
 --------------------------------------------------------------------------------
