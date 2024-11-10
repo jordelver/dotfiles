@@ -97,7 +97,7 @@ packer.startup(function(use)
   -- Automatically inserts ending structures such as `end`
   use { "tpope/vim-endwise" }
 
-  -- Various utilities for dealing words
+  -- Various utilities for dealing with words
   --
   -- > It's three superficially unrelated plugins in one that share a common
   -- > theme: working with variants of a word.
