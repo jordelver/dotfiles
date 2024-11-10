@@ -108,9 +108,6 @@ packer.startup(function(use)
   -- Switch between single-line and multiline forms of code using `gS` and `gJ`
   use { "AndrewRadev/splitjoin.vim", branch = "main" }
 
-  -- Commands to move items such as arguments left and right
-  use { "AndrewRadev/sideways.vim", branch = "main" }
-
   -- Line up text
   use { "godlygeek/tabular" }
 
@@ -129,15 +126,6 @@ packer.startup(function(use)
     end
   }
 
-  -- Test runner that can run tests at different granularities.
-  use {
-    "vim-test/vim-test",
-    config = function ()
-      -- Make test commands execute using dispatch.vim
-      vim.g['test#strategy'] = "dispatch"
-    end
-  }
-
   ------------------------------------------------------------------------------
   -- Git
   ------------------------------------------------------------------------------
@@ -148,9 +136,6 @@ packer.startup(function(use)
 
   -- Add GitHub support to Fugitive
   use { "tpope/vim-rhubarb" }
-
-  -- Simple commit browser
-  use { "junegunn/gv.vim" }
 
   -- Show various git UI
   use {
@@ -360,15 +345,6 @@ packer.startup(function(use)
   ------------------------------------------------------------------------------
   -- UI
   ------------------------------------------------------------------------------
-
-  -- Allows marking several words at one time in different colours using `<leader>m`
-  use { "inkarkat/vim-ingo-library" }
-  use {
-    "inkarkat/vim-mark",
-    config = function ()
-      vim.g.mwDefaultHighlightingPalette = "maximum"
-    end
-  }
 
   -- Allows checking Markdown `- [ ]` checkboxes using `<leader>tt`
   use { "jkramer/vim-checkbox" }
