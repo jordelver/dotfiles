@@ -174,3 +174,8 @@ vim.keymap.set('', '<C-h>', '<C-w>h')
 vim.keymap.set('', '<C-j>', '<C-w>j')
 vim.keymap.set('', '<C-k>', '<C-w>k')
 vim.keymap.set('', '<C-l>', '<C-w>l')
+
+-- Maximize the window both horizontally and vertically
+-- When using splits <C-w>| maximizes the split size horizontally. <C-w>_ maximizes
+-- the split size vertically. This command does both at once.
+vim.api.nvim_set_keymap('n', '<C-w>m', ':wincmd _<CR>:wincmd |<CR>', { silent = true })
