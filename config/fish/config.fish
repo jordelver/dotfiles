@@ -17,6 +17,9 @@ eval (brew shellenv)
 # Search hidden files, but exclude `.git` and respect `.gitignore`
 set -x FZF_DEFAULT_COMMAND 'fd --type f --hidden --follow --exclude .git'
 
+# Use CTRL-u for moving up, and CTRL-d for moving down
+set -x FZF_DEFAULT_OPTS "--bind='ctrl-u:preview-up,ctrl-d:preview-down'"
+
 # Set a custom ripgrep config file
 set -x RIPGREP_CONFIG_PATH $HOME/.ripgreprc
 
