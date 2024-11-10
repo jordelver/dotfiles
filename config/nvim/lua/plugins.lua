@@ -339,6 +339,9 @@ packer.startup(function(use)
     end
   }
 
+  -- Zig language support
+  use { "ziglang/zig.vim" }
+
   -- Add common programming words so they don't show up as spelling mistakes
   use { "psliwka/vim-dirtytalk", run = ":DirtytalkUpdate" }
 
