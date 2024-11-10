@@ -220,6 +220,9 @@ packer.startup(function(use)
             }
           },
 
+          -- Update the title of the preview window dynamically, where it is supported
+          dynamic_preview_title = true,
+
           -- Sort results bottom up
           sorting_strategy = 'descending',
 
