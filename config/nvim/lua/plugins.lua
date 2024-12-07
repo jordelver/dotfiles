@@ -571,6 +571,14 @@ packer.startup(function(use)
     end
   }
 
+  -- Extend and create a/i textobjects
+  use {
+    'echasnovski/mini.ai',
+    config = function ()
+      require('mini.ai').setup()
+    end
+  }
+
   -- Automatically set up configuration after cloning packer.nvim
   if packer_bootstrap then
     require("packer").sync()
