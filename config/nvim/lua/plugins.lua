@@ -756,6 +756,10 @@ cmp.setup {
   -- Formatting of the menu
   formatting = {
     format = lspkind.cmp_format({
+
+      -- Boolean to show the `~` expandable indicator in cmp's floating window
+      expandable_indicator = true,
+
       -- Show the icon, then the text description
       mode = 'symbol_text',
 
