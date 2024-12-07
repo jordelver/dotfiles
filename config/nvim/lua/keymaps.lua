@@ -134,13 +134,6 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
 -- Test runners
 --------------------------------------------------------------------------------
 
--- vim-test
-vim.keymap.set('n', 't<C-n>', ':TestNearest<cr>', { silent = true })
-vim.keymap.set('n', 't<C-f>', ':TestFile<cr>', { silent = true })
-vim.keymap.set('n', 't<C-s>', ':TestSuite<cr>', { silent = true })
-vim.keymap.set('n', 't<C-l>', ':TestLast<cr>', { silent = true })
-vim.keymap.set('n', 't<C-g>', ':TestVisit<cr>', { silent = true })
-
 -- plenary
 vim.keymap.set('n', '<leader>t', '<Plug>PlenaryTestFile', { silent = true })
 
