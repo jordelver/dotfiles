@@ -364,6 +364,17 @@ packer.startup(function(use)
     end
   }
 
+  -- Highlight, list and search todo comments
+  use {
+    "folke/todo-comments.nvim",
+    requires = {
+      "nvim-lua/plenary.nvim"
+    },
+    config = function ()
+      require("todo-comments").setup()
+    end
+  }
+
   -- Highlight current search matches
   use { "PeterRincker/vim-searchlight" }
 
