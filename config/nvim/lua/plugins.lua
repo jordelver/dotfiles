@@ -579,6 +579,14 @@ packer.startup(function(use)
     end
   }
 
+  -- Shows symbol overview for the current buffer
+  use({
+    "stevearc/aerial.nvim",
+    config = function()
+      require("aerial").setup()
+    end
+  })
+
   -- Automatically set up configuration after cloning packer.nvim
   if packer_bootstrap then
     require("packer").sync()
