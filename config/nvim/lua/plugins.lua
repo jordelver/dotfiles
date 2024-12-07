@@ -486,9 +486,6 @@ packer.startup(function(use)
           -- Remove separators between components and sections
           component_separators = { left = "", right = "" },
           section_separators = { left = "", right = "" },
-
-          -- show a single status bar for all windows
-          globalstatus = true,
         },
         sections = {
           lualine_a = {"mode"},
