@@ -759,7 +759,18 @@ cmp.setup {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
     { name = 'nvim_lsp_signature_help' },
-    { name = 'buffer', keyword_length = 3 },
+    {
+      name = 'buffer',
+      -- The number of characters that need to be typed to trigger auto-completion.
+      keyword_length = 3,
+      option = {
+        -- Look in all open buffers for buffer completions
+        -- https://github.com/hrsh7th/cmp-buffer#all-buffers
+        get_bufnrs = function()
+          return vim.api.nvim_list_bufs()
+        end
+      }
+    },
     { name = 'path' },
   },
 
