@@ -31,6 +31,3 @@ vim.api.nvim_create_autocmd("ColorScheme", {
   pattern = "*",
   callback = apply_colors,
 })
-
--- Set colorscheme (theme)
-vim.cmd [[ colorscheme moonlight ]]
