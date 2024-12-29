@@ -1,6 +1,1 @@
-require("options")
-require("keymaps")
-require("plugins")
-require("colors")
-require("functions")
-require("autocommands")
+require("config.lazy")
