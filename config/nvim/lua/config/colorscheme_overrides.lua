@@ -25,6 +25,11 @@ local function apply_colors()
   hl("jsCommentTodo", { fg = "#eeeeee", bg = "#2d2c5d" })
   hl("rustTodo",      { fg = "#eeeeee", bg = "#2d2c5d" })
   hl("luaTodo",       { fg = "#eeeeee", bg = "#2d2c5d" })
+
+  -- Clear weird highlighting in the quickfix window
+  hl("qfFileName", {} )
+  hl("qfLineNr", {})
+  hl("QuickFixLine", {})
 end
 
 vim.api.nvim_create_autocmd("ColorScheme", {

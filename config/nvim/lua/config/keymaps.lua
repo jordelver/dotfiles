@@ -3,9 +3,10 @@ vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("n", "<space>x", ":.lua<CR>")
 vim.keymap.set("v", "<space>x", ":lua<CR>")
 
--- Clear search highlighting when hitting <enter> in normal mode, but not in the command-line window
+-- Clear search highlighting when hitting <enter> in normal mode, but not in
+-- the command-line window or quickfix/location list
 vim.keymap.set('n', '<cr>', function()
-  if vim.fn.getcmdwintype() == '' then
+  if vim.fn.getcmdwintype() == '' and vim.bo.filetype ~= 'qf' then
     return ':nohlsearch<cr>'
   else
     return '<cr>'

@@ -13,6 +13,7 @@ return {
         filetypes_denylist = {
           "markdown",
           "NvimTree",
+          "qf",
         }
       })
     end
