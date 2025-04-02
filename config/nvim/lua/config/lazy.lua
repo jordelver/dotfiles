@@ -25,6 +25,9 @@ require("config.options")
 -- Custom keymaps
 require("config.keymaps")
 
+-- LSP
+require("config.lsp")
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
