@@ -1,7 +1,9 @@
 {
   "OnSyntaxChange": { "branch": "master", "commit": "d01db8c06eb3ca11d7bfd6e9ceb0a9cef6549312" },
   "aerial.nvim": { "branch": "master", "commit": "fd7fbe36772d7a955815c90ff9b58523bfdb410d" },
+  "blink.cmp": { "branch": "main", "commit": "49f211fe5d729df53df4c042d7c3464cf47d199e" },
   "elixir-tools.nvim": { "branch": "main", "commit": "b465f6aff50257fa466de3886fc3e7de2dcff0de" },
+  "friendly-snippets": { "branch": "main", "commit": "efff286dd74c22f731cdec26a70b46e5b203c619" },
   "fzf": { "branch": "master", "commit": "bb55045596d6d08445f3c6d320c3ec2b457462d1" },
   "fzf.vim": { "branch": "master", "commit": "556f45e79ae5e3970054fee4c4373472604a1b4e" },
   "gitsigns.nvim": { "branch": "main", "commit": "0b04035bb7b3c83e999b9676e2fb46fd0aa9f910" },
