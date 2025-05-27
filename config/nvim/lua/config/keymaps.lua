@@ -13,6 +13,11 @@ vim.keymap.set('n', '<cr>', function()
   end
 end, { expr = true })
 
+-- Search within visual selections
+-- https://www.reddit.com/r/neovim/comments/1kv7som/search_within_selection_in_neovim/
+vim.keymap.set('x', '/', '<C-\\><C-n>`</\\%V', { desc = 'Search forward within visual selection' })
+vim.keymap.set('x', '?', '<C-\\><C-n>`>?\\%V', { desc = 'Search backward within visual selection' })
+
 -- Mappings for yanking/pasting to system clipboard (+)
 vim.keymap.set('v', '<leader>d', '"+d', { noremap = true })
 vim.keymap.set('v', '<leader>y', '"+y', { noremap = true })
