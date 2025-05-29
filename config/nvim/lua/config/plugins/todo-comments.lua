@@ -5,8 +5,13 @@ return {
     dependencies = {
       "nvim-lua/plenary.nvim"
     },
-    config = function ()
-      require("todo-comments").setup()
-    end
+    opts = {
+      highlight = {
+        pattern = [[.*<(KEYWORDS)\s*]], -- removes the colon requirement
+      },
+      search = {
+        pattern = [[\b(KEYWORDS)\b]], -- removes the colon requirement
+      },
+    },
   }
 }
