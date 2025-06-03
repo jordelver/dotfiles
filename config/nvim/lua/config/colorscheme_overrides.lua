@@ -27,7 +27,7 @@ local function apply_colors()
   hl("luaTodo",       { fg = "#eeeeee", bg = "#2d2c5d" })
 
   -- Clear weird highlighting in the quickfix window
-  hl("qfFileName", {} )
+  hl("qfFileName", {})
   hl("qfLineNr", {})
   hl("QuickFixLine", {})
 end
