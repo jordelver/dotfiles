@@ -22,3 +22,5 @@ xcuserdata/
 
 # Ignore Postgres log files
 logfile
+
+**/.claude/settings.local.json
