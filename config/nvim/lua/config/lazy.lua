@@ -48,5 +48,9 @@ require("lazy").setup({
     },
 
     { import = "config.plugins" },
-  }
+  },
+  change_detection = {
+    enabled = false,
+    notify = true,
+  },
 })
