@@ -4,6 +4,7 @@
   "blink.cmp": { "branch": "main", "commit": "022521a8910a5543b0251b21c9e1a1e989745796" },
   "checkmate.nvim": { "branch": "main", "commit": "7a987d1983b45c21e6137b338dd8b7d67243ead7" },
   "elixir-tools.nvim": { "branch": "main", "commit": "6beae8194152e2d8b4a59de19a3e60c1f7ffcff5" },
+  "fFtT-highlights.nvim": { "branch": "master", "commit": "b50968a3a30b7eb3de883e16a0c42e756f10f2db" },
   "friendly-snippets": { "branch": "main", "commit": "572f5660cf05f8cd8834e096d7b4c921ba18e175" },
   "fzf": { "branch": "master", "commit": "40f9f254a9f805ae0a9329b8c2e8355269585cef" },
   "fzf.vim": { "branch": "master", "commit": "3ed6ac56d03fff0389cd5b30dfd1e1f940fe91d0" },
