@@ -4,5 +4,8 @@ vim.api.nvim_create_user_command("Q", "q", { bang = true })
 vim.api.nvim_create_user_command("W", "w", { bang = true })
 vim.api.nvim_create_user_command("Wq", "wq", { bang = true })
 
+-- Remove commands command
+vim.api.nvim_create_user_command("RemoveComments", require('config.remove_comments').remove_comments, {})
+
 -- Alias Gbrowse -> GBrowse because I can't type
 vim.api.nvim_create_user_command('Gbrowse', 'GBrowse', {})
