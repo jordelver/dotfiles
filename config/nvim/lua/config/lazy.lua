@@ -37,16 +37,6 @@ require("config.diagnostic")
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
-    {
-      "shaunsingh/moonlight.nvim",
-      branch = "pure-lua",
-      config = function ()
-        require("config.colorscheme_overrides")
-        vim.g.moonlight_style = "moonlight"
-        vim.cmd.colorscheme "moonlight"
-      end
-    },
-
     { import = "config.plugins" },
   },
   change_detection = {
