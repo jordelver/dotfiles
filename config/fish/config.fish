@@ -5,7 +5,7 @@ set -x EDITOR nvim
 set -gx AWS_VAULT_KEYCHAIN_NAME login
 
 # Add various PATHs
-set PATH $HOME/.cargo/bin $HOME/.bin /opt/homebrew/bin /opt/homebrew/sbin /usr/local/bin /usr/local/sbin $PATH
+set PATH $HOME/.cargo/bin $HOME/.bin $HOME/.local/bin /opt/homebrew/bin /opt/homebrew/sbin /usr/local/bin /usr/local/sbin $PATH
 
 # Use nvim as manpager `:h Man`
 set -x MANPAGER 'nvim +Man!'
