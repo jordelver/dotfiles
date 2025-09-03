@@ -36,19 +36,19 @@ Neovim
 
 Ruby
 
-    asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+    asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
 
 Erlang
 
-    asdf plugin-add https://github.com/asdf-vm/asdf-erlang
+    asdf plugin add https://github.com/asdf-vm/asdf-erlang
 
 Elixir
 
-    asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
+    asdf plugin add elixir https://github.com/asdf-vm/asdf-elixir.git
 
 NodeJS
 
-    asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs
+    asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs
 
 PostgreSQL
 
