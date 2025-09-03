@@ -30,6 +30,10 @@ First we need to install Homebrew.
 
 ### Install plugins
 
+Neovim
+
+    asdf plugin add neovim
+
 Ruby
 
     asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
@@ -66,19 +70,22 @@ Run the install script
 
 ## Vim (Neovim)
 
+Neovim versions are managed by `asdf` like other tools. Change the version in
+`~/.tool-versions`.
+
 ### To update
 
-`brew upgrade neovim`
+    asdf uninstall neovim nightly
+    asdf install neovim nightly
 
 ### Adding a new plugin
 
-Add to `~/.config/nvim/lua/plugins.lua` and run `:PackerSync`
-
-Run `:PackerStatus` to see what needs installing and what doesn't.
+Add to the plugin definition to `~/.config/nvim/lua/config/plugins/` and run
+`:Lazy`.
 
 ### Updating a plugin
 
-Run `:PackerSync` will update all plugins.
+Run `:Lazy` and choose to update from there.
 
 ## Fonts
 
