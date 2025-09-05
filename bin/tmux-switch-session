@@ -1,0 +1,27 @@
+#!/bin/bash
+current_session=$(tmux display-message -p '#S')
+session=$(tmux list-sessions -F '#{session_name}' | \
+    grep -v "^${current_session}$" | \
+    fzf \
+    --tmux=center,30%,20% \
+    --prompt='󰆍 ' \
+    --pointer='→' \
+    --info=inline \
+    --color='
+      border:#1a1b26,
+      fg:#c0caf5,
+      bg:#1a1b26,
+      hl:#bb9af7,
+      fg+:#c0caf5,
+      bg+:#292e42,
+      hl+:#bb9af7,
+      info:#7aa2f7,
+      prompt:#7dcfff,
+      pointer:#7dcfff,
+      marker:#9ece6a,
+      spinner:#9ece6a,
+      header:#565f89')
+
+if [ -n "$session" ]; then
+  tmux switch-client -t "$session"
+fi
