@@ -7,4 +7,3 @@ function serve
 
   ruby -run -ehttpd . -p$PORT
 end
-
