@@ -35,6 +35,9 @@ return {
     },
   },
   keys = {
+    -- File files smartly
+    { "<leader>/", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
+
     -- Fuzzily find files
     { "<leader>ff", function() Snacks.picker.files() end, desc = "Find Files" },
 
