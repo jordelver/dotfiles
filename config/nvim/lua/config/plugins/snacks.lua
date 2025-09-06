@@ -3,12 +3,6 @@ return {
   priority = 1000,
   lazy = false,
   opts = {
-    -- bigfile = { enabled = true },
-    -- dashboard = { enabled = true },
-    -- explorer = { enabled = true },
-    -- indent = { enabled = true },
-    -- input = { enabled = true },
-
     -- Snacks.picker supports the fzf syntax is supported, for example:
     --
     -- +------------+----------------------------+------------------------------------+
@@ -39,12 +33,6 @@ return {
         }
       },
     },
-    -- notifier = { enabled = true },
-    -- quickfile = { enabled = true },
-    -- scope = { enabled = true },
-    -- scroll = { enabled = true },
-    -- statuscolumn = { enabled = true },
-    -- words = { enabled = true },
   },
   keys = {
     -- Fuzzily find files
