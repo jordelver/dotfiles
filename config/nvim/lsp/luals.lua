@@ -26,7 +26,8 @@ return {
       diagnostics = {
         -- Don't raise error for these Lua globals
         globals = {
-          'vim'
+          'vim',
+          'Snacks',
         }
       }
     }

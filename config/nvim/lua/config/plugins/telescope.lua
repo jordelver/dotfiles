@@ -25,23 +25,6 @@ return {
       { "nvim-telescope/telescope-fzf-native.nvim", build = "make" }
     },
     keys = {
-      -- Fuzzily find files
-      { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Fuzzily find files" },
-
-      -- Grep the entire codebase
-      { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Fuzzily grep" },
-
-      -- Fuzzily find open buffers
-      {
-        "<leader>fb", function()
-          require("telescope.builtin").buffers({
-            -- Sorts all buffers by most recently used
-            sort_mru = true
-          })
-        end,
-        desc = 'Telescope buffers'
-      },
-
       -- Fuzzily find Neovim help topics
       { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Fuzzily find Neovim help topics" },
 
@@ -65,12 +48,6 @@ return {
         end,
         desc = 'Telescope filter my git commits'
       },
-
-      -- Resume the last picker including any state
-      { "<leader>fr", function () require("telescope.builtin").resume() end, desc = 'Telescope resume previous' },
-
-      -- Grep for the word under the cursor
-      { "<leader>fw", "<cmd>Telescope grep_string<cr>", desc = "Grep word under cursor", mode = { "n", "v" } },
     },
     config = function ()
       -- If multiple file selections are detected, open each file. If hitting
