@@ -30,8 +30,16 @@ return {
             width = 0.95,
             height = 0.95,
           }
-        }
+        },
+
+        bottom = {
+          layout = {
+            height = 0.75,
+          }
+        },
       },
+
+      layout = "bottom"
     },
   },
   keys = {
