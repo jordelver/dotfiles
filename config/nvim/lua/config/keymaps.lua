@@ -35,7 +35,7 @@ vim.keymap.set('', '<Up>', '<Nop>')
 vim.keymap.set('', '<Down>', '<Nop>')
 
 -- Toggle file tree explorer visibility
-vim.keymap.set('', '<leader>nt', ':lua Snacks.picker.explorer()<cr>', { noremap = true })
+vim.keymap.set('', '<leader>t', ':lua Snacks.picker.explorer()<cr>', { noremap = true })
 
 -- Easier git blaming
 vim.keymap.set('', '<leader>gb', '<cmd>Git blame<cr>', { noremap = true })
