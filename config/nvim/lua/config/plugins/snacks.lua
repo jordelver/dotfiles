@@ -41,6 +41,11 @@ return {
 
       layout = "bottom"
     },
+
+    -- Better vim.ui.input
+    input = {
+      enabled = true,
+    },
   },
   keys = {
     -- File files smartly
