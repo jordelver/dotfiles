@@ -40,9 +40,6 @@ vim.keymap.set('', '<leader>t', ':lua Snacks.picker.explorer()<cr>', { noremap =
 -- Easier git blaming
 vim.keymap.set('', '<leader>gb', '<cmd>Git blame<cr>', { noremap = true })
 
--- Toggle spellcheck
-vim.keymap.set('n', '<leader>s', ':set spell!<cr>', { desc = 'Toggle spellcheck' })
-
 -- Move windows without having to press w
 vim.keymap.set('', '<C-h>', '<C-w>h')
 vim.keymap.set('', '<C-j>', '<C-w>j')
