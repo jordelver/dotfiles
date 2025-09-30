@@ -25,5 +25,6 @@ config/pgcli
 config/raycast/
 config/stripe/
 config/yarn/
+.expert/
 gnupg/
 vim/bundle/
