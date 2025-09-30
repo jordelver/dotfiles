@@ -3,9 +3,6 @@ return {
   -- Useful for learning new keybindings
   {
     "folke/which-key.nvim",
-    enabled = true,
-    opts = {
-      preset = "helix"
-    }
+    enabled = true
   }
 }
