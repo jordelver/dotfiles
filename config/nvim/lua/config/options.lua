@@ -57,6 +57,9 @@ vim.opt.updatetime = 100
 -- Uses "gui" attributes instead of "cterm" attributes.
 vim.opt.termguicolors = true
 
+-- Set file to save custom spellings to
+vim.opt.spellfile = "~/.config/nvim/spell/en.utf-8.add"
+
 -- Use a programming dictionary from https://github.com/psliwka/vim-dirtytalk/
 -- as well as English
 vim.opt.spelllang = {"en", "programming"}
