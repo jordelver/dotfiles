@@ -58,7 +58,7 @@ vim.opt.updatetime = 100
 vim.opt.termguicolors = true
 
 -- Set file to save custom spellings to
-vim.opt.spellfile = "~/.config/nvim/spell/en.utf-8.add"
+vim.opt.spellfile = vim.fn.expand("~/.config/nvim/spell/en.utf-8.add")
 
 -- Use a programming dictionary from https://github.com/psliwka/vim-dirtytalk/
 -- as well as English
