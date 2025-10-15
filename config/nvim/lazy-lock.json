@@ -2,6 +2,7 @@
   "OnSyntaxChange": { "branch": "master", "commit": "d01db8c06eb3ca11d7bfd6e9ceb0a9cef6549312" },
   "aerial.nvim": { "branch": "master", "commit": "5e687b5a14004fa2dd9eccbee042b96869fe1557" },
   "blink.cmp": { "branch": "main", "commit": "327fff91fe6af358e990be7be1ec8b78037d2138" },
+  "bufferline.nvim": { "branch": "main", "commit": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3" },
   "checkmate.nvim": { "branch": "main", "commit": "0239c81d37f3adb937120d32e22e9a47d81b7015" },
   "elixir-tools.nvim": { "branch": "main", "commit": "51b026c1ed5fe32396e1cd94c2b67435b066a4fb" },
   "fFtT-highlights.nvim": { "branch": "master", "commit": "e6223b93de2d223415f5d959d5b97a75534bbc22" },
