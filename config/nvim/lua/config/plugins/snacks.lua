@@ -19,11 +19,6 @@ return {
     picker = {
       enabled = true,
 
-      debug = {
-        -- Show scores in the list
-        scores = true,
-      },
-
       layouts = {
         default = {
           layout = {
