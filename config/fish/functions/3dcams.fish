@@ -12,5 +12,5 @@ function 3dcams -d "Show my 3D printer cameras in a vertically stacked window"
     --msg-level=all=error \
     --ontop \
     $3D_PRINTER_CAM1_URL \
-    --external-file=$3D_PRINTER_CAM2_URL
+    --external-file=$3D_PRINTER_CAM2_URL > /dev/null 2>&1 &
 end

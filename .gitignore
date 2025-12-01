@@ -24,7 +24,8 @@ config/nvim/plugged/
 config/nvim/undodir/
 config/nvim/lua/.luarc.json
 config/pgcli
-config/raycast/
+config/raycast/*
+!config/raycast/script-commands/
 config/stripe/
 config/yarn/
 .expert/
