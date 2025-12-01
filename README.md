@@ -13,6 +13,15 @@ This will link configs into ~/
     cd ~/.dotfiles
     ./install.sh
 
+## Environment variables
+
+Environment variables containing secrets are exported from
+`config/fish/conf.d/secrets.fish`.
+
+Copy `config/fish/conf.d/secrets.fish.example` to
+`config/fish/conf.d/secrets.fish` and fill in the values from somewhere. Good
+luck!
+
 ## Install Homebrew
 
 First we need to install Homebrew.
