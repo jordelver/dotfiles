@@ -23,6 +23,7 @@ config/nnn/
 config/nvim/plugged/
 config/nvim/undodir/
 config/nvim/lua/.luarc.json
+config/op/
 config/pgcli
 config/raycast/*
 !config/raycast/script-commands/
