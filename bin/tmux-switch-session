@@ -3,7 +3,7 @@ current_session=$(tmux display-message -p '#S')
 session=$(tmux list-sessions -F '#{session_name}' | \
     grep -v "^${current_session}$" | \
     fzf \
-    --tmux=center,30%,20% \
+    --tmux=center,30%,30% \
     --prompt='󰆍 ' \
     --pointer='→' \
     --info=inline \
