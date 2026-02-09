@@ -36,6 +36,9 @@ set -x ERL_AFLAGS '-kernel shell_history enabled'
 # Turn off the fish welcome message
 set fish_greeting
 
+# Migrate  'fish_key_bindings' variable from universal to global scope since Fish 4.3
+set --global fish_key_bindings fish_vi_key_bindings
+
 function fish_user_key_bindings
 
   # Vi mode keybindings
