@@ -1,0 +1,3 @@
+- Lorem separator
+    - Lorem ipsum 2026 after all. Still here.
+    - https://example.com/lorem-separator
