@@ -142,4 +142,23 @@ describe("weeknotes", function()
 
     assert.are.same(expected, actual)
   end)
+
+  describe("subtitle helper", function()
+    it("exposes a subtitle command entrypoint", function()
+      assert.are.equal("function", type(weeknotes.set_subtitle_and_rename))
+    end)
+
+    it("slugifies subtitles for weeknotes filenames", function()
+      local subtitle = require("weeknotes.subtitle")
+      assert.are.equal("always-use-hot-glue", subtitle.slugify("Always use hot glue"))
+      assert.are.equal("ive-got-some-notes", subtitle.slugify("I've got some notes"))
+      assert.are.equal("quoted-notes", subtitle.slugify('"Quoted" notes'))
+    end)
+
+    it("computes a renamed path from weeknote number and subtitle", function()
+      local subtitle = require("weeknotes.subtitle")
+      local path = subtitle.build_destination_path("/tmp/244-untitled.md", "Pretty big re-organisation")
+      assert.are.equal("/tmp/244-pretty-big-re-organisation.md", path)
+    end)
+  end)
 end)
