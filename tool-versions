@@ -1,7 +1,7 @@
 neovim nightly
 ruby 4.0.2
-elixir 1.18.4-otp-27
-erlang 27.3.4.2
+elixir 1.19.5-otp-28
+erlang 28.5
 nodejs 24.8.0
 yarn 1.22.17
 postgres 15.2
