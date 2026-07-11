@@ -1,0 +1,5 @@
+{
+  "notificationSystem": "ghostty",
+  "suppressGhosttySound": true,
+  "suppressWhenFocused": false
+}

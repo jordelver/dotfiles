@@ -24,6 +24,8 @@ config/nvim/plugged/
 config/nvim/undodir/
 config/nvim/lua/.luarc.json
 config/op/
+config/opencode/opencode-notifier-state.json
+config/opencode/package-lock.json
 config/pgcli
 config/raycast/*
 !config/raycast/script-commands/
