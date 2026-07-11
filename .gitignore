@@ -19,6 +19,7 @@ config/htop/
 config/hub
 config/iterm2/
 config/karabiner/
+config/linear/credentials.toml
 config/nnn/
 config/nvim/plugged/
 config/nvim/undodir/
