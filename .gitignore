@@ -32,6 +32,5 @@ config/raycast/*
 !config/raycast/script-commands/
 config/stripe/
 config/yarn/
-.expert/
 gnupg/
 vim/bundle/
