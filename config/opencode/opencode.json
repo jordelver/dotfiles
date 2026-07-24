@@ -2,5 +2,19 @@
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
     "@mohak34/opencode-notifier@latest"
-  ]
+  ],
+  "mcp": {
+    "home-assistant": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "ha-mcp@latest"
+      ],
+      "environment": {
+        "HOMEASSISTANT_URL": "{env:HOMEASSISTANT_URL}",
+        "HOMEASSISTANT_TOKEN": "{env:HOMEASSISTANT_TOKEN}"
+      },
+      "enabled": false
+    }
+  }
 }
