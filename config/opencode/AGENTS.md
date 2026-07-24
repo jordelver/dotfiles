@@ -34,6 +34,13 @@
   commands like mix format, **always** format them as code in Markdown by
   surrounding them in backticks ` like `Example.code` or  `mix format`.
 
+- When outputting multi-step plans to be manually followed Markdown task list
+  syntax for the points. For example:
+
+      - [ ] Incomplete task
+      - [ ] Another incomplete task
+        - [ ] Nested subtask
+
 ## Writing Elixir code
 
 - **Do not** overuse the pipe(|>). It's fine to use it in a proper pipeline, but
