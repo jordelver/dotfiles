@@ -12,6 +12,114 @@
       "color": "#A78BFA"
     }
   },
+  "provider": {
+    "anthropic-via-aperture": {
+      "npm": "@ai-sdk/anthropic",
+      "name": "Aperture",
+      "options": {
+        "baseURL": "{env:TAILSCALE_APERTURE_URL}",
+        "apiKey": "not-required"
+      },
+      "models": {
+        "claude-haiku-4-5": {
+          "name": "claude-haiku-4-5",
+          "tool_call": true
+        },
+        "claude-opus-4-7": {
+          "name": "claude-opus-4-7",
+          "tool_call": true
+        },
+        "claude-opus-4-8": {
+          "name": "claude-opus-4-8",
+          "tool_call": true
+        },
+        "claude-sonnet-4-6": {
+          "name": "claude-sonnet-4-6",
+          "tool_call": true
+        },
+        "claude-sonnet-5": {
+          "name": "claude-sonnet-5",
+          "tool_call": true
+        },
+        "claude-fable-5": {
+          "name": "claude-fable-5",
+          "tool_call": true
+        }
+      }
+    },
+    "aperture-openai": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Aperture",
+      "options": {
+        "baseURL": "{env:TAILSCALE_APERTURE_URL}",
+        "apiKey": "not-required"
+      },
+      "models": {
+        "deepseek-v4-flash": {
+          "name": "deepseek-v4-flash",
+          "tool_call": true
+        },
+        "deepseek-v4-pro": {
+          "name": "deepseek-v4-pro",
+          "tool_call": true
+        },
+        "glm-5.1": {
+          "name": "glm-5.1",
+          "tool_call": true
+        },
+        "glm-5.2": {
+          "name": "glm-5.2",
+          "tool_call": true
+        },
+        "kimi-k2.6": {
+          "name": "kimi-k2.6",
+          "tool_call": true
+        },
+        "kimi-k2.7-code": {
+          "name": "kimi-k2.7-code",
+          "tool_call": true
+        },
+        "mimo-v2.5": {
+          "name": "mimo-v2.5",
+          "tool_call": true
+        },
+        "mimo-v2.5-pro": {
+          "name": "mimo-v2.5-pro",
+          "tool_call": true
+        }
+      }
+    },
+    "aperture-anthropic": {
+      "npm": "@ai-sdk/anthropic",
+      "name": "Aperture",
+      "options": {
+        "baseURL": "{env:TAILSCALE_APERTURE_URL}",
+        "apiKey": "not-required"
+      },
+      "models": {
+        "minimax-m2.7": {
+          "name": "minimax-m2.7",
+          "tool_call": true
+        },
+        "minimax-m3": {
+          "name": "minimax-m3",
+          "tool_call": true
+        },
+        "qwen3.6-plus": {
+          "name": "qwen3.6-plus",
+          "tool_call": true
+        },
+        "qwen3.7-max": {
+          "name": "qwen3.7-max",
+          "tool_call": true
+        },
+        "qwen3.7-plus": {
+          "name": "qwen3.7-plus",
+          "tool_call": true
+        }
+      }
+    }
+  },
   "plugin": [
     "@mohak34/opencode-notifier@latest"
   ],
