@@ -4,6 +4,9 @@
 
 - When writing git commit messages **always** use proper sentence case.
 
+- Write bullet points in sentence case starting each bullet with a capital
+  letter.
+
 - When writing git commit messages **always** make sure they have a body as well
   as a subject that explains what the commit does. You can omit this for very
   small changes which are inconsequential such as commits which only fix
@@ -15,6 +18,15 @@
 
 - When using the Superpowers plugin **always** create a git worktree when
   implementing a feature unless otherwise instructed.
+
+- When fixing issues pointed out through code review create "fix up" commits
+  like `git commit --fixup=<sha>` which fix the original commit rather than
+  creating new commits.
+
+- When altering existing code create logical commits which tell the story of the
+  change. When adding new code single commits are ok.
+
+- See `docs/git/commit-message.md` for an example of a good git commit message
 
 ## Writing Markdown
 
