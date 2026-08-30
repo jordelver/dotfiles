@@ -16,6 +16,9 @@
   directory located at `.github/pull_request_template.md` use it as a template
   and fill in the relevant details.
 
+- **Always** put git worktrees in the current project directory under .worktrees/
+  Do not use the system temp directory for them.
+
 - When using the Superpowers plugin **always** create a git worktree when
   implementing a feature unless otherwise instructed.
 
