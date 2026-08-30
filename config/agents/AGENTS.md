@@ -19,6 +19,9 @@
 - **Always** put git worktrees in the current project directory under .worktrees/
   Do not use the system temp directory for them.
 
+- **Never** merge main/master directly into feature branches. **Always** rebase
+  main/master instead.
+
 - When using the Superpowers plugin **always** create a git worktree when
   implementing a feature unless otherwise instructed.
 
