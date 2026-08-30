@@ -1,5 +1,43 @@
 - **Always** re-read files before writing them in case I've edited them manually.
 
+## General
+
+- If a change starts implementing an internet standard, security registry,
+  parser, protocol client, or policy database, stop and survey maintained
+  dependencies before proceeding.
+
+- Implement the smallest MVP solution.
+
+- Before writing code:
+  1. Survey existing dependencies and maintained external packages.
+  2. Estimate files changed, production LOC, test LOC, and new abstractions.
+  3. Stop for approval if the estimate exceeds:
+     - 3 changed files
+     - 100 production LOC
+     - 150 test LOC
+     - 1 new module
+     - 1 new dependency
+
+- Prefer a maintained dependency over bespoke protocol, parsing,
+  security-policy, or standards-registry code.
+
+- Test only representative application behavior. Do not reproduce an external
+  standard's complete conformance suite unless explicitly approved.
+
+- If implementation exceeds the estimate by 25%, stop and ask before continuing.
+
+- Do not interpret acceptance criteria as requiring exhaustive implementation.
+
+- Flag criteria that seem disproportionate to the MVP and propose deferring them.
+
+- Security sensitivity is not permission to build a security library. Prefer a
+  well-maintained dependency and keep custom code limited to
+  application-specific integration.
+
+- Use TDD at the agreed public seam, but keep a test budget. Test representative
+  equivalence classes and critical regressions, not every boundary maintained by
+  an upstream dependency.
+
 ## Using git and GitHub
 
 - When writing git commit messages **always** use proper sentence case.
