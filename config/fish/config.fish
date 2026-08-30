@@ -11,7 +11,11 @@ set PATH $HOME/.cargo/bin $HOME/.bin $HOME/.local/bin /opt/homebrew/bin /opt/hom
 set -x MANPAGER 'nvim +Man!'
 
 # Setup Homebrew env vars
-eval (brew shellenv)
+if type -q brew
+  eval (brew shellenv)
+else if status is-interactive; and not set -q SSH_CONNECTION
+  echo "WARNING: You need to install Homebrew"
+end
 
 # Use `fd` instead of default `find`
 # Search hidden files, but exclude `.git` and respect `.gitignore`
@@ -81,11 +85,15 @@ function fish_user_key_bindings
 end
 
 # Turn on direnv to manage per directory environment variables
-eval (direnv hook fish)
+if type -q direnv
+  eval (direnv hook fish)
+else if status is-interactive; and not set -q SSH_CONNECTION
+  echo "WARNING: You need to install direnv"
+end
 
 # Use ASDF to manage versions for Ruby, Elixir, and others
 if test -e ~/.asdf/asdf.fish
   source ~/.asdf/asdf.fish
-else
+else if status is-interactive; and not set -q SSH_CONNECTION
   echo "WARNING: You need to install asdf"
 end

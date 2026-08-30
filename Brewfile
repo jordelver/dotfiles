@@ -24,7 +24,6 @@ brew "mas"
 brew "neovim", args: ["HEAD"]
 brew "nushell"
 brew "pgweb"
-brew "reattach-to-user-namespace"
 brew "redis"
 brew "rename"
 brew "ripgrep"
