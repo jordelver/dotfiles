@@ -27,3 +27,6 @@ xcuserdata/
 logfile
 
 **/.claude/settings.local.json
+
+# Ignore git worktrees directories
+.worktrees/
