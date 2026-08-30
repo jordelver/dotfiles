@@ -56,3 +56,8 @@
   different arity unless they are actually used. Helper functions are fine, but
   only when they're actually called from somewhere.
 
+## Shell commands
+
+- When suggesting commands to run give me the fish shell syntax, not bash or
+  zsh.
+
