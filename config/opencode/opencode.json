@@ -13,6 +13,12 @@
       "color": "#A78BFA"
     }
   },
+  "permission": {
+    "external_directory": {
+      "~/.config/opencode/**": "allow",
+      "~/.local/share/opencode/**": "allow"
+    }
+  },
   "provider": {
     "anthropic-via-aperture": {
       "npm": "@ai-sdk/anthropic",
