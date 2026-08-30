@@ -1,7 +1,7 @@
 ---
 description: Reviews code for quality and best practices
 mode: subagent
-model: anthropic-via-aperture/claude-opus-4-8
+model: openai/gpt-5.6-sol
 temperature: 0.1
 permission:
   edit: deny
