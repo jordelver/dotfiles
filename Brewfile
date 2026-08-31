@@ -23,6 +23,7 @@ brew "jq"
 brew "mas"
 brew "neovim", args: ["HEAD"]
 brew "nushell"
+brew "pinentry-mac"
 brew "pgweb"
 brew "redis"
 brew "rename"
